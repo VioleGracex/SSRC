@@ -1,0 +1,23 @@
+Narrative: You wake up, earlier than usual, you feel an itch on your neck. As you look to your right you see your diary (insert player name) and an empty tube next to it.
+Narrative: After staring at your diary for a while, you get an uneasy feeling. You get out of your bed and head to the bathroom and as you are washing your face you look in the mirror. You see your eyes glowing for a moment.
+Narrative: As a response you rub your eyes and there is no glowing anymore.
+Main: I must be seeing things. I need my morning coffee.
+Narrative: You are preparing your breakfast and you notice your father is ready to head out to work already
+ but, it it too early.
+Main: Why are you leaving so early? 
+Father: Something came up and I must go now. I will not be late, Hopefully.
+Father: I am afraid I won't be able to drive you to school today.
+Main: No problem I will take the bus.
+Narrative: Your father kisses you on the forehead and leaves.
+Narrative: You are now home alone.
+Narrative: You don't get any naughty thoughts and grab your coffee and brunch head outside.
+Narrative: You take out your phone to call Amy so you can go to school together.
+Amy: Hi bestie !, are you ready for valentine's day?
+Main: What? IS IT TODAY??. I totally forgot.
+Amy: Don't worry I made some chocolate for you and my brother.
+Narrative: you remember the last time she cooked for you and it wasn't as good as her enthuiasm. it was rather, out of this world.
+Main: I am SO looking forward to that !. 
+Main: I will meet you at the bus station.
+Narrative: You arrive at school with Amy. Nothing feels out of place anymore.
+Main: Just another boring school today.
+Amy: Let's go !

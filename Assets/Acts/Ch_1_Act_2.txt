@@ -1,0 +1,251 @@
+Main: Are you Hiro?.
+Hiro: Yes dear, now get inside take a seat and put on your seat belt 'cuz we are gonna have a tough ride.
+Nova: Enough wasting time we got a team to gather, move it Hiro !.
+Hiro: Aye sir!.
+Narrative: everyone gets on  the bus and takes their seat, You sit beside Amy.
+Narrative: you see Vxlt sits on the other side of you and Nova is standing next to Hiro and Hiro is driving the bus.
+Narrative: at first the bus was moving somewhat smoothly but after a while there was couple of bumps.
+Hiro: Fasten your seat belts everyone we got some unwanted company.
+Narrative: some infectees are attempting to break the metal sheets on the windows
+Vxlt: Duck!.
+Narrative: as you get your head down Vxlt tases the infectees through a gap created by them.
+Amy: I am scared, what is going on? *starts tearing*
+Narrative: Nova hurries to comfort her
+Nova: Do not worry everything will be alright, I have got your back sis.
+-----------------------------------------------------------------------------------------------
+opt-1 confront her with Nova (gains affinity[trust] with Nova)
+
+opt-2 Ignore. Nova did more than enough, I am not gonna add more to that. (gain nothing) [think to self]
+
+if you choose option 1:-
+Narrative:you say with a little smile as you put your hand on her shoulder to comfort her
+Main: We will get through this together.
+
+if you choose option 2:- 
+nothing happens (story moves on normally)
+------------------------------------------------------------------------------------------------
+Hiro to Vxlt: Wow, I never thought I would live to see the boss' soft side.
+Vxlt: Even the hardest of stones can soften for a loved one.
+Narrative: an hour or two passes you and Amy fall asleep on each other's shoulder.
+Narrative: you wake up as the bus brakes and see a fearsome man sitting on a pile of corpses with no weapon in hand.
+Monte: You are finally here.... what took you so long?.
+Nova: You could say we had a bumpy ride, anyways, Is Cale still up there?.
+Monte: Yeah.
+Main: Did you take on all those infectees with only your fists?.
+Monte: Yes young lady, but who might you be? Nova's sister?.
+Amy: Nope, I am Nova's sister and this is my best friend.
+Monte: nice to meet you both, such cutie pies.
+Narrative: he says and reaches his hand for a head pat with a wide smile.
+-----------------------------------------------------------------------------------------------
+opt-1 Stop his hand    
+
+opt-2 give a little smile [gain affinity with Monte]
+
+
+
+if choose opt-1:-
+Main: Hey!, I am not a little kid.
+Monte: Alright, you asked for it then!
+Narrative: Monte grabs you and gives you a noogie.
+
+if choose opt-2:-
+the story goes on normally 
+---------------------------------------------------------------------------------------------
+Narrative: You see a hooded man with a sniper rifle on his back coming from the building behind Monte.
+Narrative: As he walks through the door he lifts his hood up and you see he has long green braided hair strands.
+Narrative: And you notice his expressions are quite unfriendly.
+Nova: Cale!, nice to see you man. glad you didn't get yourself in trouble this time.
+Cale: ha ha ha *sarcastic laugh*. very funny.
+Cale: I thought you said you are gonna get your sister only, who is this girl?, More nuisance?.
+Main: I am (player name), and who are you?.
+Cale: I am Cale and that is all you need to know.
+Cale: Now that you picked up your sister, let's continue our mission.
+Nova: How about we drop them at the refuge?.
+Cale: There is no time.
+Narrative: you all get on the bus and start moving.
+Amy: Brother, what is this mission you were talking about?.
+Hiro:We are going north-west from here to section A the Goverment laboratory, about 3 miles away.
+Nova: Then step on that pedal and let's get there quickly.
+Narrative: Some time pass and Amy fell asleep, you are sitting next to the window staring and wondering.
+Narrative: How could such a disaster happen?.
+Narrative: As you start wandering off with your mind you hear Vxlt singing.
+Vxlt : ~the wheels on the bus go round and round, round and round~.
+-----------------------------------------------------------------------------------------------
+opt-1: sing along [right lyrics] (~all day long~)     [Gain +2 affinity with Vxlt]
+opt-2: sing along [Wrong lyrics] (~Horn on the bus goes beep beep beep~)  [Gain +1 affinity with Vxlt]
+opt-3: tell him to shut up           [gain +2 affinity with Nova]
+
+
+if you choose opt-1:-
+Main: ~all day long~.
+Vxlt: oh! you know this song?.
+Main: Of course!, it is a childhood favorite.
+Cale: Could you both shut up?.
+
+if you choose opt-2:-
+Main: ~Horn on the bus goes beep beep beep~
+Vxlt: I am quite sure that's not how it goes.
+Main: I am sorry.
+Cale: as long as neither of you are singing I am happy.
+
+if you choose opt-3:-
+Main: Is this really the time for it? 
+Narrative: awkward silence fills the bus for a moment.
+Hiro: Maybe I should turn on the radio.
+Narrative: As Hiro turns on the radio you hear loud screaming and growling coming out of the radio.
+Narrative: Nova immediately turns the radio off.
+Nova:Dumb ass.
+Narrative: you notice Nova is checking on Amy to see if this startled her, but she is still asleep.
+-------------------------------------------------------------------------------------------------
+Narrative: A group of infectees drop on the ceiling of the bus.
+Nova: Vxlt and Cale, you stay here with Amy and her friend.
+Nova: Hiro, slow down so we can take care of some.... unwanted visitors.
+Monte: Finally some action !.
+Hiro: Time to try my latest inventions, svetlana 0.2.
+Hiro: Vxlt you are going to like this. Everyone cover your eyes.
+Narrative: You cover your eyes leaving a small gap and you see blue sparks around the bus.
+Narrative: You see Vxlt shouting ,laughing and waving his hands in the air.
+Vxlt: wheeeeey, I am in love.
+Cale: Shut up already, and get back in your seat.
+Hiro: oh that worked well what a bumpy ride.
+Hiro: See that? that's our destination we are almost there.
+Monte: Wait, look over there!. there is a large horde.
+Narrative: Hiro stops the bus.
+Narrative: Cale goes to the front of the bus and angrily hits the roof.
+Cale: Damn it we are too late.
+Cale: Nova, its all your fault, you just had to go pick up your sister and you came back with another nuissance.
+Cale: I bet if we had left this extra luggage we would have made it in time.
+--------------------------------------------------------------------------------------------------
+opt-1: Defend yourself.
+
+opt-2: Do nothing.
+
+opt-3: remind him. (choice 2 act 1.)
+
+
+
+if you choose opt-1:-
+Main: I don't need saving, I can carry my own weight.
+Narrative: Monte steps up to Cale and gestures for him to stop.
+Cale: I am sorry I lost my cool.
+
+
+if you choose opt-2:-
+Narrative: Amy wakes up by the sound of Nova and Cale arguing.
+Amy: She is not useless luggage, She saved me.
+Nova: listen up rich kid this is isnt your mansion and we aren't your servants.....so watch ur mouth
+Cale: I am sorry I lost my cool.
+
+if you choose opt-3:-
+Main: If I remember correctly this luggage is the one who led us out, so you are welcome.
+Narrative: Vxlt leans on you.
+Vxlt: Yes, she is a smart cutie pie.
+Cale: Fine, whatever.
+------------------------------------------------------------------------------------------------------------
+Nova: Cale, What is the objective of the mission?
+Cale: our objective is to save (..insert father's name here..).
+Nova: Well we can try.
+Narrative: You recognise that name it's your father's name.
+Main: I didn't notice untill now, this is the lab where my father works.
+Main: I must come with you.
+Nova: No, you gonna stay here with Amy.
+Nova: Vxlt and Monte you will stay here and protect them.
+Vxlt and Hiro: Roger!.
+Narrative: Nova, Hiro and Cale moves towards the lab hiding from the infectees and leaves you in the bus with Hiro and Monte.
+Narrative: You watch them until they vanish from your sight.
+Narrative: After a while you hear a loud thud and the bus starts shaking.
+Amy: Aaaaaaaaaaaaa.....
+Monte: Get your heads down!.
+Narrative: after a silent moment.
+Main: What was that?
+Vxlt: I will go check.
+Vxlt: NOOOO MY LOVE BLEW UP!
+Vxlt: uuuh, Monte I may need some help here.
+Narrative: You look through the window and see a horde of infectees coming your way.
+Monte: I will go help him, you guys stay here.
+Narrative: Monte leaves the bus to assist Vxlt of fighting the infectees.
+Monte: And that's a twenty!. Beat that.
+Vxlt: I am just warming up.
+Narrative: An infectee slips through Vxlt and Monte and smashes the window next to Amy.
+Narrative: As you step past Amy to protect her from the glass shards you get your arm is cut.
+Narrative: Vxlt appears from behind and tases the infectee.
+Vxlt: Sorry missy, my bad.
+Amy: Oh no! you are bleeding.
+Narrative: You hear loud growls all over the place.
+Narrative: While Nova, Hiro and Cale are stealthing near the lab they notice that all the infectees are heading in the bus's way.
+Nova: *over the radio* Monte !, what is going on ? all the infectees are heading your way.
+Monte: I think you guys should head back.
+Nova: Try to hold as much as you can.
+Cale: How did they mess up staying low?.
+Narrative: You tear a part from your shirt and use it to bandage yourself it's not well done but it will do.
+Narrative: after you manage to bandage your arm you see a frenzied infectee rushing towards Vxlt's behind.
+Main: Behind you!.
+Narrative: Vxlt dodges swiftly and elegantly as he does so, his jacket flutters in the air and as it gets down slowly you see his eyes fixed on the target and tases the infectee till it turns to crisp.
+Vxlt: *Phew* thank you, you saved my ass.
+Narrative: You see from afar Nova, Cale and Hiro clearing the way to the bus.
+Hiro: What happened to Svetlana 2.0?
+Cale: *sarcastic voice* it's because you use cheap ass materials. 
+Nova: Enough talking, Hiro get on the wheel.
+Hiro: On it boss.
+Narrative: Everyone is on the bus and they are fending of the infectees.
+Narrative: and Hiro steps on the gas crushing the infectees under the bus wheels
+Amy: Nova, (...player name...) got hurt while protecting me.  *5ara face*
+Narrative: Nova steps up to you.
+Nova: Show me.
+Narrative: He gently picks up your hurt hand and looks at it.
+Nova: what a sorry excuse for a bandage.
+Narrative: as he picks out a proper bandage he removes the cloth and makes a clean wrap.
+Nova: anyways thanks for protecting my sister I owe you one.
+Nova: Now have some rest to heal up.
+Narrative: As you try take some rest and you got some sleep eventually. 
+Narrative: You wake up to vxlt counting.
+Vxlt: 1 zombie...... 2 zombies....
+Cale: They are called infectees.
+Vxlt: *ignoring Cale* 3 zombies... a human child... oh and another one.
+Main: What did you just say?
+---------------------------------------------------------------------------------------
+opt-1: oh ok. 
+
+opt-2: Stop the bus.
+
+
+if you choose option 1:-
+Narrative: Monte steps up to Hiro.
+Monte: STOP THE GODDAMN BUS!.
+Cale: *sigh* Picking up another nuisance?
+Narrative: Hiro stops the bus. Nova and Monte goes to pick up the children.
+
+
+if you choose option 2:-
+Main: Stop the bus!. We must save them.
+Monte: yes we do.
+Nova: Well I owe you one anyways.
+Narrative: Hiro stops the bus. Nova and Monte goes to pick up the children.
+-------------------------------------------------------------------------------------
+Narrative: They pick up 2 childrens a 6th grader boy, and a 4th grader girl.
+Narrative: The girl is hiding behind the boy.
+The boy: Thank you misters.
+Narrative: Monte headpats the small girl.
+Monte: Now go sit next to the girls.
+Narrative: They go sit next to you and Amy.
+Narrative: After a while you reach a camp.
+Cale: Welcome to the sunset refugee.
+---Scene 2 ends---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

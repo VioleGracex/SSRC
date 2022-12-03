@@ -1,0 +1,4009 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9103719285657098146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: cfb68ae7-3458-4d08-b0b0-034cf75684aa
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: f4d86b12-d97d-466e-98a6-0d6e95297bc4
+  charName: Narrative
+  text: She hands you a small chocolate box
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 57b1447b-19d7-4b6e-98fc-b52f81ee84e8
+  pos:
+    serializedVersion: 2
+    x: 992
+    y: 723
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 23
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-9099074140363539666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: c8618e52-5b89-40a4-9caa-7a773e26a0e6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 90247756-af00-45c9-bbcf-3dba90f308f1
+  charName: Father
+  text: I am afraid I won't be able to drive you to school today.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 5c6e3af6-f4c2-418b-b28e-e0bfdd8863b8
+  pos:
+    serializedVersion: 2
+    x: 250
+    y: 1497
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 7
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-8915760324068582267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 787b6477-45d6-450a-bbb2-fae61e3ed90d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 1f15db9d-98b6-4953-93cf-3b22db332404
+  charName: Father
+  text: Something came up and I must go now. I will not be late, Hopefully.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 6eed393f-7c0a-4d44-9034-339933199ca4
+  pos:
+    serializedVersion: 2
+    x: 515
+    y: 373
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 9
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-8839928205815320038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: ce6079d9-b9c6-41ef-bedf-c9631367829d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 38bb3dfd-11f2-4410-90c2-988f0d950b6e
+  charName: Main
+  text: What? IS IT TODAY??. I totally forgot.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 63f7a52d-78a5-4fa1-8944-e525a5729eba
+  pos:
+    serializedVersion: 2
+    x: 546
+    y: 551
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-8793607481838971600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: b577c92b-0b4d-4f40-99f6-390613e16749
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 6293420d-7ea6-4fc4-9fb9-9e9669fd4b90
+  charName: Amy
+  text: I will be waiting.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - f4d86b12-d97d-466e-98a6-0d6e95297bc4
+  pos:
+    serializedVersion: 2
+    x: 992
+    y: 369
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 21
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-8601710783214231605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 595c2dab-ba2a-448b-9fa7-1802c80b2fa0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 858d7e88-7331-401f-bee9-12e34befd4c6
+  charName: Amy
+  text: Okay.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 383c13eb-e737-4adc-bba9-83b851d9c21b
+  pos:
+    serializedVersion: 2
+    x: 2370.1997
+    y: 784.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 28
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-8245209232704093952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: d2a4481b-f91e-4d78-b11b-6f7dfc28b7c5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 7fbd0b15-9721-456b-a70a-3bcea5389b64
+  charName: Main
+  text: '*you do your best to smile through the horrible taste in your mouth*'
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 33bc8406-1069-4c94-8c87-f1aa1a3fcbad
+  pos:
+    serializedVersion: 2
+    x: 2356.1997
+    y: 509.20007
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 28
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-8142630932182673150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 8c189cca-71aa-4ce4-be40-66f0b73dc1d0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 10334e03-0cb5-4e04-96db-b12a0d110b75
+  charName: Amy
+  text: Okay!
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 5f1db7fc-11c5-44a8-9bbc-576862d2c2c8
+  pos:
+    serializedVersion: 2
+    x: 2327
+    y: 295
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 28
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-8044448316701946940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 4ee699db-1430-4c3a-8938-c9da2396b0e3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: e80eec25-c16d-4075-8390-a13c8afa217b
+  charName: Amy
+  text: Let's go !
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children: []
+  pos:
+    serializedVersion: 2
+    x: 546
+    y: 1785
+    width: 200
+    height: 200
+  charSprite: {fileID: 21300000, guid: 7302d6462378c7c4aac93cadd51d32e9, type: 3}
+  spritePosition: middle
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 2
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-7926608796866509710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 505959de-ff83-4ae0-9528-480c4fe1ed4f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 7addc6df-b22d-4f6f-82b3-f11f1ed42337
+  charName: Main
+  text: I will meet you at the bus station.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - b8bd8c13-866e-4834-ace4-2d3c0da8c4b0
+  pos:
+    serializedVersion: 2
+    x: 543
+    y: 1261
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-7707724856529971833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 7e3f5a2d-60a7-4680-b971-eaed33b0a08f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 6821bded-f606-477f-ae1a-3681a6fd12bf
+  charName: Narrative
+  text: You are now home alone.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 4449e940-f50c-4a8f-ad38-4efed5457460
+  pos:
+    serializedVersion: 2
+    x: 769.1998
+    y: 626.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: left
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: 7aaf494c0769a6c46b7d4add237ad123, type: 3}
+  BackGroundTransition: 1
+  nodeIndexPosition: 1
+  nodeNumber: 14
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-7638011802622663732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: e5a841c6-e86b-4d5b-b00c-9974dbd9d4e1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 9aca8a8a-a201-402f-8bd6-e36c367185df
+  charName: Narrative
+  text: You wipe the foggy mirror but see that there is no glow.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - b471835b-0a70-4bcf-80c4-50a05ec329bd
+  pos:
+    serializedVersion: 2
+    x: 510.19983
+    y: 24.200073
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: 203dae9d8eaddf7478ec97379bf35f8e, type: 3}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 6
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-7404894290841003764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: f42802c9-c6da-4b9f-8ce0-6fd2661ff303
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 23c6a3aa-caf6-4012-846d-e19569fd9a19
+  charName: Amy
+  text: Let's go.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children: []
+  pos:
+    serializedVersion: 2
+    x: 4133.1997
+    y: 666.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 35
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-7250636839778047937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: b471835b-0a70-4bcf-80c4-50a05ec329bd
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: e5a841c6-e86b-4d5b-b00c-9974dbd9d4e1
+  charName: Main
+  text: I must be seeing things, I need my morning coffee.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 419af6f7-73f6-42d8-bffd-77e226c7998c
+  pos:
+    serializedVersion: 2
+    x: 513.1998
+    y: 236.20007
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 7
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-7121613043587959043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: e99a23a5-0cf0-46f8-9c7e-cb961a92ff31
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 2465ef0c-2638-4386-ae02-f80b72abd506
+  charName: Father
+  text: Something came up and I must go now. I will not be late, Hopefully.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 779a6f41-058f-497f-88e4-3ffb19ebbde2
+  pos:
+    serializedVersion: 2
+    x: 518.1998
+    y: 883.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 10
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-7113098939574839191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: f23c5855-1729-464d-8181-67236e47599b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: aec32975-46e1-404f-b5d8-c3b2122dcd88
+  charName: Main
+  text: I will meet you at the bus station.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 0ab06d4b-5ac3-4837-aa39-6916c144a56c
+  pos:
+    serializedVersion: 2
+    x: 1245.1998
+    y: 29.200073
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 21
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-6989339214353964436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 5ebd40ae-8038-4cff-8b16-7bb418ac6d72
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: b709a8c8-3bb2-469f-9db7-b53b7293c83e
+  charName: Main
+  text: What? IS IT TODAY??. I totally forgot.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 97fcae05-54ac-4f09-a7bf-84d13c9fe213
+  pos:
+    serializedVersion: 2
+    x: 761
+    y: 544
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 16
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-6490535518638951772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 6fab836d-244e-4f2d-a07a-1fc6347732c4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: becea3e4-5b18-4338-abc0-a159ce309e7a
+  charName: Narrative
+  text: You pick up your diary.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - b4265759-8e98-43af-89ff-3cbe5a57154a
+  pos:
+    serializedVersion: 2
+    x: 280.19983
+    y: 18.200043
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 1
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-6056275409348243339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: b709a8c8-3bb2-469f-9db7-b53b7293c83e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 15c64d51-83d8-4cfa-8a44-fd47bd517dfa
+  charName: Amy
+  text: Hi bestie !, are you ready for valentine's day?
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 5ebd40ae-8038-4cff-8b16-7bb418ac6d72
+  pos:
+    serializedVersion: 2
+    x: 762
+    y: 369
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 15
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-5843338488809314452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 0ab06d4b-5ac3-4837-aa39-6916c144a56c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: f23c5855-1729-464d-8181-67236e47599b
+  charName: Amy
+  text: I will be waiting.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 370c5fab-6908-409c-9436-8b7edba585d5
+  pos:
+    serializedVersion: 2
+    x: 1246.1998
+    y: 232.20007
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 22
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-5569816883275645661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: c96a0880-f599-465d-9347-35b9d8dbe40f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 6f229cf7-a4f7-4328-96f5-df57a80a51f9
+  charName: 'Narrative:'
+  text: You get out of your bed and head to the bathroom you go for a warm shower.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - d3fe7b56-d419-4bbc-a798-b39c98abe9ed
+  pos:
+    serializedVersion: 2
+    x: 269
+    y: 182
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 1
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 2
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-5497654529960470045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: cd18c558-cb36-4cbd-ae81-0afa7478825f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 6f229cf7-a4f7-4328-96f5-df57a80a51f9
+  charName: Narrative
+  text: You get out of your bed and head to the bathroom you go for a warm shower
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 3ddab6a7-d878-45c0-99df-fee12861f61c
+  pos:
+    serializedVersion: 2
+    x: 265
+    y: 155
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 2
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-5366103902888088848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 7fbd0b15-9721-456b-a70a-3bcea5389b64
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: c59493e6-9e33-46ae-9e00-841eeefe34d0
+  charName: Main
+  text: 'just one wouldn''t harm, would it? *you eat 1 chocolate piece* '
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - d2a4481b-f91e-4d78-b11b-6f7dfc28b7c5
+  pos:
+    serializedVersion: 2
+    x: 2107.1997
+    y: 508.20007
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 27
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-4946145872115509052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 3ff13f3c-e374-4e5c-a597-9cb1d219e85f
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 2dc3e6bd-03bc-4457-a8f5-ed4d0e874050
+  charName: Narrative
+  text: 'You get up and head to the bathroom and take a shower. '
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 9aca8a8a-a201-402f-8bd6-e36c367185df
+  pos:
+    serializedVersion: 2
+    x: 273.19983
+    y: 623.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 4
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-4905980935778523761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: aa0977e0-d328-428b-952d-a7bcea5f4353
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: c2b6d5b8-33fb-44ec-8e90-f354629043bf
+  charName: Amy
+  text: Let's go.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children: []
+  pos:
+    serializedVersion: 2
+    x: 3800
+    y: 456
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 33
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-4776230013094069318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 981fcd2c-4d7d-4166-866f-d56f73859832
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 9e57b67a-2859-413e-b75b-308befb5e1fa
+  charName: Narrative
+  text: You are preparing your breakfast and you notice your father is ready to head
+    out to work already but, it is too early.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - be0efa61-eaab-445f-9e41-5e2a402c470d
+  pos:
+    serializedVersion: 2
+    x: 245
+    y: 899
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 4
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-4456374546036014729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 57b1447b-19d7-4b6e-98fc-b52f81ee84e8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: cfb68ae7-3458-4d08-b0b0-034cf75684aa
+  charName: Amy
+  text: Try it now ! I poured all my love into it.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 49db3577-6d0c-4671-ac49-07331450a3fb
+  - 4baea669-ff23-46eb-996a-492ca50e8e4e
+  pos:
+    serializedVersion: 2
+    x: 1270
+    y: 418
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 24
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-4318921032598937805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 8f57a718-a699-43b7-b4bf-5726dc0f6d40
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 3ddab6a7-d878-45c0-99df-fee12861f61c
+  charName: Narrative
+  text: You reach to wipe the mirror with your hand and see that the glowing is no
+    more
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 9e57b67a-2859-413e-b75b-308befb5e1fa
+  pos:
+    serializedVersion: 2
+    x: 260
+    y: 524
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: 46f6ee09b1de3a246a844b75ec698606, type: 3}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 4
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-3953241856414482092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 6821bded-f606-477f-ae1a-3681a6fd12bf
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: ed2f1af8-e07b-4f39-a9cc-35981ccae806
+  charName: Narrative
+  text: Your father kisses you on the forehead and leaves.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 7e3f5a2d-60a7-4680-b971-eaed33b0a08f
+  pos:
+    serializedVersion: 2
+    x: 769.1998
+    y: 431.20007
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: left
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 1
+  nodeNumber: 13
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-3416815108519230303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 3ddab6a7-d878-45c0-99df-fee12861f61c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: cd18c558-cb36-4cbd-ae81-0afa7478825f
+  charName: Narrative
+  text: as you are drying your hair you stare at the mirror and notice your eyes
+    are starting to glow.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 8f57a718-a699-43b7-b4bf-5726dc0f6d40
+  pos:
+    serializedVersion: 2
+    x: 263
+    y: 330
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 3
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-2851272906391357297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 370c5fab-6908-409c-9436-8b7edba585d5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 0ab06d4b-5ac3-4837-aa39-6916c144a56c
+  charName: (Narrative)
+  text: As you arrive at the bus station you see Amy waving for you.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - e5ceabd1-3377-49ae-b5fa-87c42a2efbbf
+  pos:
+    serializedVersion: 2
+    x: 1247.1998
+    y: 439.20007
+    width: 200
+    height: 200
+  charSprite: {fileID: 21300000, guid: c3c90155463cdb4439c49aa9f7fc4021, type: 3}
+  spritePosition: left
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: 0a4ed905ae8a6e44792c621463c319bc, type: 3}
+  BackGroundTransition: 1
+  nodeIndexPosition: 1
+  nodeNumber: 23
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-2696404141810478697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 49db3577-6d0c-4671-ac49-07331450a3fb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 57b1447b-19d7-4b6e-98fc-b52f81ee84e8
+  charName: 
+  text: Eat one
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 0ecf1bea-59a6-4948-b018-4797eb42f7d5
+  pos:
+    serializedVersion: 2
+    x: 1570
+    y: 297
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 25
+  affinityPoints: 1
+  affinityCharacter: Amy
+  conditionalAffinity: Amy:3
+--- !u!114 &-2562236387850934557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 8c3c0e20-2aa7-4889-8f4a-682d70471df6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 6eed393f-7c0a-4d44-9034-339933199ca4
+  charName: Main
+  text: No problem I will take the bus with my friend Amy.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - ac37f631-db87-47bb-bb5b-b3ede518c475
+  pos:
+    serializedVersion: 2
+    x: 513
+    y: 725
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 11
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-2406562860126769849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 1211fbc4-3e6a-469a-b6d1-e4fdaa7753b7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: a02f3001-53cc-4495-b86f-8b89e716c294
+  charName: Main
+  text: I am dying to try it !.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 6293420d-7ea6-4fc4-9fb9-9e9669fd4b90
+  pos:
+    serializedVersion: 2
+    x: 995
+    y: 10
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 19
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-2332661851623500128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 90247756-af00-45c9-bbcf-3dba90f308f1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: be0efa61-eaab-445f-9e41-5e2a402c470d
+  charName: Father
+  text: Something came up and I must go now. I will not be late, Hopefully.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - c8618e52-5b89-40a4-9caa-7a773e26a0e6
+  pos:
+    serializedVersion: 2
+    x: 243
+    y: 1298
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 6
+  affinityPoints: 1
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-2313340478579317172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 1f15db9d-98b6-4953-93cf-3b22db332404
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 0efce424-324e-4419-9368-b270f5d7f7b1
+  charName: Main
+  text: 'Why are you leaving so early? '
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 787b6477-45d6-450a-bbb2-fae61e3ed90d
+  pos:
+    serializedVersion: 2
+    x: 516
+    y: 188
+    width: 200
+    height: 200
+  charSprite: {fileID: 21300000, guid: 08db04db6cf18c14b9aa2ceb66f5ab11, type: 3}
+  spritePosition: left
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: c003b07b1c16cf64cbaaf35398249f6f, type: 3}
+  BackGroundTransition: 1
+  nodeIndexPosition: 1
+  nodeNumber: 8
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-2240527275413528509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 97fcae05-54ac-4f09-a7bf-84d13c9fe213
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 5ebd40ae-8038-4cff-8b16-7bb418ac6d72
+  charName: Amy
+  text: Don't worry I made some homemade chocolate for you and my brother.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - a02f3001-53cc-4495-b86f-8b89e716c294
+  pos:
+    serializedVersion: 2
+    x: 760
+    y: 724
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 17
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-2173161205604696219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 2b41a096-4366-4b91-88e5-d9b3a5dda773
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 67a5bd59-a220-4e49-b9c2-7d0968401618
+  charName: Narrative
+  text: 'You both get on the bus '
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - fad9e636-e45a-4765-aba0-a4d5b5446ae9
+  pos:
+    serializedVersion: 2
+    x: 3111
+    y: 424
+    width: 200
+    height: 200
+  charSprite: {fileID: 21300000, guid: 35ad3f387ae630c4c82d90c6c9c59b8c, type: 3}
+  spritePosition: right
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: 85b0311e3e0a7804e8f1085603539bd9, type: 3}
+  BackGroundTransition: 1
+  nodeIndexPosition: 3
+  nodeNumber: 31
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-2139095725052714532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: ed2f1af8-e07b-4f39-a9cc-35981ccae806
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 779a6f41-058f-497f-88e4-3ffb19ebbde2
+  charName: Main
+  text: No problem I will take the bus with Amy.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 6821bded-f606-477f-ae1a-3681a6fd12bf
+  pos:
+    serializedVersion: 2
+    x: 768.1998
+    y: 233.20007
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 12
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-2045891500330884254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 724747a6-a368-4ccb-92c6-9886613b1319
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 63f7a52d-78a5-4fa1-8944-e525a5729eba
+  charName: Narrative
+  text: you remember the last time she cooked for you and it wasn't as good as her
+    enthuiasm. it was rather, out of this world.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 7addc6df-b22d-4f6f-82b3-f11f1ed42337
+  pos:
+    serializedVersion: 2
+    x: 541
+    y: 910
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-1826531424474840128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: d3fe7b56-d419-4bbc-a798-b39c98abe9ed
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: c96a0880-f599-465d-9347-35b9d8dbe40f
+  charName: 'Narrative:'
+  text: As you are drying your hair you stare at the mirror and notice your eyes
+    are starting to glow.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - d0cb291b-908b-4dfe-99af-20ebd628e389
+  pos:
+    serializedVersion: 2
+    x: 272
+    y: 350
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: right
+  clearOtherSprites: 1
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: c4ae43f33235f554da2be03773758803, type: 3}
+  BackGroundTransition: 1
+  nodeIndexPosition: 3
+  nodeNumber: 4
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-1736294662170210642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 5f3cc5c4-80a9-4b5e-b53e-2804945c2c37
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: e5ceabd1-3377-49ae-b5fa-87c42a2efbbf
+  charName: Amy
+  text: Try it now ! I poured all my love into it.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - c59493e6-9e33-46ae-9e00-841eeefe34d0
+  - cd2bfd7f-a167-4c48-9f06-64dabdf13ee6
+  pos:
+    serializedVersion: 2
+    x: 1473.1998
+    y: 647.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 25
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-1677341803037494664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 779a6f41-058f-497f-88e4-3ffb19ebbde2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: e99a23a5-0cf0-46f8-9c7e-cb961a92ff31
+  charName: Father
+  text: I am afraid I won't be able to drive you to school today.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - ed2f1af8-e07b-4f39-a9cc-35981ccae806
+  pos:
+    serializedVersion: 2
+    x: 766.1998
+    y: 24.200073
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 11
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-1512642033463193541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: ba5f7a25-5e16-46ae-ba60-1278bce259dc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 22b078a7-a29a-4b0c-8015-9b92ebe086b8
+  charName: Narrative
+  text: After a while you arrive to the school.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 23c6a3aa-caf6-4012-846d-e19569fd9a19
+  pos:
+    serializedVersion: 2
+    x: 3633.1997
+    y: 667.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: 17f7b361ff243c144bdf67facaea2ab3, type: 3}
+  BackGroundTransition: 1
+  nodeIndexPosition: 0
+  nodeNumber: 33
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-1130403591547914613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 4baea669-ff23-46eb-996a-492ca50e8e4e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 57b1447b-19d7-4b6e-98fc-b52f81ee84e8
+  charName: 
+  text: Save it for later
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 2e78edfc-69ec-4b71-8709-1f51a2ee9deb
+  pos:
+    serializedVersion: 2
+    x: 1568
+    y: 556
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 25
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-1099671446741289262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: b8bd8c13-866e-4834-ace4-2d3c0da8c4b0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 505959de-ff83-4ae0-9528-480c4fe1ed4f
+  charName: Narrative
+  text: You arrive at school with Amy. Nothing feels out of place.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - e80eec25-c16d-4075-8390-a13c8afa217b
+  pos:
+    serializedVersion: 2
+    x: 544
+    y: 1434
+    width: 200
+    height: 200
+  charSprite: {fileID: 21300000, guid: 7302d6462378c7c4aac93cadd51d32e9, type: 3}
+  spritePosition: middle
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: bd54f5d4de2119c48839832b27f76f78, type: 3}
+  BackGroundTransition: 0
+  nodeIndexPosition: 2
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-1039847987806781502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: e80eec25-c16d-4075-8390-a13c8afa217b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: b8bd8c13-866e-4834-ace4-2d3c0da8c4b0
+  charName: Main
+  text: Just another boring school day.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 4ee699db-1430-4c3a-8938-c9da2396b0e3
+  pos:
+    serializedVersion: 2
+    x: 548
+    y: 1611
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-1007473779699394486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 9aca8a8a-a201-402f-8bd6-e36c367185df
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 3ff13f3c-e374-4e5c-a597-9cb1d219e85f
+  charName: Narrative
+  text: You get out of the shower and start drying your hair infront of the mirror
+    in your reflection your eyes are glowing blue.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - e5a841c6-e86b-4d5b-b00c-9974dbd9d4e1
+  pos:
+    serializedVersion: 2
+    x: 271.19983
+    y: 878.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: right
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: c4ae43f33235f554da2be03773758803, type: 3}
+  BackGroundTransition: 1
+  nodeIndexPosition: 3
+  nodeNumber: 5
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-982031826689774481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 0ecf1bea-59a6-4948-b018-4797eb42f7d5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 49db3577-6d0c-4671-ac49-07331450a3fb
+  charName: Narrative
+  text: 'just one wouldn''t harm, would it? *you eat 1 chocolate piece* '
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 10334e03-0cb5-4e04-96db-b12a0d110b75
+  pos:
+    serializedVersion: 2
+    x: 1820
+    y: 296
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 26
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-769816066874849279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: fad9e636-e45a-4765-aba0-a4d5b5446ae9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 2b41a096-4366-4b91-88e5-d9b3a5dda773
+  charName: Narrative
+  text: After a while you arrive at the school
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - c2b6d5b8-33fb-44ec-8e90-f354629043bf
+  pos:
+    serializedVersion: 2
+    x: 3346
+    y: 438
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: bd54f5d4de2119c48839832b27f76f78, type: 3}
+  BackGroundTransition: 1
+  nodeIndexPosition: 0
+  nodeNumber: 32
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-401103020973487385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: b09daca5-f9a0-4e3f-9e6d-5322e6950d32
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: c9a8b427-23be-4810-9727-c91400ec34fc
+  charName: Amy
+  text: Don't worry I made some homemade chocolate for you and my brother.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - e874ae03-3d9e-46da-8339-574ed1848994
+  pos:
+    serializedVersion: 2
+    x: 1008.1998
+    y: 448.20007
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 18
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-348199871749101733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 0cb9bcdb-352b-4864-9949-4accadfb86a3
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: f12227bf-4f0a-4393-bbfb-41a75ac7bead
+  charName: Amy
+  text: Let's go.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children: []
+  pos:
+    serializedVersion: 2
+    x: 3910.1997
+    y: 664.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 34
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-146468185921235311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 35e9e255-dfd3-4038-8268-e818664ad810
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 383c13eb-e737-4adc-bba9-83b851d9c21b
+  charName: (Narrative)
+  text: As soon as you are done the bus arrives.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 22b078a7-a29a-4b0c-8015-9b92ebe086b8
+  pos:
+    serializedVersion: 2
+    x: 3133.1997
+    y: 667.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 31
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &-128406861115738666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 38bb3dfd-11f2-4410-90c2-988f0d950b6e
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: ff232e16-637a-4ce3-8101-aa9100d2c6db
+  charName: Amy
+  text: Hi bestie !, are you ready for valentine's day?
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - ce6079d9-b9c6-41ef-bedf-c9631367829d
+  pos:
+    serializedVersion: 2
+    x: 547
+    y: 370
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd02df50ad5b2f4497096c9fbb0a3e9, type: 3}
+  m_Name: Prologue
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 5309886174217524223}
+  - {fileID: -6490535518638951772}
+  - {fileID: 6513863514932438449}
+  - {fileID: 6314662775269524232}
+  - {fileID: -4946145872115509052}
+  - {fileID: -1007473779699394486}
+  - {fileID: -7638011802622663732}
+  - {fileID: -7250636839778047937}
+  - {fileID: 5622424740872297660}
+  - {fileID: 1930179604451666505}
+  - {fileID: -7121613043587959043}
+  - {fileID: -1677341803037494664}
+  - {fileID: -2139095725052714532}
+  - {fileID: -3953241856414482092}
+  - {fileID: -7707724856529971833}
+  - {fileID: 1377060149050388402}
+  - {fileID: 2216878400462349577}
+  - {fileID: 6702059628974316060}
+  - {fileID: -401103020973487385}
+  - {fileID: 5210833272541294808}
+  - {fileID: 8074562004726196803}
+  - {fileID: -7113098939574839191}
+  - {fileID: -5843338488809314452}
+  - {fileID: -2851272906391357297}
+  - {fileID: 5911000505912329968}
+  - {fileID: -1736294662170210642}
+  - {fileID: 555437913878083032}
+  - {fileID: 7253369378667848545}
+  - {fileID: 5345167504529258903}
+  - {fileID: -5366103902888088848}
+  - {fileID: -8245209232704093952}
+  - {fileID: 6126315745215743566}
+  - {fileID: 7284262636330903790}
+  - {fileID: -8601710783214231605}
+  - {fileID: 1776465313256527484}
+  - {fileID: -146468185921235311}
+  - {fileID: 5105073031400655852}
+  - {fileID: -1512642033463193541}
+  - {fileID: 2741752884007746719}
+  - {fileID: -7404894290841003764}
+  canvasHeight: 5000
+  canvasWidth: 5000
+  newNodeOffset: {x: 250, y: 0}
+--- !u!114 &353438263509941942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: f12227bf-4f0a-4393-bbfb-41a75ac7bead
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 22b078a7-a29a-4b0c-8015-9b92ebe086b8
+  charName: Main
+  text: Another boring school day.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 0cb9bcdb-352b-4864-9949-4accadfb86a3
+  pos:
+    serializedVersion: 2
+    x: 3644.1997
+    y: 665.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 33
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &555437913878083032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: c59493e6-9e33-46ae-9e00-841eeefe34d0
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 5f3cc5c4-80a9-4b5e-b53e-2804945c2c37
+  charName: 
+  text: Eat one
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 7fbd0b15-9721-456b-a70a-3bcea5389b64
+  pos:
+    serializedVersion: 2
+    x: 1856.1998
+    y: 509.20007
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 26
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &1191047818349407849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 7addc6df-b22d-4f6f-82b3-f11f1ed42337
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 724747a6-a368-4ccb-92c6-9886613b1319
+  charName: Main
+  text: I am SO looking forward to that !.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 505959de-ff83-4ae0-9528-480c4fe1ed4f
+  pos:
+    serializedVersion: 2
+    x: 540
+    y: 1087
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &1377060149050388402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 4449e940-f50c-4a8f-ad38-4efed5457460
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 7e3f5a2d-60a7-4680-b971-eaed33b0a08f
+  charName: Narrative
+  text: You take out your phone to call Amy so you can go to school together.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 5af458ca-956f-4bbd-8015-30a5c9732469
+  pos:
+    serializedVersion: 2
+    x: 767.1998
+    y: 865.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 15
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &1696113753215433540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: d0cb291b-908b-4dfe-99af-20ebd628e389
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: d3fe7b56-d419-4bbc-a798-b39c98abe9ed
+  charName: Narrative
+  text: You reach to wipe the mirror with your hand and see that the glowing is no
+    more
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 17b788a4-b316-4c95-a5eb-a2f47aaec5d2
+  pos:
+    serializedVersion: 2
+    x: 274
+    y: 535
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: 88ede261ed993114a92a8ca9d63ae356, type: 3}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 5
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &1776465313256527484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 383c13eb-e737-4adc-bba9-83b851d9c21b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 595c2dab-ba2a-448b-9fa7-1802c80b2fa0
+  charName: Main
+  text: '*you put the chocolate box in your backpack*'
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 35e9e255-dfd3-4038-8268-e818664ad810
+  pos:
+    serializedVersion: 2
+    x: 2621.1997
+    y: 784.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 29
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &1930179604451666505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 2465ef0c-2638-4386-ae02-f80b72abd506
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 419af6f7-73f6-42d8-bffd-77e226c7998c
+  charName: Main
+  text: 'Why are you leaving so early? '
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - e99a23a5-0cf0-46f8-9c7e-cb961a92ff31
+  pos:
+    serializedVersion: 2
+    x: 514.1998
+    y: 626.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 21300000, guid: ace7c0eaf69adcd4bbe2767a2c23742e, type: 3}
+  spritePosition: left
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: e5ad68ffad976604a975e84da4d8e173, type: 3}
+  BackGroundTransition: 1
+  nodeIndexPosition: 1
+  nodeNumber: 9
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &1965323587263727492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 63f7a52d-78a5-4fa1-8944-e525a5729eba
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: ce6079d9-b9c6-41ef-bedf-c9631367829d
+  charName: Amy
+  text: Don't worry I made some chocolate for you and my brother.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 724747a6-a368-4ccb-92c6-9886613b1319
+  pos:
+    serializedVersion: 2
+    x: 543
+    y: 729
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &2160231028530860567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 6eed393f-7c0a-4d44-9034-339933199ca4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 787b6477-45d6-450a-bbb2-fae61e3ed90d
+  charName: Father
+  text: I am afraid I won't be able to drive you to school today.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 8c3c0e20-2aa7-4889-8f4a-682d70471df6
+  pos:
+    serializedVersion: 2
+    x: 515
+    y: 545
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 10
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &2186140310120652023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: ff232e16-637a-4ce3-8101-aa9100d2c6db
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 23a4a324-dc1c-4033-97c9-629f0644c210
+  charName: Narrative
+  text: You take out your phone to call Amy so you can go to school together.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 38bb3dfd-11f2-4410-90c2-988f0d950b6e
+  pos:
+    serializedVersion: 2
+    x: 544
+    y: 193
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &2216878400462349577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 5af458ca-956f-4bbd-8015-30a5c9732469
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 4449e940-f50c-4a8f-ad38-4efed5457460
+  charName: Amy
+  text: Hi bestie !, are you ready for valentine's day?
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - c9a8b427-23be-4810-9727-c91400ec34fc
+  pos:
+    serializedVersion: 2
+    x: 996.1998
+    y: 28.200073
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 16
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &2254077193190986271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 23a4a324-dc1c-4033-97c9-629f0644c210
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: b360b9de-0504-4ea5-a50a-11672ef84ae5
+  charName: Narrative
+  text: You don't get any naughty thoughts and grab your coffee and brunch head outside.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - ff232e16-637a-4ce3-8101-aa9100d2c6db
+  pos:
+    serializedVersion: 2
+    x: 539
+    y: 16
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &2567155369436419245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 2e78edfc-69ec-4b71-8709-1f51a2ee9deb
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 4baea669-ff23-46eb-996a-492ca50e8e4e
+  charName: Narrative
+  text: '*you do your best to smile through the horrible taste in your mouth*'
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - e061f37f-0b8f-4352-a4d6-e1c3248e1c50
+  pos:
+    serializedVersion: 2
+    x: 1818
+    y: 556
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 26
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &2741752884007746719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 23c6a3aa-caf6-4012-846d-e19569fd9a19
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: ba5f7a25-5e16-46ae-ba60-1278bce259dc
+  charName: Main
+  text: Just another boring school day.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - f42802c9-c6da-4b9f-8ce0-6fd2661ff303
+  pos:
+    serializedVersion: 2
+    x: 3883.1997
+    y: 667.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 34
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &2773486565366066711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: ac37f631-db87-47bb-bb5b-b3ede518c475
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 8c3c0e20-2aa7-4889-8f4a-682d70471df6
+  charName: Narrative
+  text: Your father kisses you on the forehead and leaves.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 0fe1cee3-362b-4860-b834-83e6974cf9b7
+  pos:
+    serializedVersion: 2
+    x: 512
+    y: 908
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 12
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &3129988051741398674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 9e57b67a-2859-413e-b75b-308befb5e1fa
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 8f57a718-a699-43b7-b4bf-5726dc0f6d40
+  charName: Main
+  text: I must be seeing things ,I need my morning coffee.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 981fcd2c-4d7d-4166-866f-d56f73859832
+  pos:
+    serializedVersion: 2
+    x: 252
+    y: 710
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: 673b650604a199d45b480dc4498c80f5, type: 3}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 3
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &3353359492539694401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: a02f3001-53cc-4495-b86f-8b89e716c294
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 97fcae05-54ac-4f09-a7bf-84d13c9fe213
+  charName: Narrative
+  text: you remember the last time she cooked for you and it wasn't as good as her
+    enthusiasm, it was rather out of this world.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 1211fbc4-3e6a-469a-b6d1-e4fdaa7753b7
+  pos:
+    serializedVersion: 2
+    x: 755
+    y: 901
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 18
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &3561441305378622934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: b360b9de-0504-4ea5-a50a-11672ef84ae5
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 87947684-0232-4cfd-a28e-5374ffa5300d
+  charName: Narrative
+  text: You are now home alone.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 23a4a324-dc1c-4033-97c9-629f0644c210
+  pos:
+    serializedVersion: 2
+    x: 245
+    y: 2075
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: left
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 1
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &4024484790360832196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 10334e03-0cb5-4e04-96db-b12a0d110b75
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 0ecf1bea-59a6-4948-b018-4797eb42f7d5
+  charName: Main
+  text: 'I will try it later, now let''s catch the bus before we miss it. '
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 8c189cca-71aa-4ce4-be40-66f0b73dc1d0
+  pos:
+    serializedVersion: 2
+    x: 2070
+    y: 296
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 27
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &4304650394355335830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 67a5bd59-a220-4e49-b9c2-7d0968401618
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 5f1db7fc-11c5-44a8-9bbc-576862d2c2c8
+  charName: Narrative
+  text: As soon as you are done the bus arrives.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 2b41a096-4366-4b91-88e5-d9b3a5dda773
+  pos:
+    serializedVersion: 2
+    x: 2853
+    y: 443
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: middle
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 2
+  nodeNumber: 30
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &4547123312152254401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 15c64d51-83d8-4cfa-8a44-fd47bd517dfa
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 0fe1cee3-362b-4860-b834-83e6974cf9b7
+  charName: Narrative
+  text: You take out your phone to call Amy so you can go to school together.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - b709a8c8-3bb2-469f-9db7-b53b7293c83e
+  pos:
+    serializedVersion: 2
+    x: 760
+    y: 191
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 14
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &5105073031400655852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 22b078a7-a29a-4b0c-8015-9b92ebe086b8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 35e9e255-dfd3-4038-8268-e818664ad810
+  charName: Narrative
+  text: You both get on the bus.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - ba5f7a25-5e16-46ae-ba60-1278bce259dc
+  pos:
+    serializedVersion: 2
+    x: 3396.1997
+    y: 665.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: 85b0311e3e0a7804e8f1085603539bd9, type: 3}
+  BackGroundTransition: 1
+  nodeIndexPosition: 0
+  nodeNumber: 32
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &5210833272541294808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: e874ae03-3d9e-46da-8339-574ed1848994
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: b09daca5-f9a0-4e3f-9e6d-5322e6950d32
+  charName: Narrative
+  text: you remember the last time she cooked for you and it wasn't as good as her
+    enthusiasm, it was rather out of this world.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - aec32975-46e1-404f-b5d8-c3b2122dcd88
+  pos:
+    serializedVersion: 2
+    x: 998.1998
+    y: 632.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 19
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &5249667488596748582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 5c6e3af6-f4c2-418b-b28e-e0bfdd8863b8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: c8618e52-5b89-40a4-9caa-7a773e26a0e6
+  charName: Main
+  text: No problem I will take the bus.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 87947684-0232-4cfd-a28e-5374ffa5300d
+  pos:
+    serializedVersion: 2
+    x: 247
+    y: 1695
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &5309886174217524223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: becea3e4-5b18-4338-abc0-a159ce309e7a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 1
+  parentID: 
+  charName: Narrative
+  text: 'You wake up, earlier than usual, you feel an itch on your neck. '
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 6fab836d-244e-4f2d-a07a-1fc6347732c4
+  pos:
+    serializedVersion: 2
+    x: 43
+    y: 25
+    width: 200
+    height: 200
+  charSprite: {fileID: 21300000, guid: e19d6011f50e97745b59bc4c3f1c6488, type: 3}
+  spritePosition: right
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: d8a9fb1adf32ac646ba69c2a186b5cfb, type: 3}
+  BackGroundTransition: 0
+  nodeIndexPosition: 3
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &5338328228110690642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 6293420d-7ea6-4fc4-9fb9-9e9669fd4b90
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 1211fbc4-3e6a-469a-b6d1-e4fdaa7753b7
+  charName: Main
+  text: I will meet you at the bus station.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - b577c92b-0b4d-4f40-99f6-390613e16749
+  pos:
+    serializedVersion: 2
+    x: 993
+    y: 188
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 20
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &5345167504529258903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 858d7e88-7331-401f-bee9-12e34befd4c6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: cd2bfd7f-a167-4c48-9f06-64dabdf13ee6
+  charName: Main
+  text: 'I will try it later, now let''s catch the bus before we miss it. '
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 595c2dab-ba2a-448b-9fa7-1802c80b2fa0
+  pos:
+    serializedVersion: 2
+    x: 2120.1997
+    y: 784.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 27
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &5622424740872297660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 419af6f7-73f6-42d8-bffd-77e226c7998c
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: b471835b-0a70-4bcf-80c4-50a05ec329bd
+  charName: Narrative
+  text: You head to the kitchen to prepare breakfast for you and your father and
+    you notice that your father is already heading out.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 2465ef0c-2638-4386-ae02-f80b72abd506
+  pos:
+    serializedVersion: 2
+    x: 514.1998
+    y: 437.20007
+    width: 200
+    height: 200
+  charSprite: {fileID: 21300000, guid: e19d6011f50e97745b59bc4c3f1c6488, type: 3}
+  spritePosition: right
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: 7aaf494c0769a6c46b7d4add237ad123, type: 3}
+  BackGroundTransition: 1
+  nodeIndexPosition: 3
+  nodeNumber: 8
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &5644230185592131611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 0fe1cee3-362b-4860-b834-83e6974cf9b7
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: ac37f631-db87-47bb-bb5b-b3ede518c475
+  charName: Narrative
+  text: You are now home alone.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 15c64d51-83d8-4cfa-8a44-fd47bd517dfa
+  pos:
+    serializedVersion: 2
+    x: 755
+    y: 3
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: left
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 1
+  nodeNumber: 13
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &5735795171328928145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: e061f37f-0b8f-4352-a4d6-e1c3248e1c50
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 2e78edfc-69ec-4b71-8709-1f51a2ee9deb
+  charName: Narrative
+  text: it may not taste good at all but at least you are not rude.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 9757800b-4ff9-4959-bf9a-70a74f482b88
+  pos:
+    serializedVersion: 2
+    x: 2068
+    y: 554
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 27
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &5754717804255768679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: f4d86b12-d97d-466e-98a6-0d6e95297bc4
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: b577c92b-0b4d-4f40-99f6-390613e16749
+  charName: Narrative
+  text: As you arrive at the bus station you see Amy waving for you.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - cfb68ae7-3458-4d08-b0b0-034cf75684aa
+  pos:
+    serializedVersion: 2
+    x: 990
+    y: 551
+    width: 200
+    height: 200
+  charSprite: {fileID: 21300000, guid: c67189985708a0a4b8e502180a83af01, type: 3}
+  spritePosition: middle
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 21300000, guid: 1f278b780781b1448a371dcbb8726ef7, type: 3}
+  BackGroundTransition: 0
+  nodeIndexPosition: 2
+  nodeNumber: 22
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &5911000505912329968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: e5ceabd1-3377-49ae-b5fa-87c42a2efbbf
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 370c5fab-6908-409c-9436-8b7edba585d5
+  charName: (Narrative)
+  text: She hands you a small chocolate box
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 5f3cc5c4-80a9-4b5e-b53e-2804945c2c37
+  pos:
+    serializedVersion: 2
+    x: 1247.1998
+    y: 647.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 24
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &6089669508966820947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 17b788a4-b316-4c95-a5eb-a2f47aaec5d2
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: d0cb291b-908b-4dfe-99af-20ebd628e389
+  charName: Main
+  text: I must be seeing things. I need my morning coffee.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 0efce424-324e-4419-9368-b270f5d7f7b1
+  pos:
+    serializedVersion: 2
+    x: 274
+    y: 714
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 6
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &6126315745215743566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 33bc8406-1069-4c94-8c87-f1aa1a3fcbad
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: d2a4481b-f91e-4d78-b11b-6f7dfc28b7c5
+  charName: Narrative
+  text: It may not taste good at all but at least you made her happy.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - aca970f7-4262-4ee7-93f9-0d1f9d52297d
+  pos:
+    serializedVersion: 2
+    x: 2606.1997
+    y: 509.20007
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 29
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &6169028603361498331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: c2b6d5b8-33fb-44ec-8e90-f354629043bf
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: fad9e636-e45a-4765-aba0-a4d5b5446ae9
+  charName: Main
+  text: Just Another boring school day.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - aa0977e0-d328-428b-952d-a7bcea5f4353
+  pos:
+    serializedVersion: 2
+    x: 3583
+    y: 438
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 33
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &6314662775269524232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 2dc3e6bd-03bc-4457-a8f5-ed4d0e874050
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: b4265759-8e98-43af-89ff-3cbe5a57154a
+  charName: Narrative
+  text: You wonder if it belongs to your father, you pay it no mind.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 3ff13f3c-e374-4e5c-a597-9cb1d219e85f
+  pos:
+    serializedVersion: 2
+    x: 243.19983
+    y: 416.20004
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 3
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &6374311837138767380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 0efce424-324e-4419-9368-b270f5d7f7b1
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 17b788a4-b316-4c95-a5eb-a2f47aaec5d2
+  charName: Narrative
+  text: You head to the kitchen to prepare your morning coffee and you notice that
+    your father has already prepared the coffee and drank a cup.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 1f15db9d-98b6-4953-93cf-3b22db332404
+  pos:
+    serializedVersion: 2
+    x: 520
+    y: 8
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 7
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &6513863514932438449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: b4265759-8e98-43af-89ff-3cbe5a57154a
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 6fab836d-244e-4f2d-a07a-1fc6347732c4
+  charName: (Narrative)
+  text: After staring at your diary for a while you put it back , you see a tube
+    rolling on the table.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 2dc3e6bd-03bc-4457-a8f5-ed4d0e874050
+  pos:
+    serializedVersion: 2
+    x: 275.19983
+    y: 223.20004
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 2
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &6702059628974316060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: c9a8b427-23be-4810-9727-c91400ec34fc
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 5af458ca-956f-4bbd-8015-30a5c9732469
+  charName: Main
+  text: What? IS IT TODAY??. I totally forgot.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - b09daca5-f9a0-4e3f-9e6d-5322e6950d32
+  pos:
+    serializedVersion: 2
+    x: 999.1998
+    y: 232.20007
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 17
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &7253369378667848545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: cd2bfd7f-a167-4c48-9f06-64dabdf13ee6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 5f3cc5c4-80a9-4b5e-b53e-2804945c2c37
+  charName: 
+  text: Save it for later
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 858d7e88-7331-401f-bee9-12e34befd4c6
+  pos:
+    serializedVersion: 2
+    x: 1739.1997
+    y: 790.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 26
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &7284262636330903790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: aca970f7-4262-4ee7-93f9-0d1f9d52297d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 33bc8406-1069-4c94-8c87-f1aa1a3fcbad
+  charName: Amy
+  text: '*Squeals in happiness as she sees you smiling*'
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 35e9e255-dfd3-4038-8268-e818664ad810
+  pos:
+    serializedVersion: 2
+    x: 2856.1997
+    y: 509.20007
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 30
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &7331408550276632856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: be0efa61-eaab-445f-9e41-5e2a402c470d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 981fcd2c-4d7d-4166-866f-d56f73859832
+  charName: Main
+  text: 'Why are you leaving so early? '
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 90247756-af00-45c9-bbcf-3dba90f308f1
+  pos:
+    serializedVersion: 2
+    x: 245
+    y: 1096
+    width: 200
+    height: 200
+  charSprite: {fileID: 21300000, guid: 08db04db6cf18c14b9aa2ceb66f5ab11, type: 3}
+  spritePosition: left
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 1
+  nodeNumber: 5
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &7447081956455387250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 5f1db7fc-11c5-44a8-9bbc-576862d2c2c8
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 8c189cca-71aa-4ce4-be40-66f0b73dc1d0
+  charName: Narrative
+  text: '*you put the chocolate box in your backpack*'
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 67a5bd59-a220-4e49-b9c2-7d0968401618
+  pos:
+    serializedVersion: 2
+    x: 2572
+    y: 296
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 29
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &7748053747625207648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 6f229cf7-a4f7-4328-96f5-df57a80a51f9
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: becea3e4-5b18-4338-abc0-a159ce309e7a
+  charName: Narrative
+  text: After staring at your diary for a while, you get an uneasy feeling. You get
+    out of your bed and head to the bathroom and as you are washing your face you
+    look in the mirror. You see your eyes glowing for a moment.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - c96a0880-f599-465d-9347-35b9d8dbe40f
+  pos:
+    serializedVersion: 2
+    x: 267
+    y: 0
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 1
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &8074562004726196803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: aec32975-46e1-404f-b5d8-c3b2122dcd88
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 1
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: e874ae03-3d9e-46da-8339-574ed1848994
+  charName: Main
+  text: 'I am dying to try it !(not really). '
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - f23c5855-1729-464d-8181-67236e47599b
+  pos:
+    serializedVersion: 2
+    x: 996.1998
+    y: 834.2001
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 20
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &8090660216805592738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 9757800b-4ff9-4959-bf9a-70a74f482b88
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: e061f37f-0b8f-4352-a4d6-e1c3248e1c50
+  charName: Amy
+  text: '*Squeals in happiness as she sees you smiling*'
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - 67a5bd59-a220-4e49-b9c2-7d0968401618
+  pos:
+    serializedVersion: 2
+    x: 2318
+    y: 553
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 28
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 
+--- !u!114 &8769999989682206882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 87947684-0232-4cfd-a28e-5374ffa5300d
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isSpriteVisible: 0
+  isRootNode: 0
+  parentID: 5c6e3af6-f4c2-418b-b28e-e0bfdd8863b8
+  charName: Narrative
+  text: Your father kisses you on the forehead and leaves.
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - b360b9de-0504-4ea5-a50a-11672ef84ae5
+  pos:
+    serializedVersion: 2
+    x: 249
+    y: 1889
+    width: 200
+    height: 200
+  charSprite: {fileID: 0}
+  spritePosition: None
+  clearOtherSprites: 0
+  fadeCheck: 0
+  BG: {fileID: 0}
+  BackGroundTransition: 0
+  nodeIndexPosition: 0
+  nodeNumber: 0
+  affinityPoints: 0
+  affinityCharacter: 
+  conditionalAffinity: 

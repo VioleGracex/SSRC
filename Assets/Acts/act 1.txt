@@ -1,0 +1,80 @@
+Narrative: you are attending your math class and the teacher ,Mr.Jack,  is teaching your most hated subject and as you start to get bored a student comes running and yells.
+Student: Mr.Jack THERE IS SOMETHING AT THE GATE YOU MUST SEE, COME QUICKLY!. 
+Narrative: the teacher follows quickly and as soon as he leaves, the students in the class rush behind him to see what is going on.
+Amy: *poking you* hey let's go check what's going on.
+Main: Nah, I would rather wait here.
+Amy: c'mon just a quick peek.
+Main: alright, I can't say no to my bestie twice.
+Narrative: you go with Amy and manage to stand by the window.
+Narrative: as everyone is watching they see few students walking in a strange way.
+Teacher at the gate: are you okay son?.
+Narrative: as the kid replies with a growl, he rushes and bites the teacher.
+Narrative: another teacher is running towards your class from downstairs and looks horrified.
+Teacher:Everyone evacuate to the Gym now!.
+Narrative: as he sends out the order you see a student behind him.
+Narrative: students start to run, scream and shout as the teacher is getting bited and bleeds horribly.
+Narrative: as everyone starts running in fear.
+Narrative: you hear a thud behind you.
+Narrative: you look behind you to see Amy on the floor and the student who bit the teacher is walking towards her.
+Narratice:  his face is as pale as a white paper and half of his mouth is gone
+Narrative: Amy starts crying and looks like her legs gave out from fear.
+/choice 1:
+1-
+grab her and run 
+2-
+grab the baseball bat and hit him
+/opt 1:
+1-
+Narrative: you pull her up and support her till she runs on her own.
+2-
+Narrative: you hit the person with the bat and he rolls away,  Amy stands up and tells you to run.
+*
+>
+Nova
+Narrative: right around the corner you bump into a black haired man.
+Amy: brother .??? : Glad you are okay , follow me.
+Amy: what about her “player name here “.
+???: leave her .
+Amy: Brother ! .
+???: fine, she can follow but I won’t be carrying any dead weight around.
+Amy: At least introduce yourself .
+???: we don’t have time for this . 
+Amy: Brother !.
+???: fine, I am Nova her brother and a Private detective , now that should be enough let’s go.
+Main: I am …... .
+Nova: if you can move your mouth move your legs instead.
+Narrative: as Nova peeks down the stairs he spots infected through the hallway.
+Nova : tch , we should find another way .
+/choice 2 :
+1- 
+I think I might know
+2- 
+Say Nothing
+/opt 2:
+1-
+Nova: lead the way.`Narrative :you go to class 3 the roof of the cabin is  close to the window.`Main : what do you think? , we should be able to drop from here to the roof ?
+2-
+Nova: Cale we need a way out. Cale : Go to Class 3 and jump down on the cabin’s roof.`Narrative :you go to class 3 the roof of the cabin is close to the window.
+*
+Nova: It might just work, Amy get on my back.
+Amy: I am not a kid anymore chee *pouts*.
+Narrative: Nova jumps first and helps his sister down, as you go through the window an infected breaks room, you trip and fall but Nova manages to catch you. 
+Main: Thanks.
+Nova: I told you to watch your step.
+Nova: *grabs radio* “Hiro” is everything ready.
+Hiro: we half way done boss.
+Nova: ok  be done in  3 minutes . 
+Hiro: that is harsh, the infected are already coming our way because of the noise.
+Nova: tell “Vxlt” to clear the way and come meet us.
+Narrative: a dashing guy with white hair and two tasers in hand running through the zombies crippling them.
+Vxlt: Bosso ! , how are you miss? and who is this cutie?.
+Nova: my sister’s friend.               
+Main: Hey, I have a name ! “ here “.      
+Main: anyways, how are we getting out of here?
+Vxlt: our way out is almost here.
+Narrative: a school bus with metal sheets around it and razor wires on windows moves behind Vxlt.
+Vxlt: see? there it is.
+Hiro: are you done? , Get in !.
+Nova: let’s move.
+% scene 1 ended ;
+
