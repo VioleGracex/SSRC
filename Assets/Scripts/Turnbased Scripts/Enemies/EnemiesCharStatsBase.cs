@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEditor;
 
 [CreateAssetMenu(fileName = "EnemyCharStat_01", menuName = "Char/EnemyStats", order = 1)]
-public class CharStatsBase : ScriptableObject
+public class EnemiesCharStatsBase : ScriptableObject
 {
     public float attack,defense,dex,maxHP,HP;
     public readonly string[] attack_type =  {"slash","bludge","pierce"};

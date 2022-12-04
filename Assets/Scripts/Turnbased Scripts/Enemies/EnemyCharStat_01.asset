@@ -20,7 +20,7 @@ MonoBehaviour:
   _atkTypeIndex: 0
   turnCharges: 0
   turnCharges_Max: 0
+  mapLocation: 0
   _coreTypeIndex: 0
   coreLocation: 
-  myParts:
-  - {fileID: 11400000, guid: 7c26a376a568ee843ad488f726821b6f, type: 2}
+  myParts: []
