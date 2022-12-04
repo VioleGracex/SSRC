@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEditor;
 
-[CreateAssetMenu(fileName = "CharStat_01", menuName = "Char/EnemyStats", order = 1)]
+[CreateAssetMenu(fileName = "EnemyCharStat_01", menuName = "Char/EnemyStats", order = 1)]
 public class CharStatsBase : ScriptableObject
 {
     public float attack,defense,dex,maxHP,HP;
