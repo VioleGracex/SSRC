@@ -1,14 +1,9 @@
 using UnityEngine;
-using UnityEditor;
 
-[CreateAssetMenu(fileName = "EnemyCharStat_01", menuName = "Char/EnemyStats", order = 1)]
+[CreateAssetMenu(fileName = "EnemyCharStat_01", menuName = "Char/Enemy/EnemyStats", order = 1)]
 public class EnemiesCharStatsBase : ScriptableObject
 {
     public float attack,defense,dex,maxHP,HP;
-    public readonly string[] attack_type =  {"slash","bludge","pierce"};
-
-    [SerializeField,Header ("slash,bludge,pierce")]
-    public int _atkTypeIndex;
 
     public int turnCharges,turnCharges_Max,mapLocation;
 

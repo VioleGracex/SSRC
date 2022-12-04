@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-[CreateAssetMenu(fileName = "CharParts_01", menuName = "Char/parts", order = 1)]
+[CreateAssetMenu(fileName = "EnemyCharParts_01", menuName = "Char/Enemy/parts", order = 1)]
 public class Parts : ScriptableObject
 {
    
