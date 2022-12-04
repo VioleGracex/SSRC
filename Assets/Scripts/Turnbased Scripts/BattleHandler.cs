@@ -7,25 +7,25 @@ using UnityEngine.UI;
 public class BattleHandler : MonoBehaviour
 {
     private static BattleHandler instance;
-    private State state;
+    public State state;
     public static BattleHandler Getinstance()
     {
         return instance;
     }
 
     [SerializeField]
-    TextMeshProUGUI whoseTurn,partTargetText;
+    TextMeshProUGUI whoseTurn, partTargetText;
     [SerializeField]
-    Transform[] heroLocations,enemyLocations;
+    Transform[] heroLocations, enemyLocations;
     [SerializeField]  // instead of serialize use instantiate and save them don't forget order in layer and it's child
-    public List<Transform> heroes,enemies;
+    public List<Transform> heroes, enemies;
 
     GameObject attacker;
     GameObject target;
     
     [SerializeField] float slideSpeed = 10f;
-    bool playerTurn = true,playerStart = true; // get if he successed in miniGame fast click if yes he gets to start else he got ambushed 
-    private enum State
+    public bool playerTurn = true, playerStart = true; // get if he successed in miniGame fast click if yes he gets to start else he got ambushed 
+    public enum State
     {
         WaitingForPlayer,
         Busy,
@@ -56,7 +56,7 @@ public class BattleHandler : MonoBehaviour
         {
             if (attacker.GetComponent<HeroAbstract>().myStats.turnCharges <= 0)
             {
-                Debug.Log("No Chrages");
+                Debug.Log("No Charges");
                 return;
             }
             state = State.SlidingForward;  
@@ -70,7 +70,7 @@ public class BattleHandler : MonoBehaviour
             Debug.Log(attacker.GetComponent<EnemyAbstract>().myStats.turnCharges);
             if (attacker.GetComponent<EnemyAbstract>().myStats.turnCharges <= 0)
             {
-                Debug.Log("No Chrages");
+                Debug.Log("No Charges");
                 return;
             }
             if (attacker.transform.position.x > attacker.transform.position.x)
@@ -192,5 +192,16 @@ public class BattleHandler : MonoBehaviour
             }
         }
     }
+
+    public void SetAttacker(GameObject unit)
+    {
+        attacker = unit;
+    }
+
+     public void SetTarget(GameObject unit)
+    {
+        target = unit;
+    }
+
 
 }

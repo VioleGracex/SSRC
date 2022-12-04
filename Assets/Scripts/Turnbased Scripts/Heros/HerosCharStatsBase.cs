@@ -9,5 +9,6 @@ public class HerosCharStatsBase : ScriptableObject
 
     public bool exhausted;
 
+    Vector3 myPosition;
 
 }
