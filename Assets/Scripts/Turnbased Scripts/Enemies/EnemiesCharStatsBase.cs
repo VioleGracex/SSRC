@@ -7,7 +7,7 @@ public class EnemiesCharStatsBase : ScriptableObject
 
     public int turnCharges,turnCharges_Max,mapLocation;
 
-    bool exhausted;
+    public bool exhausted;
 
     public readonly string[] core_type =  {"green","red","violet"};
 
@@ -15,9 +15,15 @@ public class EnemiesCharStatsBase : ScriptableObject
     public int _coreTypeIndex;
 
     public string coreLocation;
-    /*public string[] bodyParts,armor_; */
-   
-    public Parts[] myParts;
+
+    [System.Serializable]
+    public struct PartData
+    {
+       public string partName,armorType;
+       public int hp,armorHp;
+    }
+
+    public PartData[] partsData;
 
 
 }

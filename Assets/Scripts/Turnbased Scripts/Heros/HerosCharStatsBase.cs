@@ -7,7 +7,7 @@ public class HerosCharStatsBase : ScriptableObject
 
     public int turnCharges,turnCharges_Max,mapLocation,level,levelCap,weaponMastry;
 
-    bool exhausted;
+    public bool exhausted;
 
 
 }
