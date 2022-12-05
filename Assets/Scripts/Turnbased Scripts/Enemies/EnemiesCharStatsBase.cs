@@ -15,7 +15,7 @@ public class EnemiesCharStatsBase : ScriptableObject
     public int _coreTypeIndex;
 
     public string coreLocation;
-    Vector3 myPosition;
+    public Vector3 myPosition;
 
     [System.Serializable]
     public struct PartData
@@ -25,8 +25,5 @@ public class EnemiesCharStatsBase : ScriptableObject
     }
 
     public PartData[] partsData;
-
-    
-
 
 }

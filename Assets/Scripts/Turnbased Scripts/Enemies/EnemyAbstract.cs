@@ -7,6 +7,10 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal
     public EnemiesCharStatsBase myStats;
     public Animator myAnimator;
     
+    void OnEnable()
+    {
+       myStats.myPosition = this.transform.position;
+    }
     void Start()
     {
         

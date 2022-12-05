@@ -9,22 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 407d2de45cc0ed0489236ed2313e6e86, type: 3}
-  m_Name: EnemyCharStat_01
+  m_Script: {fileID: 11500000, guid: 61f0910b9823db54bae085fae40a600a, type: 3}
+  m_Name: HeroCharStat_01
   m_EditorClassIdentifier: 
   attack: 1
   defense: 1
   dex: 1
-  maxHP: 5
-  HP: 5
+  maxHP: 10
+  HP: 10
+  exp: 0
+  expToLvlUp: 0
   turnCharges: 3
   turnCharges_Max: 5
   mapLocation: 0
-  exhausted: 1
-  _coreTypeIndex: 0
-  coreLocation: 
-  partsData:
-  - partName: 
-    armorType: 
-    hp: 0
-    armorHp: 0
+  level: 1
+  levelCap: 40
+  weaponMastery: 0
+  exhausted: 0

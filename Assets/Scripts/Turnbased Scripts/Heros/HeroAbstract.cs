@@ -7,6 +7,10 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal
     public HerosCharStatsBase myStats;
     public Animator myAnimator;
     // Start is called before the first frame update
+    void OnEnable()
+    {
+       myStats.myPosition = this.transform.position;
+    }
     void Start()
     {
         
