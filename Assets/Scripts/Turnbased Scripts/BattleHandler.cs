@@ -20,8 +20,8 @@ public class BattleHandler : MonoBehaviour
     [SerializeField]  // instead of serialize use instantiate and save them don't forget order in layer and it's child
     public List<Transform> heroes, enemies;
 
-    [SerializeField]
-    GameObject attacker,target;
+    GameObject attacker;
+    GameObject target;
     
     [SerializeField] float slideSpeed = 10f;
     public bool playerTurn = true, playerStart = true; // get if he successed in miniGame fast click if yes he gets to start else he got ambushed 
@@ -111,16 +111,14 @@ public class BattleHandler : MonoBehaviour
         if (state == State.SlidingForward && target.gameObject != null)
         {
             //attacker.GetComponent<Unit>().myAnimator.Play("Walking");
-            Vector3 temp = target.transform.position + target.transform.right * (-4f);
+            Vector3 temp = target.transform.position + target.transform.right * (-2f);
             MovementTranslation(attacker.transform, temp);
-            Debug.Log(Mathf.Abs(attacker.transform.position.x - temp.x) < 1f);
-            yield return new WaitUntil(() => Mathf.Abs(attacker.transform.position.x - temp.x) < 1f);
+            yield return new WaitUntil(() => Mathf.Abs(attacker.transform.position.x - temp.x) < 0.6f);
             //state = State.Busy;
         }
         //attack here
         if(target.gameObject != null)
         {
-            state = State.SlidingBackward;
             StopCoroutine(SlideToTargetPlayer(attacker, target));
         } 
        
@@ -134,18 +132,9 @@ public class BattleHandler : MonoBehaviour
         if (state == State.SlidingBackward)
         {
             //attacker.GetComponent<Unit>().myAnimator.Play("Walking");
-            Vector3 temp =new Vector3(0,0,0);
-            if(playerTurn)
-            {
-                temp = attacker.GetComponent<HeroAbstract>().myStats.myPosition;
-            }
-            else
-            {
-                temp = attacker.GetComponent<EnemyAbstract>().myStats.myPosition;
-            }
-           
+            Vector3 temp = heroLocations[attacker.GetComponent<HeroAbstract>().myStats.mapLocation].position;
             MovementTranslation(attacker.transform, temp);
-            yield return new WaitUntil(() => Mathf.Abs(temp.x - attacker.transform.position.x) < 1f);
+            yield return new WaitUntil(() => Mathf.Abs(heroLocations[attacker.GetComponent<HeroAbstract>().myStats.mapLocation].position.x - attacker.transform.position.x) < 0.6f);
         }
 
         state = State.WaitingForPlayer;
@@ -157,7 +146,6 @@ public class BattleHandler : MonoBehaviour
    
     void Update()
     {
-        Debug.Log(state);
         switch (state)
         {
             case State.WaitingForPlayer:

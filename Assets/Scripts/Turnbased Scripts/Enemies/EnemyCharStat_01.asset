@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 407d2de45cc0ed0489236ed2313e6e86, type: 3}
   m_Name: EnemyCharStat_01
   m_EditorClassIdentifier: 
-  attack: 1
-  defense: 1
-  dex: 1
-  maxHP: 5
-  HP: 5
-  turnCharges: 3
-  turnCharges_Max: 5
+  attack: 0
+  defense: 0
+  dex: 0
+  maxHP: 0
+  HP: 0
+  turnCharges: 0
+  turnCharges_Max: 0
   mapLocation: 0
-  exhausted: 1
+  exhausted: 0
   _coreTypeIndex: 0
   coreLocation: 
   partsData:

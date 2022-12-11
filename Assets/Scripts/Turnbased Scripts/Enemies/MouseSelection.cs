@@ -20,13 +20,11 @@ public class MouseSelection : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && battleHandler.state == BattleHandler.State.WaitingForPlayer)
         { 
-            Debug.Log("searching");
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.GetRayIntersection(ray);
             if (hit.collider!=null)
             {
-                Debug.Log("found");
-                if(hit.transform.gameObject.tag == "Hero")
+                if(hit.transform.gameObject.tag == "Player")
                 {
                     battleHandler.SetAttacker(hit.transform.gameObject);
                 }

@@ -24,8 +24,6 @@ TagManager:
   - UIHandler
   - BackGround
   - PositionList
-  - Hero
-  - Enemy
   layers:
   - Default
   - TransparentFX

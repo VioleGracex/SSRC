@@ -5,10 +5,10 @@ public class HerosCharStatsBase : ScriptableObject
 {
     public float attack,defense,dex,maxHP,HP,exp,expToLvlUp;
 
-    public int turnCharges,turnCharges_Max,mapLocation,level,levelCap,weaponMastery;
+    public int turnCharges,turnCharges_Max,mapLocation,level,levelCap,weaponMastry;
 
     public bool exhausted;
 
-    public Vector3 myPosition;
+    Vector3 myPosition;
 
 }
