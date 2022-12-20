@@ -11,6 +11,8 @@ namespace RPG.Dialogue
         [SerializeField]
         private bool isPlayerSpeaking = false;
         [SerializeField]
+        private bool isMiniGame = false;
+        [SerializeField]
         private bool isSpriteVisible = false;
         [SerializeField]
         private bool isRootNode = false;
@@ -50,6 +52,12 @@ namespace RPG.Dialogue
         private string affinityCharacter;
         [SerializeField]
         private string conditionalAffinity;
+        [SerializeField]
+        private string miniGameName;
+        [SerializeField]
+        private GameObject miniGame;
+        [SerializeField]
+        private string fightSceneName;
         
     #endregion
 
@@ -120,6 +128,10 @@ namespace RPG.Dialogue
         {
             return isPlayerSpeaking;
         }
+        public bool IsMiniGame()
+        {
+            return isMiniGame;
+        }
 
         public bool IsRootNode()
         {
@@ -155,6 +167,20 @@ namespace RPG.Dialogue
         public int GetAffinityPoints()
         {
             return affinityPoints;
+        }
+
+        public string GetMiniGameName()
+        {
+            return miniGameName;
+        }
+
+        public GameObject GetMiniGame()
+        {
+            return miniGame;
+        }
+        public string GetFightSceneName()
+        {
+            return fightSceneName;
         }
         
 #if UNITY_EDITOR
@@ -258,6 +284,21 @@ namespace RPG.Dialogue
         public void SetBG(Sprite backgroundSprite)
         {
             BG = backgroundSprite;
+            EditorUtility.SetDirty(this);
+        }
+        public void SetMiniGameName(string mGName)
+        {
+            miniGameName = mGName;
+            EditorUtility.SetDirty(this);
+        }
+        public void SetMiniGame(GameObject mG)
+        {
+            miniGame = mG;
+            EditorUtility.SetDirty(this);
+        }
+        public void SetFightSceneName(string sceneName)
+        {
+            fightSceneName = sceneName;
             EditorUtility.SetDirty(this);
         }
 #endif

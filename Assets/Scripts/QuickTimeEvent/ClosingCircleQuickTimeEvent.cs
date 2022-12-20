@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using RPG.Dialogue;
 
 public class ClosingCircleQuickTimeEvent : MonoBehaviour
 {
@@ -31,7 +33,7 @@ public class ClosingCircleQuickTimeEvent : MonoBehaviour
     {
         if(Mathf.Abs(this.transform.localScale.x - targetCircle.transform.localScale.x) <= forgivingThreshold )
         {
-            CallSuccedOnQuickTimeEvent();
+            CallSucceedOnQuickTimeEvent();
 
         }
         else
@@ -40,12 +42,27 @@ public class ClosingCircleQuickTimeEvent : MonoBehaviour
         }
     }
 
-    private void CallSuccedOnQuickTimeEvent()
+    private void CallSucceedOnQuickTimeEvent()
     {
-        Debug.Log("Succed in minigame");
+        Debug.Log("succeed in minigame");
+
+        LoadFightScene();
+
     }
+
+    private static void LoadFightScene()
+    {
+        //also create quick save to load on death before the mini game or after
+        SceneManager.LoadSceneAsync("Prologue_TurnBased", LoadSceneMode.Additive);
+        //loading screen wait set active unload
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(FindObjectOfType<PlayerConversant>().currentNode.GetFightSceneName()));
+        SceneManager.UnloadSceneAsync("DialogueTestTemplate");
+    }
+
     private void CallFailOnQuickTimeEvent()
     {
         Debug.Log("FailedMiniGame");
+        LoadFightScene();
     }
 }
+

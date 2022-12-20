@@ -15,11 +15,14 @@ namespace RPG.Dialogue.Editor
         GUIStyle nodeStyle;
         [NonSerialized]
         GUIStyle playerNodeStyle;
-         GUIStyle rootNodeStyle;
+        GUIStyle rootNodeStyle;
+        GUIStyle MiniGameNodeStyle;
         [NonSerialized]
         DialogueNode draggingNode = null;
         [NonSerialized]
         DialogueNode creatingNode = null;
+        [NonSerialized]
+        DialogueNodeMiniGame creatingNode2 = null;
         [NonSerialized]
         DialogueNode deletingNode = null;
         [NonSerialized]
@@ -78,7 +81,12 @@ namespace RPG.Dialogue.Editor
             rootNodeStyle.normal.textColor = Color.yellow;
             rootNodeStyle.padding = new RectOffset(15, 20, 15, 20);
             rootNodeStyle.border = new RectOffset(12, 12, 12, 12);
-            
+
+            MiniGameNodeStyle = new GUIStyle();
+            MiniGameNodeStyle.normal.background = EditorGUIUtility.Load("node2") as Texture2D;
+            MiniGameNodeStyle.normal.textColor = Color.blue;
+            MiniGameNodeStyle.padding = new RectOffset(15, 20, 15, 20);
+            MiniGameNodeStyle.border = new RectOffset(12, 12, 12, 12);
          }
 
         
@@ -202,32 +210,56 @@ namespace RPG.Dialogue.Editor
             {               
                 draggingCanvas = false;            
             }     
-            else if(Event.current.type == EventType.ScrollWheel )
+           /*  else if(Event.current.type == EventType.ScrollWheel )
             {            
                 zoomedout=!zoomedout;
                 //not working probably
                 GUI.changed = true;
                 Repaint();
-            }        
+            }     */    
         }
 
         
         private void DrawNode(DialogueNode node)
         {
             GUIStyle style = nodeStyle;
+            if(node.IsRootNode())
+            {
+                style = rootNodeStyle;
+            }
             if (node.IsPlayerSpeaking())
             {
                 style = playerNodeStyle;
             }
-            if(node.IsRootNode())
+            if(node.IsMiniGame())
             {
-                style =rootNodeStyle;
+                style= MiniGameNodeStyle;
+                GUILayout.BeginArea(node.GetPos(), style);
+                var txt_style = new GUIStyle(GUI.skin.label) {alignment = TextAnchor.MiddleCenter};
+                EditorGUILayout.LabelField("Mini Game",txt_style);
+                 //EditorGUILayout.LabelField($"MiniGame : {node.GetSpriteName().name}");
+                node.SetMiniGameName(EditorGUILayout.TextField(node.GetMiniGameName()));
+                EditorGUILayout.LabelField("Fight Scene",txt_style);
+                node.SetFightSceneName(EditorGUILayout.TextField(node.GetFightSceneName()));
+           
             }
-            GUILayout.BeginArea(node.GetPos(), style);
-            node.SetCharName(EditorGUILayout.TextField(node.GetCharName()));
-            node.SetText(EditorGUILayout.TextField(node.GetText()));
+            else
+            {
+                GUILayout.BeginArea(node.GetPos(), style);
+                node.SetCharName(EditorGUILayout.TextField(node.GetCharName()));
+                node.SetText(EditorGUILayout.TextField(node.GetText()));
+            }
+            
+          
+
+           
 
             GUILayout.BeginHorizontal();
+           /*  if(node.IsMiniGame())
+            {
+                //EditorGUILayout.LabelField("Mini Game");
+                node.SetMiniGame((GameObject)EditorGUILayout.ObjectField("MG", node.GetMiniGame(), typeof(GameObject), true));
+            } */
 
             if (GUILayout.Button("+"))
             {
@@ -242,9 +274,22 @@ namespace RPG.Dialogue.Editor
 
             GUILayout.EndHorizontal();
 
-            int tempPositionIndex = EditorGUILayout.Popup(node.GetIndexPosition(),positionOptions);
-            node.SetIndexPosition(tempPositionIndex);
-            node.SetSpritePosition(positionOptions[tempPositionIndex]);
+            if(node.IsMiniGame())
+            {
+                GUILayout.BeginVertical();
+                node.SetMiniGame((GameObject)EditorGUILayout.ObjectField("MG", node.GetMiniGame(), typeof(GameObject), true));
+                GUILayout.EndVertical();
+            } 
+
+           
+           
+            if(!node.IsMiniGame())
+            {
+                int tempPositionIndex = EditorGUILayout.Popup(node.GetIndexPosition(),positionOptions);
+                node.SetIndexPosition(tempPositionIndex);
+                node.SetSpritePosition(positionOptions[tempPositionIndex]);
+            }
+          
 
             CheckAssets(node);
 
@@ -334,40 +379,55 @@ namespace RPG.Dialogue.Editor
 
         private static void CheckAssets(DialogueNode node)
         {
-            if (node.GetSpriteName() != null)
+            if(!node.IsMiniGame())
             {
-                EditorGUILayout.LabelField($"Sprite : {node.GetSpriteName().name}");
-            }
-            else
-            {
-                EditorGUILayout.LabelField("Sprite : Empty");
-            }
+                if (node.GetSpriteName() != null)
+                {
+                    EditorGUILayout.LabelField($"Sprite : {node.GetSpriteName().name}");
+                }
+                else
+                {
+                    EditorGUILayout.LabelField("Sprite : Empty");
+                }
 
-            if (node.GetBGName() != null)
-            {
-                EditorGUILayout.LabelField($"BG : {node.GetBGName().name}");
-            }
-            else
-            {
-                EditorGUILayout.LabelField("BG : Empty");
-            }
+                if (node.GetBGName() != null)
+                {
+                    EditorGUILayout.LabelField($"BG : {node.GetBGName().name}");
+                }
+                else
+                {
+                    EditorGUILayout.LabelField("BG : Empty");
+                }
 
-            if (node.GetVLName() != null)
-            {
-                EditorGUILayout.LabelField($"Audio : {node.GetVLName().name}");
+                if (node.GetVLName() != null)
+                {
+                    EditorGUILayout.LabelField($"Audio : {node.GetVLName().name}");
+                }
+                else
+                {
+                    EditorGUILayout.LabelField("Audio : Empty");
+                }
+                if (node.IsSpriteVisible())
+                {
+                    EditorGUILayout.LabelField("SpriteV : Switch");
+                }
+                else
+                {
+                    EditorGUILayout.LabelField("SpriteV : No Switch");
+                }
             }
             else
             {
-                EditorGUILayout.LabelField("Audio : Empty");
+                /* if (node.GetMiniGameName() != null)
+                {
+                    EditorGUILayout.LabelField($"Sprite : {node.GetSpriteName().name}");
+                }
+                else
+                {
+                    EditorGUILayout.LabelField("Sprite : Empty");
+                } */
             }
-            if (node.IsSpriteVisible())
-            {
-                EditorGUILayout.LabelField("SpriteV : Switch");
-            }
-            else
-            {
-                EditorGUILayout.LabelField("SpriteV : No Switch");
-            }
+           
         }
     }
 }

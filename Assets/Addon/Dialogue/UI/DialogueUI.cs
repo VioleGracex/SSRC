@@ -54,6 +54,7 @@ namespace RPG.UI
 
         void Update()
         {
+            Debug.Log(FindObjectOfType<PlayerConversant>().currentNode.GetFightSceneName());
             if (Input.GetKeyDown("space") && chatbox.IsActive())
             {
                 // nextButton.onClick.Invoke();
@@ -103,7 +104,7 @@ namespace RPG.UI
 
         public void UpdateUI()
         {
-             foreach(Transform child in positionList)
+            foreach(Transform child in positionList)
             {
                 
                 if(child.GetComponent<Image>().sprite == null)
@@ -214,7 +215,13 @@ namespace RPG.UI
                         chatboxHolder.gameObject.SetActive(false);
                         //here fix
                     }
-                    if (DialogueHolder.HasNext())
+                    else if( DialogueHolder.currentNode.IsMiniGame())
+                    {
+                        Debug.Log("miniGame");
+                        Instantiate(DialogueHolder.currentNode.GetMiniGame(),new Vector3(988, 688, 0),Quaternion.identity);
+                        //instantiate prefab
+                    }
+                    else if (DialogueHolder.HasNext())
                     {
                         DialogueHolder.Next();
                     }
