@@ -33,6 +33,7 @@ public class BattleHandler : MonoBehaviour
         SlidingForward,
         SlidingBackward,
         Fleeing,
+        Done,
     }
     private void Awake()
     {
@@ -113,13 +114,21 @@ public class BattleHandler : MonoBehaviour
             //attacker.GetComponent<Unit>().myAnimator.Play("Walking");
             Vector3 temp = target.transform.position + target.transform.right * (-2f);
             MovementTranslation(attacker.transform, temp);
-            yield return new WaitUntil(() => Mathf.Abs(attacker.transform.position.x - temp.x) < 0.6f);
-            //state = State.Busy;
+          
+            yield return new WaitUntil(() => Mathf.Abs(attacker.transform.position.x - temp.x) < 2f);
+            state = State.Done;
+            Debug.Log("done" + (Mathf.Abs(attacker.transform.position.x - temp.x) < 2f));
         }
         //attack here
         if(target.gameObject != null)
         {
-            StopCoroutine(SlideToTargetPlayer(attacker, target));
+            //add busy and wait for animation to end then change to slidebackward
+            //might be unnecessary to have stop coroutine here or in switch
+            state = State.SlidingBackward;
+            StartCoroutine(SlideToPlacePlayer(attacker));
+            
+           //StopCoroutine(SlideToTargetPlayer(attacker, target));
+           
         } 
        
         yield return new WaitForSeconds(2f);
@@ -129,15 +138,23 @@ public class BattleHandler : MonoBehaviour
     IEnumerator SlideToPlacePlayer(GameObject attacker)
     {
         //GameObject attacker = this.GetComponent<MouseSelection>().playerTarget;
-        if (state == State.SlidingBackward)
+        if (state == State.SlidingBackward && playerTurn)
         {
             //attacker.GetComponent<Unit>().myAnimator.Play("Walking");
-            Vector3 temp = heroLocations[attacker.GetComponent<HeroAbstract>().myStats.mapLocation].position;
+            Vector3 temp = attacker.GetComponent<HeroAbstract>().myStats.myPosition;
             MovementTranslation(attacker.transform, temp);
-            yield return new WaitUntil(() => Mathf.Abs(heroLocations[attacker.GetComponent<HeroAbstract>().myStats.mapLocation].position.x - attacker.transform.position.x) < 0.6f);
+            yield return new WaitUntil(() => Mathf.Abs(temp.x - attacker.transform.position.x) < 0.6f);
+        }
+        else if (state == State.SlidingBackward && !playerTurn)
+        {
+            Vector3 temp = attacker.GetComponent<EnemyAbstract>().myStats.myPosition;
+            MovementTranslation(attacker.transform, temp);
+            yield return new WaitUntil(() => Mathf.Abs(temp.x - attacker.transform.position.x) < 0.6f);
         }
 
-        state = State.WaitingForPlayer;
+        if(playerTurn)
+         state = State.WaitingForPlayer;
+
         //attacker.GetComponent<Unit>().myAnimator.Play("Idle");
 
         yield return null;
@@ -163,6 +180,8 @@ public class BattleHandler : MonoBehaviour
                 StartCoroutine(FleeToTheRight());
                 break;
             case State.Busy:
+                break;
+            case State.Done:
                 break;
             default:
                 //enable player actions
@@ -200,7 +219,8 @@ public class BattleHandler : MonoBehaviour
 
      public void SetTarget(GameObject unit)
     {
-        target = unit;
+        if(state == State.WaitingForPlayer)
+          target = unit;
     }
 
 

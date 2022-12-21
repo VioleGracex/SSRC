@@ -24,7 +24,7 @@ public class MouseSelection : MonoBehaviour
             RaycastHit2D hit = Physics2D.GetRayIntersection(ray);
             if (hit.collider!=null)
             {
-                if(hit.transform.gameObject.tag == "Player")
+                if(hit.transform.gameObject.tag == "Hero")
                 {
                     battleHandler.SetAttacker(hit.transform.gameObject);
                 }

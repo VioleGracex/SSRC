@@ -9,7 +9,7 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal
     
     void Start()
     {
-        
+        myStats.myPosition = this.transform.position;
     }
 
     // Update is called once per frame

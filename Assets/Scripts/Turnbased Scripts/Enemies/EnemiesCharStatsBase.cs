@@ -1,8 +1,9 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "EnemyCharStat_01", menuName = "Char/Enemy/EnemyStats", order = 1)]
+[CreateAssetMenu(fileName = "EnemyCharStat 1", menuName = "Char/Enemy/EnemyStats", order = 1)]
 public class EnemiesCharStatsBase : ScriptableObject
 {
+    public string unitName;
     public float attack,defense,dex,maxHP,HP;
 
     public int turnCharges,turnCharges_Max,mapLocation;
@@ -15,7 +16,7 @@ public class EnemiesCharStatsBase : ScriptableObject
     public int _coreTypeIndex;
 
     public string coreLocation;
-    Vector3 myPosition;
+    public Vector3 myPosition;
 
     [System.Serializable]
     public struct PartData

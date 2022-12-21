@@ -9,7 +9,7 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal
     // Start is called before the first frame update
     void Start()
     {
-        
+        myStats.myPosition = this.transform.position;
     }
 
     // Update is called once per frame
