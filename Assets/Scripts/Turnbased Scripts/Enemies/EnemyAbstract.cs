@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
+using TMPro;
+
 public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal
 {
     public EnemiesCharStatsBase myStats;
@@ -38,7 +40,7 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal
     {
        //get battlehandler selected part here
        //example how to find body part index
-       string damagedPart = "rightleg";
+       string damagedPart = GameObject.Find("PartName").GetComponent<TextMeshProUGUI>().text;
        int temp = myParts.Where(x=> x.partName == damagedPart).Select(x => myParts.IndexOf(x)).FirstOrDefault();
        EnemiesCharStatsBase.PartData tempPart = myParts[temp];
 

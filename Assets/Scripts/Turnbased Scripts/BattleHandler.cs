@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
+using Unity.VisualScripting;
 
 public class BattleHandler : MonoBehaviour
 {
@@ -14,14 +16,14 @@ public class BattleHandler : MonoBehaviour
     }
 
     [SerializeField]
-    TextMeshProUGUI whoseTurn, partTargetText;
+    TextMeshProUGUI whoseTurn, partTargetText,enemyStatsText;
     [SerializeField]
     Transform[] heroLocations, enemyLocations;
     [SerializeField]  // instead of serialize use instantiate and save them don't forget order in layer and it's child
     public List<Transform> heroes, enemies;
 
     GameObject attacker;
-    GameObject target;
+   public GameObject target;
     
     [SerializeField] float slideSpeed = 10f;
     public bool playerTurn = true, playerStart = true; // get if he successed in miniGame fast click if yes he gets to start else he got ambushed 
@@ -220,8 +222,55 @@ public class BattleHandler : MonoBehaviour
      public void SetTarget(GameObject unit)
     {
         if(state == State.WaitingForPlayer)
-          target = unit;
+        {
+            target = unit;
+            UpdateToggleUI();
+            UpdateStatsUI();
+        }
+         
     }
+
+    private void UpdateToggleUI()
+    {
+       List <EnemiesCharStatsBase.PartData> targetPartsData = target.GetComponent<EnemyAbstract>().myParts;
+        GameObject toggleParent = GameObject.FindGameObjectWithTag("BodyTarget");
+        foreach (var item in targetPartsData)
+        {
+            if(item.hp <=0)
+            {
+                toggleParent.transform.Find(item.partName + "Toggle");
+                            
+            }
+          
+        }
+    }
+
+    private void UpdateStatsUI()
+    {
+        EnemyAbstract enemy = target.GetComponent<EnemyAbstract>(); 
+        EnemiesCharStatsBase enemyStats = target.GetComponent<EnemyAbstract>().myStats;
+        string placeholderString;
+        if(enemy.exhausted)
+        {
+            placeholderString = "Exhausted";
+        }
+        else
+        {
+            placeholderString = "NotExhausted";
+        }
+        enemyStatsText.text = "ATK: " + enemyStats.attack.ToString("f0")
+            + "\nDef: " + enemyStats.defense.ToString("f0")
+            + "\nDex: " + enemyStats.dex.ToString("f0")
+            + "\nHP: " + enemy.HP.ToString("f0")
+            + "\nStatus: "+ placeholderString
+            + "\nCoreType: " + enemyStats.core_type;
+    }
+
+    private void UpdateHpBar()
+    {
+        //will do later
+    }
+
 
 
 }
