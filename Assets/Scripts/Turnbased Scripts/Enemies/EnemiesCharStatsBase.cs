@@ -7,7 +7,7 @@ using UnityEditor;
 [CreateAssetMenu(fileName = "EnemyCharStat 1", menuName = "Char/Enemy/EnemyStats", order = 1)]
 public class EnemiesCharStatsBase : ScriptableObject
 {
-    public string unitName;
+    public string unitName, enemyBodyType; // enemy type humanoid animal tentacle etc changes the body target ui to fit the part count and shape
     public float attack,defense,dex,maxHP;
 
     public int turnCharges_Max,level;
@@ -23,8 +23,8 @@ public class EnemiesCharStatsBase : ScriptableObject
     [System.Serializable]
     public struct PartData
     {
-       public string partName,armorType ;
-       public float hp,armorHp,partDamageRate; //max rate is 100 (0-100) DamageRate
+       public string partName,armorType,affectedStat; //the stat it affects when part is destroyed
+       public float hp, armorHp, partDamageRate,statLossRate; //max rate is 100 (0-100) DamageRate ,statLossRate
        
     }
 
