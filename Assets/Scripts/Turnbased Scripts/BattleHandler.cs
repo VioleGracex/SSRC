@@ -55,7 +55,7 @@ public class BattleHandler : MonoBehaviour
 
         if (attacker != null && target != null)
         {
-            if (attacker.GetComponent<HeroAbstract>().myStats.turnCharges <= 0)
+            if (attacker.GetComponent<HeroAbstract>().turnCharges <= 0)
             {
                 Debug.Log("No Charges");
                 return;
@@ -68,8 +68,8 @@ public class BattleHandler : MonoBehaviour
     {
         if (attacker != null && attackTarget != null)
         {
-            Debug.Log(attacker.GetComponent<EnemyAbstract>().myStats.turnCharges);
-            if (attacker.GetComponent<EnemyAbstract>().myStats.turnCharges <= 0)
+            Debug.Log(attacker.GetComponent<EnemyAbstract>().turnCharges);
+            if (attacker.GetComponent<EnemyAbstract>().turnCharges <= 0)
             {
                 Debug.Log("No Charges");
                 return;
