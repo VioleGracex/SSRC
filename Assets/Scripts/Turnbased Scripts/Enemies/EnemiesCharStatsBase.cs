@@ -1,15 +1,17 @@
 using UnityEngine;
+using UnityEditor;
+ using System;
+ using System.Collections;
+ using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "EnemyCharStat 1", menuName = "Char/Enemy/EnemyStats", order = 1)]
 public class EnemiesCharStatsBase : ScriptableObject
 {
     public string unitName;
-    public float attack,defense,dex,maxHP,HP;
+    public float attack,defense,dex,maxHP;
 
-    public int turnCharges,turnCharges_Max,mapLocation;
-
-    public bool exhausted;
-
+    public int turnCharges_Max,level;
+    
     public readonly string[] core_type =  {"green","red","violet"};
 
     [SerializeField,Header ("green,red,violet")]
@@ -21,11 +23,12 @@ public class EnemiesCharStatsBase : ScriptableObject
     [System.Serializable]
     public struct PartData
     {
-       public string partName,armorType;
-       public int hp,armorHp;
+       public string partName,armorType ;
+       public float hp,armorHp,partDamageRate; //max rate is 100 (0-100) DamageRate
+       
     }
 
-    public PartData[] partsData;
+    public List<PartData> partsData;
 
     
 

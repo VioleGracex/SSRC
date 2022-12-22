@@ -24,8 +24,17 @@ MonoBehaviour:
   exhausted: 0
   _coreTypeIndex: 0
   coreLocation: 
+  myPosition: {x: -30.1, y: 1.3, z: 0}
   partsData:
-  - partName: 
+  - partName: teez
+    armorType: 1
+    hp: 1
+    armorHp: 1
+  - partName: ass
+    armorType: 
+    hp: 0
+    armorHp: 0
+  - partName: rightleg
     armorType: 
     hp: 0
     armorHp: 0

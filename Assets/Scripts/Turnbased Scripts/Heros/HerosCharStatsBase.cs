@@ -4,9 +4,9 @@ using UnityEngine;
 public class HerosCharStatsBase : ScriptableObject
 {
     public string unitName;
-    public float attack,defense,dex,maxHP,HP,exp,expToLvlUp;
+    public float attack,defense,dex,maxHP,expToLvlUp;
 
-    public int turnCharges,turnCharges_Max,mapLocation,level,levelCap,weaponMastry;
+    public int turnCharges_Max,level,levelCap,weaponMastry;
 
     public bool exhausted;
 

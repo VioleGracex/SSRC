@@ -6,6 +6,12 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal
 {
     public HerosCharStatsBase myStats;
     public Animator myAnimator;
+
+    public float attack,defense,dex,HP,exp;
+
+    public int turnCharges,level,weaponMastry;
+
+    public bool exhausted;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,29 +26,29 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal
 
     public void Newturn()
     {
-        myStats.exhausted = false;
-        myStats.turnCharges=myStats.turnCharges_Max;
+        exhausted = false;
+        turnCharges=myStats.turnCharges_Max;
     }
     public void Damage(float damage)
     {
-        if (myStats.HP + damage < 0)
+        if (HP - damage < 0)
         {
-            myStats.HP = myStats.maxHP;
+            HP = 0;//death
         }
         else
         {
-            myStats.HP  -= damage;
+            HP  -= damage;
         }
     }
     public void Heal(float heal)
     {
-        if (myStats.HP + heal > myStats.maxHP)
+        if (HP + heal > myStats.maxHP)
         {
-            myStats.HP = myStats.maxHP;
+            HP = myStats.maxHP;
         }
         else
         {
-            myStats.HP  += heal;
+            HP  += heal;
         }
     }
 

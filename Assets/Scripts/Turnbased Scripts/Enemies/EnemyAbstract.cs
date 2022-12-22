@@ -1,15 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal
 {
     public EnemiesCharStatsBase myStats;
+    public List<EnemiesCharStatsBase.PartData> myParts;
     public Animator myAnimator;
+    
+     public float attack,defense,dex,HP;
+
+    public int turnCharges,mapLocation;
+
+    public bool exhausted;
     
     void Start()
     {
         myStats.myPosition = this.transform.position;
+        myParts = myStats.partsData;
+        
+        
     }
 
     // Update is called once per frame
@@ -19,31 +30,43 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal
     }
     public void Newturn()
     {
-        myStats.exhausted = false;
-        myStats.turnCharges=myStats.turnCharges_Max;
+        exhausted = false;
+        turnCharges=myStats.turnCharges_Max;     
     }
 
-    public void Damage(float damage)
+    public void Damage(float damage) //take damage on armor or part render it unusable and apply perctenage of it depending on weakness to current hp
     {
-        if (myStats.HP + damage < 0)
+       //get battlehandler selected part here
+       //example how to find body part index
+       string damagedPart = "rightleg";
+       int temp = myParts.Where(x=> x.partName == damagedPart).Select(x => myParts.IndexOf(x)).FirstOrDefault();
+       EnemiesCharStatsBase.PartData tempPart = myParts[temp];
+
+        if(tempPart.armorHp > 0)
         {
-            myStats.HP = myStats.maxHP;
+           tempPart.armorHp-=damage;
+           Debug.Log("damaged");
         }
-        else
+        else if(tempPart.hp > 0 )
         {
-            myStats.HP  -= damage;
+           tempPart.hp -= damage * (tempPart.partDamageRate/100);
         }
     }
-    public void Heal(float heal)
+    public void Heal(float heal) //heals main hp
     {
-        if (myStats.HP + heal > myStats.maxHP)
+        if (HP + heal > myStats.maxHP)
         {
-            myStats.HP = myStats.maxHP;
+            HP = myStats.maxHP;
         }
-        else
+        else 
         {
-            myStats.HP  += heal;
+            HP  += heal;
         }
+    }
+
+    public void RestorePart() //heals a part of body 
+    {
+
     }
 
       public void Death()
