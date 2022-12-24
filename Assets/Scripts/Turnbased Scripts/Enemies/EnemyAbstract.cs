@@ -5,7 +5,7 @@ using System.Linq;
 
 using TMPro;
 
-public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal
+public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack
 {
     public EnemiesCharStatsBase myStats;
     public List<EnemiesCharStatsBase.PartData> myParts;
@@ -34,6 +34,10 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal
     {
         exhausted = false;
         turnCharges=myStats.turnCharges_Max;     
+    }
+    public void Attack(GameObject attackTarget)
+    {
+        attackTarget.GetComponent<IDamageable>().Damage(myStats.attack);
     }
 
     public void Damage(float damage) //take damage on armor or part render it unusable and apply perctenage of it depending on weakness to current hp

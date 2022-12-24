@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407d2de45cc0ed0489236ed2313e6e86, type: 3}
+  m_Name: LowDEx
+  m_EditorClassIdentifier: 
+  unitName: infectee
+  enemyBodyType: 
+  attack: 1
+  defense: 1
+  dex: 1
+  maxHP: 5
+  turnCharges_Max: 5
+  level: 0
+  _coreTypeIndex: 0
+  coreLocation: 
+  myPosition: {x: -30.1, y: -6.7, z: 0}
+  partsData:
+  - partName: Head
+    armorType: 1
+    affectedStat: 
+    hp: 1
+    armorHp: 1
+    partDamageRate: 0
+    statLossRate: 0
+  - partName: Body
+    armorType: 
+    affectedStat: 
+    hp: 0
+    armorHp: 0
+    partDamageRate: 0
+    statLossRate: 0
+  - partName: LeftArm
+    armorType: 
+    affectedStat: 
+    hp: 1
+    armorHp: 1
+    partDamageRate: 0
+    statLossRate: 0
+  - partName: RightLeg
+    armorType: 
+    affectedStat: 
+    hp: 1
+    armorHp: 1
+    partDamageRate: 0
+    statLossRate: 0
+  - partName: LeftLeg
+    armorType: 
+    affectedStat: 
+    hp: 1
+    armorHp: 1
+    partDamageRate: 0
+    statLossRate: 0

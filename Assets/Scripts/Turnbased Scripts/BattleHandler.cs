@@ -109,6 +109,12 @@ public class BattleHandler : MonoBehaviour
         state = State.WaitingForPlayer;
         //end level
     }
+    public void SlideToTargetPlayerFunction(GameObject attacker,GameObject target)
+    {
+        StartCoroutine(SlideToTargetPlayer(attacker,target));
+    }
+
+
     IEnumerator SlideToTargetPlayer(GameObject attacker, GameObject target)
     {
 
@@ -122,7 +128,7 @@ public class BattleHandler : MonoBehaviour
             state = State.Done;
             Debug.Log("done" + (Mathf.Abs(attacker.transform.position.x - temp.x) < 2f));
         }
-        //attack here
+        attacker.GetComponent<IAttack>().Attack(target);
         if(target.gameObject != null)
         {
             //add busy and wait for animation to end then change to slidebackward
@@ -137,8 +143,9 @@ public class BattleHandler : MonoBehaviour
         yield return new WaitForSeconds(2f);
         //here fix
     }
+  
 
-    IEnumerator SlideToPlacePlayer(GameObject attacker)
+      IEnumerator SlideToPlacePlayer(GameObject attacker)
     {
         //GameObject attacker = this.GetComponent<MouseSelection>().playerTarget;
         if (state == State.SlidingBackward && playerTurn)

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeroAbstract : MonoBehaviour,IDamageable,IHeal
+public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack
 {
     public HerosCharStatsBase myStats;
     public Animator myAnimator;
@@ -28,6 +28,10 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal
     {
         exhausted = false;
         turnCharges=myStats.turnCharges_Max;
+    }
+    public void Attack(GameObject attackTarget)
+    {
+        attackTarget.GetComponent<IDamageable>().Damage(attack);
     }
     public void Damage(float damage)
     {
