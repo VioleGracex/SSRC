@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack
+public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IReturnTurnCharges,IReturnPosition
 {
     public HerosCharStatsBase myStats;
     public Animator myAnimator;
@@ -12,6 +13,8 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack
     public int turnCharges,level,weaponMastry;
 
     public bool exhausted;
+
+    public GameObject charToken;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,9 +59,27 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack
         }
     }
 
+    public void Charges(int usage)
+    {
+        turnCharges -= usage;
+    }
+    public int ReturnCharges()
+    {
+        return turnCharges;
+    }
+    public Vector2 ReturnPosition()
+    {
+        return myStats.myPosition;
+    }
+
       public void Death()
     {
         //death animation
         Destroy(this.gameObject,0.5f);       
+    }
+
+    void UpdateHPBar()
+    {
+        charToken.GetComponentInChildren<BarFillHandler>().SetBarFillPercentage(HP/myStats.maxHP);
     }
 }

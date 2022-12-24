@@ -28,6 +28,11 @@ public class BattleHandler : MonoBehaviour
     [SerializeField] float slideSpeed = 10f;
     public bool playerTurn = true, playerStart = true; // get if he successed in miniGame fast click if yes he gets to start else he got ambushed 
 
+    [SerializeField]
+    GameObject tokenPrefab; //hp bar for heros
+    [SerializeField]
+    Button attackButton;
+
     public enum State
     {
         WaitingForPlayer,
@@ -46,48 +51,8 @@ public class BattleHandler : MonoBehaviour
             playerTurn = true;
             SetTurnCharges();
         } 
-        
     }
 
-    public void MovementTranslation(Transform attacker, Vector3 target)
-    {
-        attacker.position = Vector3.MoveTowards(attacker.position, target, slideSpeed * Time.deltaTime);        
-    }
-    public void AttackEnemy()
-    {
-
-        if (attacker != null && target != null)
-        {
-            if (attacker.GetComponent<HeroAbstract>().turnCharges <= 0)
-            {
-                Debug.Log("No Charges");
-                return;
-            }
-            state = State.SlidingForward;  
-        }
-    }
-
-    public void AttackPlayer(GameObject attacker, GameObject attackTarget)
-    {
-        if (attacker != null && attackTarget != null)
-        {
-            Debug.Log(attacker.GetComponent<EnemyAbstract>().turnCharges);
-            if (attacker.GetComponent<EnemyAbstract>().turnCharges <= 0)
-            {
-                Debug.Log("No Charges");
-                return;
-            }
-            if (attacker.transform.position.x > attacker.transform.position.x)
-            {
-                attacker.transform.position = attackTarget.transform.position - new Vector3(2, 0, 0);
-            }
-            else
-            {
-                attacker.transform.position = attackTarget.transform.position - new Vector3(-2, 0, 0);
-            }
-            //attackTarget
-        }
-    }
 
     public void FlipHeroes()
     {
@@ -96,6 +61,11 @@ public class BattleHandler : MonoBehaviour
         {
             hero.rotation = Quaternion.Euler(0, 180, 0);
         }
+    }
+#region  //movement
+    public void MovementTranslation(Transform attacker, Vector3 target)
+    {
+        attacker.position = Vector3.MoveTowards(attacker.position, target, slideSpeed * Time.deltaTime);        
     }
 
     IEnumerator FleeToTheRight()
@@ -109,18 +79,22 @@ public class BattleHandler : MonoBehaviour
         state = State.WaitingForPlayer;
         //end level
     }
-    public void SlideToTargetPlayerFunction(GameObject attacker,GameObject target)
+
+    public void SlideToTargetFunction(GameObject attacker,GameObject target)
     {
-        StartCoroutine(SlideToTargetPlayer(attacker,target));
+        StartCoroutine(SlideToTarget(attacker,target));
     }
 
 
-    IEnumerator SlideToTargetPlayer(GameObject attacker, GameObject target)
+    IEnumerator SlideToTarget(GameObject attacker, GameObject target)
     {
-
+        if (attacker.GetComponent<IReturnTurnCharges>().ReturnCharges() <= 0)
+        {
+            Debug.Log("No Charges");
+        }
         if (state == State.SlidingForward && target.gameObject != null)
         {
-            //attacker.GetComponent<Unit>().myAnimator.Play("Walking");
+            //myAnimator.Play("Walking");
             Vector3 temp = target.transform.position + target.transform.right * (-2f);
             MovementTranslation(attacker.transform, temp);
           
@@ -134,10 +108,8 @@ public class BattleHandler : MonoBehaviour
             //add busy and wait for animation to end then change to slidebackward
             //might be unnecessary to have stop coroutine here or in switch
             state = State.SlidingBackward;
-            StartCoroutine(SlideToPlacePlayer(attacker));
-            
+            StartCoroutine(SlideToPlace(attacker));
            //StopCoroutine(SlideToTargetPlayer(attacker, target));
-           
         } 
        
         yield return new WaitForSeconds(2f);
@@ -145,19 +117,13 @@ public class BattleHandler : MonoBehaviour
     }
   
 
-      IEnumerator SlideToPlacePlayer(GameObject attacker)
+      IEnumerator SlideToPlace(GameObject attacker)
     {
         //GameObject attacker = this.GetComponent<MouseSelection>().playerTarget;
-        if (state == State.SlidingBackward && playerTurn)
+        if (state == State.SlidingBackward)
         {
             //attacker.GetComponent<Unit>().myAnimator.Play("Walking");
-            Vector3 temp = attacker.GetComponent<HeroAbstract>().myStats.myPosition;
-            MovementTranslation(attacker.transform, temp);
-            yield return new WaitUntil(() => Mathf.Abs(temp.x - attacker.transform.position.x) < 0.6f);
-        }
-        else if (state == State.SlidingBackward && !playerTurn)
-        {
-            Vector3 temp = attacker.GetComponent<EnemyAbstract>().myStats.myPosition;
+            Vector3 temp = attacker.GetComponent<IReturnPosition>().ReturnPosition();
             MovementTranslation(attacker.transform, temp);
             yield return new WaitUntil(() => Mathf.Abs(temp.x - attacker.transform.position.x) < 0.6f);
         }
@@ -165,11 +131,17 @@ public class BattleHandler : MonoBehaviour
         if(playerTurn)
          state = State.WaitingForPlayer;
 
+        if (attacker.GetComponent<IReturnTurnCharges>().ReturnCharges() <= 0)
+        {
+            Debug.Log("No Charges");
+             attackButton.interactable = false;
+            //disable attack button
+        }
         //attacker.GetComponent<Unit>().myAnimator.Play("Idle");
 
         yield return null;
     }
-
+#endregion
    
     void Update()
     {
@@ -180,11 +152,11 @@ public class BattleHandler : MonoBehaviour
                 //enable player actions
                 break;
             case State.SlidingForward:
-                StartCoroutine(SlideToTargetPlayer(attacker, target));
+                StartCoroutine(SlideToTarget(attacker, target));
                 break;
             case State.SlidingBackward:
-                StopCoroutine(SlideToTargetPlayer(attacker, target));
-                StartCoroutine(SlideToPlacePlayer(attacker));
+                StopCoroutine(SlideToTarget(attacker, target));
+                StartCoroutine(SlideToPlace(attacker));
                 break;
             case State.Fleeing:
                 StartCoroutine(FleeToTheRight());
@@ -198,7 +170,7 @@ public class BattleHandler : MonoBehaviour
                 break;
         }
     }
-
+#region //setting values
     public void SpawnParty(string[] party)
     {
         //get names instantiate
@@ -224,7 +196,18 @@ public class BattleHandler : MonoBehaviour
 
     public void SetAttacker(GameObject unit)
     {
-        attacker = unit;
+        if(unit.GetComponent<IReturnTurnCharges>().ReturnCharges() > 0)
+        {
+            attacker = unit;
+            attackButton.interactable = true;
+            //enable attack button
+        }
+        else
+        {
+            Debug.Log("no charges");
+            attacker = null;
+        }
+       
     }
 
      public void SetTarget(GameObject unit)
@@ -235,9 +218,10 @@ public class BattleHandler : MonoBehaviour
             UpdateToggleUI();
             UpdateStatsUI();
         }
-         
     }
-
+#endregion
+    
+#region //updating ui
     private void UpdateToggleUI()
     {
         List <EnemiesCharStatsBase.PartData> targetPartsData = target.GetComponent<EnemyAbstract>().myParts;
@@ -247,11 +231,8 @@ public class BattleHandler : MonoBehaviour
         {
             if(item.hp <=0)
             {
-                toggleParent.transform.Find(item.partName + "Toggle").GetComponent<Toggle>().interactable = false;
-
-                            
+                toggleParent.transform.Find(item.partName + "Toggle").GetComponent<Toggle>().interactable = false;       
             }
-          
         }
     }
 
@@ -276,11 +257,17 @@ public class BattleHandler : MonoBehaviour
             + "\nCoreType: " + enemyStats.core_type;
     }
 
+    private void SpawnCharTokens()
+    {
+        GameObject token = Instantiate(tokenPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+        token.transform.SetParent (GameObject.FindGameObjectWithTag("Tokens").transform, false);
+        //spawn card HeroAbstract mystats.CardSprite
+    }
     private void UpdateHpBar()
     {
         //will do later
     }
-
+#endregion
 
 
 }

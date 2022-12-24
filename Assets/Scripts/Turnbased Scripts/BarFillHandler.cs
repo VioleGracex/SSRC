@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class BarFillHandler : MonoBehaviour
 {
     [SerializeField] Image fillBarImage;
-   [HideInInspector] public float barFillPercentage;
+   [HideInInspector] float barFillPercentage;
     // Start is called before the first frame update
    
 

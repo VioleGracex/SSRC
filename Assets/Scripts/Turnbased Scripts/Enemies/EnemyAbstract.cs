@@ -5,7 +5,7 @@ using System.Linq;
 
 using TMPro;
 
-public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack
+public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IReturnTurnCharges,IReturnPosition
 {
     public EnemiesCharStatsBase myStats;
     public List<EnemiesCharStatsBase.PartData> myParts;
@@ -21,8 +21,6 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack
     {
         myStats.myPosition = this.transform.position;
         myParts = myStats.partsData;
-        
-        
     }
 
     // Update is called once per frame
@@ -80,4 +78,18 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack
         //death animation
         Destroy(this.gameObject,0.5f);       
     }
+
+     public void Charges(int usage)
+    {
+        turnCharges -= usage;
+    }
+    public int ReturnCharges()
+    {
+        return turnCharges;
+    }
+    public Vector2 ReturnPosition()
+    {
+        return myStats.myPosition;
+    }
+
 }

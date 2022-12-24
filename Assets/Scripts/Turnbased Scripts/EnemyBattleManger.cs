@@ -13,10 +13,9 @@ public class EnemyBattleManger : MonoBehaviour
     {
         GetAllEnemies();
         GetAllPlayerHeroes();
-       
     }
 
-    private void SendEnemyToATtack()
+    private void SendEnemyToAttack()
     {
         if (enemies[attackIndex].gameObject == null)
         {
@@ -29,7 +28,7 @@ public class EnemyBattleManger : MonoBehaviour
                 attackIndex++;
             }
         }
-        BattleHandler.Getinstance().SlideToTargetPlayerFunction(enemies[attackIndex].gameObject, DecideWhichPlayerToAttack());
+        BattleHandler.Getinstance().SlideToTargetFunction(enemies[attackIndex].gameObject, DecideWhichPlayerToAttack());
         if(attackIndex < enemies.Length-1)
         {
             attackIndex++;

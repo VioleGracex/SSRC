@@ -12,6 +12,8 @@ public class HerosCharStatsBase : ScriptableObject
     public bool exhausted;
 
     public Vector3 myPosition;
-    public Sprite cardImage;
+    public Sprite cardSprite;
+
+    public GameObject charToken;
 
 }
