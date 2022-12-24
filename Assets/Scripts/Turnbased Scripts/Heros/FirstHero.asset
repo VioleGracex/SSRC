@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61f0910b9823db54bae085fae40a600a, type: 3}
+  m_Name: FirstHero
+  m_EditorClassIdentifier: 
+  unitName: VxltDemo
+  attack: 1
+  defense: 1
+  dex: 1
+  maxHP: 10
+  expToLvlUp: 10
+  turnCharges_Max: 5
+  level: 1
+  levelCap: 40
+  weaponMastry: 0
+  exhausted: 0
+  myPosition: {x: 27.2, y: 1.03, z: 0}
+  cardImage: {fileID: 21300000, guid: 87bb035cf7b855844b48c731e96ab536, type: 3}
