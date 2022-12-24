@@ -92,4 +92,10 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
         return myStats.myPosition;
     }
 
+    public float ReturnPartHP(string partName)
+    {
+        int temp = myParts.Where(x=> x.partName == partName).Select(x => myParts.IndexOf(x)).FirstOrDefault();
+        return myParts[temp].hp;
+    }
+
 }

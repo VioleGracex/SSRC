@@ -8,7 +8,7 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
     public HerosCharStatsBase myStats;
     public Animator myAnimator;
 
-    public float attack,defense,dex,HP,exp;
+    public float attack,defense,dex,HP,SP,exp;
 
     public int turnCharges,level,weaponMastry;
 
@@ -80,6 +80,8 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
 
     void UpdateHPBar()
     {
-        charToken.GetComponentInChildren<BarFillHandler>().SetBarFillPercentage(HP/myStats.maxHP);
+        BarFillHandler[] bars = charToken.GetComponentsInChildren<BarFillHandler>();
+        bars[0].SetBarFillPercentage(HP/myStats.maxHP);
+        bars[1].SetBarFillPercentage(SP/myStats.maxSP);
     }
 }

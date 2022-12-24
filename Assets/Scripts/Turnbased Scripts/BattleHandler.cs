@@ -26,12 +26,19 @@ public class BattleHandler : MonoBehaviour
     public GameObject target;
     
     [SerializeField] float slideSpeed = 10f;
-    public bool playerTurn = true, playerStart = true; // get if he successed in miniGame fast click if yes he gets to start else he got ambushed 
+    public bool playerTurn = true, playerStart = true; // get if he succeeded in miniGame fast click if yes he gets to start else he got ambushed 
 
     [SerializeField]
     GameObject tokenPrefab; //hp bar for heros
     [SerializeField]
     Button attackButton;
+
+    [SerializeField]
+    ScrollMechanic scrollMechanic;
+
+    List<string> temp;
+
+    string targetedPart;
 
     public enum State
     {
@@ -51,6 +58,10 @@ public class BattleHandler : MonoBehaviour
             playerTurn = true;
             SetTurnCharges();
         } 
+
+        List<string> temp = new List<string> {"Head","Body","RightArm","LeftArm","RightLeg","LeftLeg"};
+        scrollMechanic.Initialize(temp, true, 0);
+        scrollMechanic.RecolorText(Color.black);
     }
 
 
@@ -145,6 +156,7 @@ public class BattleHandler : MonoBehaviour
    
     void Update()
     {
+        
         switch (state)
         {
             case State.WaitingForPlayer:
@@ -193,21 +205,25 @@ public class BattleHandler : MonoBehaviour
             }
         }
     }
+    public void SetPartTarget(string part)
+    {
+        partTargetText.text = part;
+        CheckAttackAvailability();
+    }
 
     public void SetAttacker(GameObject unit)
     {
         if(unit.GetComponent<IReturnTurnCharges>().ReturnCharges() > 0)
         {
             attacker = unit;
-            attackButton.interactable = true;
             //enable attack button
         }
-        else
+        else 
         {
-            Debug.Log("no charges");
+            Debug.Log("no charges"); // make popups
             attacker = null;
         }
-       
+        CheckAttackAvailability();
     }
 
      public void SetTarget(GameObject unit)
@@ -231,7 +247,9 @@ public class BattleHandler : MonoBehaviour
         {
             if(item.hp <=0)
             {
-                toggleParent.transform.Find(item.partName + "Toggle").GetComponent<Toggle>().interactable = false;       
+                Debug.Log("edit Hp text");
+                toggleParent.transform.Find(item.partName + "Toggle").GetComponent<Toggle>().interactable = false;   
+                scrollMechanic.EditPartTextWheel(item.partName, Color.red);    
             }
         }
     }
@@ -243,7 +261,7 @@ public class BattleHandler : MonoBehaviour
         string placeholderString;
         if(enemy.exhausted)
         {
-            placeholderString = "Exhausted";
+            placeholderString = "Exhausted"; 
         }
         else
         {
@@ -266,6 +284,26 @@ public class BattleHandler : MonoBehaviour
     private void UpdateHpBar()
     {
         //will do later
+    }
+
+    private void CheckAttackAvailability()
+    {
+        //conditions for attacking avaliable target, has charges , player turn
+         if(target != null && attacker != null)
+         {
+            bool hasCharges = attacker.GetComponent<IReturnTurnCharges>().ReturnCharges() > 0;
+            bool partDestroyed = target.GetComponent<EnemyAbstract>().ReturnPartHP(scrollMechanic.GetCurrentName()) <= 0;
+            Debug.Log(partDestroyed);
+            //Debug.Log("Part Already Destroyed"); // make popups
+            if(hasCharges && !partDestroyed)
+                attackButton.interactable = true; 
+            else
+                attackButton.interactable = false; 
+         }
+         else
+         {
+            attackButton.interactable = false; 
+         }
     }
 #endregion
 

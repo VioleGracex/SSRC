@@ -34,7 +34,7 @@ MonoBehaviour:
   - partName: Body
     armorType: 
     affectedStat: 
-    hp: 0
+    hp: 1
     armorHp: 0
     partDamageRate: 0
     statLossRate: 0
