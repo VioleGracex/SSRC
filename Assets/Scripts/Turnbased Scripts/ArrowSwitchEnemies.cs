@@ -5,10 +5,15 @@ using UnityEngine;
 
 public class ArrowSwitchEnemies : MonoBehaviour
 {
-  List<GameObject> enemies = new List<GameObject>();
+   [SerializeField]
+    List<GameObject> enemies ;
     void Awake()
     {
-      enemies = this.GetComponentsInChildren<GameObject>().ToList();
+       // Transform[] temp = this.GetComponentsInChildren<Transform>();
+        foreach (Transform item in this.transform)
+        {
+            enemies.Add(item.gameObject);
+        }
          
     }
 

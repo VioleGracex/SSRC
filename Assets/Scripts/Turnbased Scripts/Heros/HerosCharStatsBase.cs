@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "HeroCharStat 1", menuName = "Char/Hero/HeroStats", order = 1)]
 public class HerosCharStatsBase : ScriptableObject
@@ -11,5 +12,6 @@ public class HerosCharStatsBase : ScriptableObject
     public bool exhausted;
 
     public Vector3 myPosition;
+    public Sprite cardImage;
 
 }

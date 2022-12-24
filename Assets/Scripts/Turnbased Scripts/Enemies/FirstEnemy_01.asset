@@ -13,28 +13,49 @@ MonoBehaviour:
   m_Name: FirstEnemy_01
   m_EditorClassIdentifier: 
   unitName: infectee
+  enemyBodyType: 
   attack: 1
   defense: 1
   dex: 1
   maxHP: 5
-  HP: 5
-  turnCharges: 3
   turnCharges_Max: 5
-  mapLocation: 0
-  exhausted: 0
+  level: 0
   _coreTypeIndex: 0
   coreLocation: 
-  myPosition: {x: -30.1, y: 1.3, z: 0}
+  myPosition: {x: -30.1, y: -6.7, z: 0}
   partsData:
-  - partName: teez
+  - partName: Head
     armorType: 1
+    affectedStat: 
     hp: 1
     armorHp: 1
-  - partName: ass
+    partDamageRate: 0
+    statLossRate: 0
+  - partName: Body
     armorType: 
+    affectedStat: 
     hp: 0
     armorHp: 0
-  - partName: rightleg
+    partDamageRate: 0
+    statLossRate: 0
+  - partName: LeftArm
     armorType: 
-    hp: 0
-    armorHp: 0
+    affectedStat: 
+    hp: 1
+    armorHp: 1
+    partDamageRate: 0
+    statLossRate: 0
+  - partName: RightLeg
+    armorType: 
+    affectedStat: 
+    hp: 1
+    armorHp: 1
+    partDamageRate: 0
+    statLossRate: 0
+  - partName: LeftLeg
+    armorType: 
+    affectedStat: 
+    hp: 1
+    armorHp: 1
+    partDamageRate: 0
+    statLossRate: 0

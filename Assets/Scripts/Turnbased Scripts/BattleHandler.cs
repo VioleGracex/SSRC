@@ -16,17 +16,18 @@ public class BattleHandler : MonoBehaviour
     }
 
     [SerializeField]
-    TextMeshProUGUI whoseTurn, partTargetText,enemyStatsText;
+    TextMeshProUGUI whoseTurn, targetName, partTargetText,enemyStatsText;
     [SerializeField]
     Transform[] heroLocations, enemyLocations;
     [SerializeField]  // instead of serialize use instantiate and save them don't forget order in layer and it's child
     public List<Transform> heroes, enemies;
 
     GameObject attacker;
-   public GameObject target;
+    public GameObject target;
     
     [SerializeField] float slideSpeed = 10f;
     public bool playerTurn = true, playerStart = true; // get if he successed in miniGame fast click if yes he gets to start else he got ambushed 
+
     public enum State
     {
         WaitingForPlayer,
@@ -232,13 +233,15 @@ public class BattleHandler : MonoBehaviour
 
     private void UpdateToggleUI()
     {
-       List <EnemiesCharStatsBase.PartData> targetPartsData = target.GetComponent<EnemyAbstract>().myParts;
+        List <EnemiesCharStatsBase.PartData> targetPartsData = target.GetComponent<EnemyAbstract>().myParts;
+        targetName.text = target.name;
         GameObject toggleParent = GameObject.FindGameObjectWithTag("BodyTarget");
         foreach (var item in targetPartsData)
         {
             if(item.hp <=0)
             {
-                toggleParent.transform.Find(item.partName + "Toggle");
+                toggleParent.transform.Find(item.partName + "Toggle").GetComponent<Toggle>().interactable = false;
+
                             
             }
           
