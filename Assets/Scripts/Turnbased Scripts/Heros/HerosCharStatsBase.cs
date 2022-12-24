@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class HerosCharStatsBase : ScriptableObject
 {
     public string unitName;
-    public float attack,defense,dex,maxHP,expToLvlUp;
+    public float attack, defense, dex, maxHP, maxSP,expToLvlUp;
 
     public int turnCharges_Max,level,levelCap,weaponMastry;
 
