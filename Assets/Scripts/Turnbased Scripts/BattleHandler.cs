@@ -293,7 +293,6 @@ public class BattleHandler : MonoBehaviour
          {
             bool hasCharges = attacker.GetComponent<IReturnTurnCharges>().ReturnCharges() > 0;
             bool partDestroyed = target.GetComponent<EnemyAbstract>().ReturnPartHP(scrollMechanic.GetCurrentName()) <= 0;
-            Debug.Log(partDestroyed);
             //Debug.Log("Part Already Destroyed"); // make popups
             if(hasCharges && !partDestroyed)
                 attackButton.interactable = true; 
