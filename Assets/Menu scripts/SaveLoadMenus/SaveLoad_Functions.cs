@@ -47,7 +47,7 @@ public class SaveLoad_Functions : MonoBehaviour
         if (scene.buildIndex != 0)
         {
             DialogueHolder =  GameObject.FindGameObjectWithTag("DialogueHolder").GetComponent<PlayerConversant>();
-            currentDialogue =DialogueHolder.GetComponent<PlayerConversant>().currentDialogue;
+            currentDialogue = DialogueHolder.GetComponent<PlayerConversant>().currentDialogue;
            
         }   
     }

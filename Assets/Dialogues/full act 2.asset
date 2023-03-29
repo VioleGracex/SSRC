@@ -42,6 +42,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-9177375513869200695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,7 +60,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 91bc5b6f-e088-468f-8fbb-b5897aa7e85d
-  charName: (Narrative)
+  charName: Narrative
   text: Monte steps up to Cale and gestures for him to stop.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -84,6 +85,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-9157785797201455831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +128,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-9092107980350237746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +171,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-9083074729330956266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +213,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-9022957336180829899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,7 +240,7 @@ MonoBehaviour:
   - 45d7e232-8c79-44c3-83c8-e03973c938c7
   pos:
     serializedVersion: 2
-    x: 726
+    x: 725
     y: 508
     width: 200
     height: 200
@@ -252,6 +257,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8950691049248334953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,7 +276,7 @@ MonoBehaviour:
   isRootNode: 0
   parentID: 324cf13c-22db-4e10-aced-9fbbcc2fd70f
   charName: Hiro
-  text: " Well it worked didn\u2019t it? What a bumpy ride though."
+  text: "Well it worked didn\u2019t it? What a bumpy ride though."
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
   children:
@@ -294,6 +300,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8889088405597375805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,6 +343,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8822666037059767435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,7 +369,7 @@ MonoBehaviour:
   - 6cea84d5-7fd6-49bb-b0ca-e52d723b7b2f
   pos:
     serializedVersion: 2
-    x: 11273
+    x: 11271
     y: 292
     width: 200
     height: 200
@@ -378,6 +386,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8805084347270336357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,6 +429,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8794590790242186589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,6 +472,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8779863290190924014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,7 +490,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 1902cb88-fa58-44d6-b47d-a1ed6d1f6265
-  charName: (Narrative)
+  charName: Narrative
   text: '*Looks out and focuses on the hooded man* '
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -488,7 +499,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 4791
-    y: 470
+    y: 469
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -504,6 +515,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8589495809747005396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,7 +543,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 264
-    y: 0
+    y: -1
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -547,6 +559,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8258119531708952984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,6 +602,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8207779736274286409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,7 +620,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 49ee510c-6e65-4094-a1fc-33ee769cc748
-  charName: (Narrative)
+  charName: Narrative
   text: Vxlt appears from behind and tases the infectee.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -631,6 +645,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8186268927790832851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -673,6 +688,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8163488557875132927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -698,7 +714,7 @@ MonoBehaviour:
   - ac1d5116-1ec5-44bf-ae6c-de778bf8e6c4
   pos:
     serializedVersion: 2
-    x: 13787
+    x: 13786
     y: 284
     width: 200
     height: 200
@@ -715,6 +731,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8119698234802303132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,7 +749,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 48ad945a-642e-4f7d-86a4-4ba11f1d2b08
-  charName: (Narrative)
+  charName: Narrative
   text: Vxlt ignoring Cale continues to count
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -741,7 +758,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 29663
-    y: 282
+    y: 281
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -757,6 +774,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7918922163357041535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,6 +818,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7871096888286192995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,7 +836,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 96b5a217-ad20-492b-8993-5d511f64a0fd
-  charName: ' (Narrative)'
+  charName: Narrative
   text: Nova hurries to comfort Amy
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -842,6 +861,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7857371177502222449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,6 +904,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7572500700101487735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -926,6 +947,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7468324481543340728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -969,6 +991,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7348922706312064352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,7 +1009,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: ce56ae97-4e52-4394-b9de-3e71d1025603
-  charName: (Narrative)
+  charName: Narrative
   text: After a silent moment.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -994,7 +1017,7 @@ MonoBehaviour:
   - 8f12c20a-cf2e-49b9-90c2-d88331498883
   pos:
     serializedVersion: 2
-    x: 18137
+    x: 18138
     y: 286
     width: 200
     height: 200
@@ -1011,6 +1034,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7324085064183449214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1038,7 +1062,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 490
-    y: 342
+    y: 341
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -1054,6 +1078,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7282049980413949449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1096,6 +1121,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7252675622595455581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1121,8 +1147,8 @@ MonoBehaviour:
   - 53531499-01dd-4a2b-bfd3-7e2d38970c57
   pos:
     serializedVersion: 2
-    x: 15389
-    y: 288
+    x: 15388
+    y: 289
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -1138,6 +1164,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7243476272890077297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1155,7 +1182,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: c9add120-37d4-4b54-930b-2921afb2c300
-  charName: (Narrative)
+  charName: Narrative
   text: A couple hours pass and the road is foggy.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -1163,7 +1190,7 @@ MonoBehaviour:
   - ea413ad0-0f88-40d8-bb12-86db13e58262
   pos:
     serializedVersion: 2
-    x: 5704
+    x: 5705
     y: 461
     width: 200
     height: 200
@@ -1180,6 +1207,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7181019695149404546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1222,6 +1250,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7169925909662440487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1239,7 +1268,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: d14678fb-04d3-4d85-aef1-4b3e60984ab9
-  charName: (Narrative)
+  charName: Narrative
   text: as he picks out a proper bandage he removes the cloth and makes a clean wrap.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -1264,6 +1293,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7163938849188395385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1281,7 +1311,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: fc5f6554-5149-4c41-bf44-1b9210bb4314
-  charName: (Narrative)
+  charName: Narrative
   text: "The hooded man\u2019s expressions are unfriendly and his movements are shady."
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -1289,7 +1319,7 @@ MonoBehaviour:
   - 04cb4978-a4d7-4d4a-831a-9f5608cd4081
   pos:
     serializedVersion: 2
-    x: 4797
+    x: 4798
     y: 651
     width: 200
     height: 200
@@ -1306,6 +1336,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7144310755990210829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1323,7 +1354,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 10122340-342d-4a84-8022-7c0b10e4c485
-  charName: (Narrative)
+  charName: Narrative
   text: '*Growl* *Rawwwwr* *Uggggh*'
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -1331,7 +1362,7 @@ MonoBehaviour:
   - d9a37257-725b-40fe-bdfa-4836601600d2
   pos:
     serializedVersion: 2
-    x: 7188
+    x: 7187
     y: 907
     width: 200
     height: 200
@@ -1348,6 +1379,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7080383048368289235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1390,6 +1422,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7062713937050293690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1432,6 +1465,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7046969857004650871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1446,7 +1480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
   isMiniGame: 0
-  isSpriteVisible: 0
+  isSpriteVisible: 1
   isRootNode: 0
   parentID: eeb91fdf-1e67-4796-86c2-b2bf967fe18b
   charName: Narrative
@@ -1458,7 +1492,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 19387
-    y: 285
+    y: 284
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -1474,6 +1508,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6973003169684781171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1516,6 +1551,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6961840894418919630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1533,16 +1569,16 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 38f625b4-8002-4a7d-a103-3fee54a6111f
-  charName: (Narrative)
-  text: ' Monte leaves the bus to assist Vxlt of fighting the infectees.'
+  charName: Narrative
+  text: Monte leaves the bus to assist Vxlt of fighting the infectees.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
   children:
   - c2297416-c487-45cd-87d3-0f5407c6bf0b
   pos:
     serializedVersion: 2
-    x: 19886
-    y: 285
+    x: 19885
+    y: 284
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -1558,6 +1594,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6958415536411928228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1575,7 +1612,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 1202fbaf-51f1-44f0-a532-6445fe4a1c3f
-  charName: (Narrative)
+  charName: Narrative
   text: Monte reaches his hand to give you head pat with his wide smile
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -1601,6 +1638,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6904783651857337617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1643,6 +1681,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6895266618080373723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1685,6 +1724,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6780305391667376812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1702,7 +1742,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 9a6726ed-8919-41fe-82b2-37afdb455d98
-  charName: (Narrative)
+  charName: Narrative
   text: They pick up 2 childrens a 6th grader boy, and a 4th grader girl.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -1727,6 +1767,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6677333280639642628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1769,6 +1810,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6667786219268590408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1786,7 +1828,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: c69ca821-83fd-48fb-ba48-656cc1cc2bf1
-  charName: ' (Narrative)'
+  charName: Narrative
   text: ' infected start to break the metal sheets on the windows'
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -1811,6 +1853,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6657957812173934097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1852,6 +1895,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6643170503432894314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1877,7 +1921,7 @@ MonoBehaviour:
   - edbeaf0f-3cf3-44b7-9b33-ff06bea725dd
   pos:
     serializedVersion: 2
-    x: 9022
+    x: 9021
     y: 290
     width: 200
     height: 200
@@ -1894,6 +1938,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6623940462897041395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1936,6 +1981,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6456671626693282025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1978,6 +2024,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6381188625402980418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1995,7 +2042,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: cef1d345-b5c1-4aaf-87c9-f88f162a42ae
-  charName: (Narrative)
+  charName: Narrative
   text: Monte steps up to Hiro.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -2003,7 +2050,7 @@ MonoBehaviour:
   - 101dc706-8a18-4980-80d6-0a032f59817a
   pos:
     serializedVersion: 2
-    x: 30667
+    x: 30666
     y: 69
     width: 200
     height: 200
@@ -2020,6 +2067,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6376463966996612354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2037,7 +2085,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: ed2150e7-ff4a-4b82-9d02-decfd47a316e
-  charName: (Narrative)
+  charName: Narrative
   text: Monte headpats the small girl.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -2046,7 +2094,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 32506
-    y: 314
+    y: 313
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -2062,6 +2110,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6269182160216521906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2104,6 +2153,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-5789022872820680110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2146,6 +2196,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-5786972158789262986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2188,6 +2239,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-5712698278578424612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2205,7 +2257,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: d4182051-b6c0-4bb3-b97c-8f27fa9c7bf4
-  charName: (Narrative)
+  charName: Narrative
   text: 'Two hours pass by and the end is nowhere in sight. '
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -2214,7 +2266,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 2292
-    y: 146
+    y: 144
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -2230,6 +2282,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-5661888423101652162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2247,7 +2300,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: e8b85776-736d-4af1-95e1-c688faa94c86
-  charName: (Narrative)
+  charName: Narrative
   text: Monte laughs and smiles.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -2256,7 +2309,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 4265
-    y: 204
+    y: 203
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -2272,6 +2325,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-5650265716251376905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2297,7 +2351,7 @@ MonoBehaviour:
   - 5be7240f-601a-4d40-8fcf-2bdc92ad154c
   pos:
     serializedVersion: 2
-    x: 20412
+    x: 20411
     y: 284
     width: 200
     height: 200
@@ -2314,6 +2368,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-5408697433801351027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2356,6 +2411,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-5228378633942167438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2398,6 +2454,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-5227722208899665722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2440,6 +2497,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-5196126293978488078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2457,7 +2515,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 891028ea-1c74-4ac3-b34c-0a1399166849
-  charName: (Narrative)
+  charName: Narrative
   text: Vxlt shouts aloud wooooo ahahaha
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -2482,6 +2540,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-5174055525760638162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2524,6 +2583,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-5099957315867413774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2566,6 +2626,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-5014572591213464255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2583,7 +2644,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 3a4c150d-bea6-42dd-827a-3145ab1b93cf
-  charName: (Narrative)
+  charName: Narrative
   text: The bus completely stops and along the road is a fearsome man sitting upon
     a pile of corpses with no weapon in his hands.
   voiceLine: {fileID: 0}
@@ -2609,6 +2670,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4892114961164115176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2626,7 +2688,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: dcea2467-4a20-4633-ba32-58681f6f0289
-  charName: (Narrative)
+  charName: Narrative
   text: '*Vxlt starts to sing loudly*'
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -2634,8 +2696,8 @@ MonoBehaviour:
   - 12ecf6ea-a8df-4601-8fda-eefb293ae872
   pos:
     serializedVersion: 2
-    x: 5926
-    y: 622
+    x: 5925
+    y: 621
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -2651,6 +2713,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4851243111121629866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2669,15 +2732,15 @@ MonoBehaviour:
   isRootNode: 0
   parentID: 7dac2317-1bd8-4c5e-ae2a-09df765e1a85
   charName: Nova
-  text: ' Well we can try.'
+  text: Well we can try.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
   children:
   - 7575b703-5a99-407f-8aa8-9b67e331a906
   pos:
     serializedVersion: 2
-    x: 15139
-    y: 288
+    x: 15138
+    y: 287
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -2693,6 +2756,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4772008438368667547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2710,7 +2774,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: c5dbb34d-2876-424c-a947-5c0072ed4047
-  charName: (Narrative)
+  charName: Narrative
   text: Monte leaves the bus to assist Vxlt of fighting the infected.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -2735,6 +2799,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4739107024853925000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2777,6 +2842,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4709402874756179117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2794,7 +2860,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 703eeb1d-6e87-497d-834d-70513f7fc880
-  charName: (Narrative)
+  charName: Narrative
   text: You sit beside Amy
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -2802,8 +2868,8 @@ MonoBehaviour:
   - 35511f58-0a62-4f6e-a8e9-baa21c1cbb8a
   pos:
     serializedVersion: 2
-    x: 254
-    y: 693
+    x: 271
+    y: 695
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -2819,6 +2885,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4695041607609940562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2861,6 +2928,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4686925293753523293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2903,6 +2971,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4656757683839906732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2920,7 +2989,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 8cd53a3c-bcca-4e2c-b55d-bd9e1e9c5f75
-  charName: (Narrative)
+  charName: Narrative
   text: He gently picks up your hurt hand and looks at it.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -2928,7 +2997,7 @@ MonoBehaviour:
   - d14678fb-04d3-4d85-aef1-4b3e60984ab9
   pos:
     serializedVersion: 2
-    x: 27413
+    x: 27412
     y: 284
     width: 200
     height: 200
@@ -2945,6 +3014,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4643051423972373672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2971,7 +3041,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 13537
-    y: 284
+    y: 283
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -2987,6 +3057,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4618166609299108709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3029,6 +3100,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4560277721075155337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3047,7 +3119,7 @@ MonoBehaviour:
   isRootNode: 0
   parentID: cf536ad7-a0bf-4f02-9246-e99154119395
   charName: Nova
-  text: listen up rich kid this is isnt your mansion and we aren't your servants.....so
+  text: listen up rich kid this is isn't your mansion and we aren't your servants.....so
     watch ur mouth
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -3055,8 +3127,8 @@ MonoBehaviour:
   - 9fcfd1e0-a0d2-4fb5-8d25-563d5923eee2
   pos:
     serializedVersion: 2
-    x: 14037
-    y: 284
+    x: 14036
+    y: 283
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -3072,6 +3144,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4543420032922392422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3114,6 +3187,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4509224310747518473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3139,8 +3213,8 @@ MonoBehaviour:
   - 1dbfdfec-b9c9-4c2d-ad78-fa4497b93a89
   pos:
     serializedVersion: 2
-    x: 6936
-    y: 561
+    x: 6935
+    y: 562
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -3156,6 +3230,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4000572716956089369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3183,7 +3258,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 30421
-    y: 284
+    y: 281
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -3199,6 +3274,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-3752990392322480307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3224,7 +3300,7 @@ MonoBehaviour:
   - 7dac2317-1bd8-4c5e-ae2a-09df765e1a85
   pos:
     serializedVersion: 2
-    x: 14639
+    x: 14638
     y: 288
     width: 200
     height: 200
@@ -3241,6 +3317,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-3485580593260914536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3258,7 +3335,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: dcf36997-8bc8-45ef-b713-3b28a70d4dfe
-  charName: (Narrative)
+  charName: Narrative
   text: After you manage to bandage your arm you see a frenzied infectee rushing
     towards Vxlt's behind.
   voiceLine: {fileID: 0}
@@ -3268,7 +3345,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 23931
-    y: 284
+    y: 283
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -3284,6 +3361,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-3208338238279308640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3310,7 +3388,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 23181
-    y: 284
+    y: 285
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -3326,6 +3404,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-3101501236887137723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3343,7 +3422,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 35511f58-0a62-4f6e-a8e9-baa21c1cbb8a
-  charName: (Narrative)
+  charName: Narrative
   text: Nova moves next to Hiro
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -3368,6 +3447,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-3050278000254404544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3385,7 +3465,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: dad4a9a3-c7fa-4c2b-b0a0-9b7bddaac4d7
-  charName: ' (Narrative)'
+  charName: Narrative
   text: Infected start to surround the bus.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -3410,6 +3490,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-3045771821369358085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3436,7 +3517,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 25663
-    y: 284
+    y: 283
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -3452,6 +3533,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-3014755895793130728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3469,7 +3551,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: e0d9307d-8af4-4872-bfa5-4203f4611a27
-  charName: (Narrative)
+  charName: Narrative
   text: Hiro stops the bus. Nova and Monte goes to pick up the children.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -3477,7 +3559,7 @@ MonoBehaviour:
   - c542cf17-776a-4979-911a-2893c3c12c85
   pos:
     serializedVersion: 2
-    x: 31506
+    x: 31505
     y: 314
     width: 200
     height: 200
@@ -3494,6 +3576,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-2744788980854218620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3519,7 +3602,7 @@ MonoBehaviour:
   - 1b35b50f-3842-4741-8fd3-561a10b847ac
   pos:
     serializedVersion: 2
-    x: 22181
+    x: 22180
     y: 284
     width: 200
     height: 200
@@ -3536,6 +3619,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-2656189026391758240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3553,7 +3637,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 04a98c5d-9153-4900-87d2-9353e971db96
-  charName: (Narrative)
+  charName: Narrative
   text: Nova steps up to you.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -3578,6 +3662,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-2550427564945822038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3620,6 +3705,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-2523070989265678510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3637,7 +3723,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: da64c850-a31b-40f1-b32b-7a59fdd0b4d9
-  charName: (Narrative)
+  charName: Narrative
   text: While Nova, Hiro and Cale are stealthing near the lab they notice that all
     the infectees are heading in the bus's way.
   voiceLine: {fileID: 0}
@@ -3663,6 +3749,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-2436571706128176025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3680,7 +3767,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 7c9a9955-957f-40aa-a491-00e614704c50
-  charName: (Narrative)
+  charName: Narrative
   text: After a while you hear a loud thud and the bus starts shaking.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -3689,7 +3776,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 17387
-    y: 286
+    y: 285
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -3705,6 +3792,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-2412023003193564146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3747,6 +3835,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-2166922404417281281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3789,6 +3878,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1938680034629922401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3807,7 +3897,7 @@ MonoBehaviour:
   isRootNode: 0
   parentID: a1175085-262a-43dd-814b-7faa40f13dc3
   charName: Hiro
-  text: ' On it boss.'
+  text: On it boss.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
   children:
@@ -3831,6 +3921,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1795039895378292484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3857,7 +3948,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 5469
-    y: 642
+    y: 643
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -3873,6 +3964,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1764518209007338653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3915,6 +4007,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1731237961787109484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3932,7 +4025,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 76667543-c7fc-4c76-b3dc-61be77d9c343
-  charName: (Narrative)
+  charName: Narrative
   text: '*Nova checks on Amy to see if the growling startled her*'
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -3957,6 +4050,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1716426342953185663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3999,6 +4093,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1586813412462394797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4041,6 +4136,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1530995088258949072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4083,6 +4179,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1449712573776334128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4125,6 +4222,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1446731924523011854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4142,7 +4240,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: c962a164-3a1c-4851-9f42-bf2b6935adcd
-  charName: (Narrative)
+  charName: Narrative
   text: Engine starts , The bus begins moving slowly towards <location>
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -4151,7 +4249,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 491
-    y: -5
+    y: -7
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -4167,6 +4265,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1361722531850566206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4209,6 +4308,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1282903006816055502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4251,6 +4351,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1117418402125247077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4293,6 +4394,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1098167143992898548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4311,8 +4413,8 @@ MonoBehaviour:
   isRootNode: 0
   parentID: 8c87fdaf-032c-489a-b458-3ded4469c6bc
   charName: Cale
-  text: ' I bet if we left this extra luggage back home we would have made it in
-    time. scoffs'
+  text: I bet if we left this extra luggage back home we would have made it in time.
+    scoffs
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
   children:
@@ -4321,7 +4423,7 @@ MonoBehaviour:
   - 6421fa36-3ea6-438c-a389-8cd6ec62a3a3
   pos:
     serializedVersion: 2
-    x: 13021
+    x: 13020
     y: 290
     width: 200
     height: 200
@@ -4338,6 +4440,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1067924329008797579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4355,7 +4458,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: c19f5f40-7eeb-4579-9078-a35872fa8468
-  charName: (Narrative)
+  charName: Narrative
   text: A hooded man armed with a sniper rifle attached to his back approaches from
     a nearby building behind Monte.
   voiceLine: {fileID: 0}
@@ -4381,6 +4484,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1002915196922252323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4423,6 +4527,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-906484496594654686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4465,6 +4570,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-845304874230818911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4490,7 +4596,7 @@ MonoBehaviour:
   - d4182051-b6c0-4bb3-b97c-8f27fa9c7bf4
   pos:
     serializedVersion: 2
-    x: 1781
+    x: 1780
     y: 479
     width: 200
     height: 200
@@ -4507,6 +4613,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-745625025828797131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4524,7 +4631,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: d3ebae1e-1880-4e79-b790-3d8a9b3f5f86
-  charName: (Narrative)
+  charName: Narrative
   text: 'As you try take some rest and you got some sleep eventually. '
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -4549,6 +4656,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-737591504614641641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4591,6 +4699,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-684672030527592449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4608,7 +4717,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 91e2e94b-ca41-4250-b224-4c31d22f7cb5
-  charName: (Narrative)
+  charName: Narrative
   text: Everyone begins to get on the bus and takes their seat.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -4633,6 +4742,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-589281764697925822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4677,6 +4787,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-503382569861131255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4702,7 +4813,7 @@ MonoBehaviour:
   - 2c792bbe-7c26-4d94-b7ee-3e6be28a287f
   pos:
     serializedVersion: 2
-    x: 6436
+    x: 6435
     y: 565
     width: 200
     height: 200
@@ -4719,6 +4830,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-487381893299200845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4736,7 +4848,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 5be7240f-601a-4d40-8fcf-2bdc92ad154c
-  charName: (Narrative)
+  charName: Narrative
   text: An infectee slips through Vxlt and Monte and smashes the window next to Amy.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -4744,7 +4856,7 @@ MonoBehaviour:
   - 49ee510c-6e65-4094-a1fc-33ee769cc748
   pos:
     serializedVersion: 2
-    x: 20912
+    x: 20911
     y: 284
     width: 200
     height: 200
@@ -4761,6 +4873,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-223457844005454677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4778,7 +4891,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: fa0b71d1-be1b-4785-8b3f-0957bb52ccd2
-  charName: (Narrative)
+  charName: Narrative
   text: Loud Screech
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -4803,6 +4916,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-81949652860112481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4828,7 +4942,7 @@ MonoBehaviour:
   - 57692780-2da4-44db-9d44-643c88d9e80b
   pos:
     serializedVersion: 2
-    x: 7436
+    x: 7435
     y: 301
     width: 200
     height: 200
@@ -4845,6 +4959,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5122,6 +5237,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &110912719150178206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5147,7 +5263,7 @@ MonoBehaviour:
   - 550e2733-9585-493f-9997-202c59808bec
   pos:
     serializedVersion: 2
-    x: 21680
+    x: 21679
     y: 288
     width: 200
     height: 200
@@ -5164,6 +5280,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &205326748438313304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5206,6 +5323,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &265472915932227575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5248,6 +5366,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &462965133365133817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5290,6 +5409,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &623131306346715500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5315,7 +5435,7 @@ MonoBehaviour:
   - eeb91fdf-1e67-4796-86c2-b2bf967fe18b
   pos:
     serializedVersion: 2
-    x: 18887
+    x: 18886
     y: 285
     width: 200
     height: 200
@@ -5332,6 +5452,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &674454992821121160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5374,6 +5495,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &769166089627585346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5416,6 +5538,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &875974803778226722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5433,7 +5556,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 8a236b40-0f1d-4a2a-b2ba-5f677a7a47cf
-  charName: '(Narrative) '
+  charName: Narrative
   text: A group of infected drops on the ceiling of the bus.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -5458,6 +5581,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1079817672156480722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5500,6 +5624,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1103768672055401580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5542,6 +5667,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1182012237097530474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5567,8 +5693,8 @@ MonoBehaviour:
   - 9d5d6aa2-1539-40a9-804f-683f55d25b10
   pos:
     serializedVersion: 2
-    x: 6687
-    y: 65
+    x: 6666
+    y: 62
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -5584,6 +5710,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1281192416956732162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5601,7 +5728,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 4c166432-eb3c-4e4c-9a97-5f4082b97f58
-  charName: (Narrative)
+  charName: Narrative
   text: Vxlt dodges swiftly and elegantly as he does so, his jacket flutters in the
     air and as it gets down slowly you see his eyes fixed on the target and tases
     the infectee till it turns to crisp.
@@ -5611,7 +5738,7 @@ MonoBehaviour:
   - db014d7e-7446-4926-b799-04182992f8b7
   pos:
     serializedVersion: 2
-    x: 24431
+    x: 24430
     y: 284
     width: 200
     height: 200
@@ -5628,6 +5755,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1505846511318290799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5670,6 +5798,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1579424714497949930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5712,6 +5841,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1590390874182721568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5755,6 +5885,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1637750442283709929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5772,7 +5903,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 87573232-67e9-43b8-81e0-fabcebcf60a9
-  charName: (Narrative)
+  charName: Narrative
   text: Everyone rushes back on the bus.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -5780,7 +5911,7 @@ MonoBehaviour:
   - 4ea9e76c-c8b8-4dc8-b344-f0086d71f571
   pos:
     serializedVersion: 2
-    x: 5477
+    x: 5478
     y: 128
     width: 200
     height: 200
@@ -5797,6 +5928,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1693062513620280631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5839,6 +5971,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1725089789674536267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5856,7 +5989,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: a67e6a22-38ac-46ea-a0c1-f9840ba0e178
-  charName: ' (Narrative)'
+  charName: Narrative
   text: Crack Smash
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -5881,6 +6014,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1739535510016884044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5899,7 +6033,7 @@ MonoBehaviour:
   isRootNode: 0
   parentID: a8f85466-ef38-4e60-8812-c25881f69b52
   charName: Cale
-  text: " Nova!! It's all your fault\u2026 you just had to go pick up your sister
+  text: "Nova!! It's all your fault\u2026 you just had to go pick up your sister
     and that other nuisance. We lost our time because of it."
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -5924,6 +6058,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1806509719228329453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5966,6 +6101,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1836951784083274652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5983,7 +6119,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 1dbfdfec-b9c9-4c2d-ad78-fa4497b93a89
-  charName: (Narrative)
+  charName: Narrative
   text: '*Hiro turns on the radio*'
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -6008,6 +6144,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1900267512303829301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6050,6 +6187,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1938153858983317219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6092,6 +6230,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1966436999623749251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6109,7 +6248,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: c4830603-6dda-490a-bd1e-3c1279827acb
-  charName: ' (Narrative)'
+  charName: Narrative
   text: Vxlt tases the infected through a small gap in the crowd of infected.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -6134,6 +6273,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &2153830376913306192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6176,6 +6316,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &2155573502845035311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6193,7 +6334,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: ff08599a-2b1c-4483-93f4-132e816bed38
-  charName: (Narrative)
+  charName: Narrative
   text: '*Engine Starts*'
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -6218,6 +6359,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &2213503038145813155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6260,6 +6402,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &2354711601593958090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6277,7 +6420,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 99a062ab-2a2a-4580-9157-68340a706e23
-  charName: (Narrative)
+  charName: Narrative
   text: As you step past Amy to protect her from the glass shards you get your arm
     is cut.
   voiceLine: {fileID: 0}
@@ -6303,6 +6446,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &2475893273325684497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6320,7 +6464,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 4ecc147f-8f4e-4585-ab05-b751ca2b4b55
-  charName: (Narrative)
+  charName: Narrative
   text: Nova, Hiro and Cale moves towards the lab hiding from the infectees and leaves
     you in the bus with Hiro and Monte.
   voiceLine: {fileID: 0}
@@ -6330,7 +6474,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 16888
-    y: 286
+    y: 285
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -6346,6 +6490,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3014825670323610864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6388,6 +6533,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3287429659140258359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6430,6 +6576,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3397602985371816815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6457,7 +6604,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 5032
-    y: 122
+    y: 120
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -6473,6 +6620,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3664460491685756076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6498,7 +6646,7 @@ MonoBehaviour:
   - bff281b9-3045-499f-a339-a276fb6e3c22
   pos:
     serializedVersion: 2
-    x: 30427
+    x: 30426
     y: 69
     width: 200
     height: 200
@@ -6515,6 +6663,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3729479770367121124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6557,6 +6706,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3732773352341819606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6599,6 +6749,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3790429307339925136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6641,6 +6792,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3870269935060247486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6658,7 +6810,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: e53df030-d35c-4470-89f2-595648e48469
-  charName: (Narrative)
+  charName: Narrative
   text: Vxlt leans on you.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -6667,7 +6819,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 13784
-    y: 508
+    y: 507
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -6683,6 +6835,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3899961046943339022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6726,6 +6879,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4048242099298622354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6743,7 +6897,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 92c54451-ae83-4db7-a1bf-639f7a8eba90
-  charName: (Narrative)
+  charName: Narrative
   text: Amy falls asleep on your shoulder
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -6752,7 +6906,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 2285
-    y: 353
+    y: 352
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -6768,6 +6922,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4156629772275923968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6810,6 +6965,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4197135590530257105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6836,7 +6992,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 17887
-    y: 286
+    y: 285
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -6852,6 +7008,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4220667594047732244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6877,7 +7034,7 @@ MonoBehaviour:
   - fd516a80-201b-4428-a599-f9c7bec66d8d
   pos:
     serializedVersion: 2
-    x: 235
+    x: 234
     y: 1367
     width: 200
     height: 200
@@ -6894,6 +7051,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4350648952541350859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6936,6 +7094,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4359705458597246237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6978,6 +7137,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4369077553859972510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7020,6 +7180,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4385018391539722666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7045,7 +7206,7 @@ MonoBehaviour:
   - 3bec3943-9153-468a-bcc1-ce6a553deaa8
   pos:
     serializedVersion: 2
-    x: 8522
+    x: 8521
     y: 290
     width: 200
     height: 200
@@ -7062,6 +7223,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4386252910166325518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7079,7 +7241,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 27f2c95b-3d31-45a3-87ce-70f8fe5d02da
-  charName: (Narrative)
+  charName: Narrative
   text: After a while you reach a camp.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -7104,6 +7266,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4413303225378235759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7121,7 +7284,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: cd17e650-123c-4fc9-9782-7fb55097627f
-  charName: (Narrative)
+  charName: Narrative
   text: You fall asleep
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -7146,6 +7309,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4462979156073837757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7163,7 +7327,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 2ea218b8-1f7d-4b24-8781-c1ce57e34b5a
-  charName: (Narrative)
+  charName: Narrative
   text: ' *Amy remains fast asleep*'
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -7172,7 +7336,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 7182
-    y: 1614
+    y: 1615
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -7188,6 +7352,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4507836601492496661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7230,6 +7395,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4594260630736580916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7272,6 +7438,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4702490169284570734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7289,7 +7456,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 64110c71-e066-4273-9c72-8db277fff65a
-  charName: (Narrative)
+  charName: Narrative
   text: '*Monte grabs your head and gives you a noogie.'
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -7314,6 +7481,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4867603475698947780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7339,7 +7507,7 @@ MonoBehaviour:
   - 0ef8058e-7b3d-42b7-986c-2e392af7554c
   pos:
     serializedVersion: 2
-    x: 6437
+    x: 6436
     y: 65
     width: 200
     height: 200
@@ -7356,6 +7524,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4870904081043106537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7381,7 +7550,7 @@ MonoBehaviour:
   - 8218cdbe-ae91-4957-adba-a05ba7d4e969
   pos:
     serializedVersion: 2
-    x: 8772
+    x: 8771
     y: 290
     width: 200
     height: 200
@@ -7398,6 +7567,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4910594388047782470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7440,6 +7610,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4925864023772581612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7457,7 +7628,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: fd516a80-201b-4428-a599-f9c7bec66d8d
-  charName: (Narrative)
+  charName: Narrative
   text: thud  thump horn
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -7482,6 +7653,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4948162326174495683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7499,7 +7671,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: ba16898a-32a3-4c7f-b37b-480ed47607cd
-  charName: (Narrative)
+  charName: Narrative
   text: screech brakes
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -7524,6 +7696,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5003786489674810968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7566,6 +7739,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5064749491641529961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7609,6 +7783,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5120708272506677857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7651,6 +7826,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5154191266848606728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7676,8 +7852,8 @@ MonoBehaviour:
   - ee34ca02-db41-45f9-8b51-76e90b71b8e5
   pos:
     serializedVersion: 2
-    x: 18637
-    y: 285
+    x: 18638
+    y: 284
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -7693,6 +7869,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5166832460804119703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7718,7 +7895,7 @@ MonoBehaviour:
   - 1e8e5868-af40-4970-ae35-6f2799122257
   pos:
     serializedVersion: 2
-    x: 27163
+    x: 27161
     y: 284
     width: 200
     height: 200
@@ -7735,6 +7912,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5173331770660171460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7777,6 +7955,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5315388954246871555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7795,14 +7974,14 @@ MonoBehaviour:
   isRootNode: 0
   parentID: d4050808-431e-4eef-a69a-d6b604692f4a
   charName: Vxlt
-  text: ' 3 zombies... a human child... oh and another one'
+  text: 3 zombies... a human child... oh and another one
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
   children:
   - d87059ec-2a12-4328-beac-b8e4bfd6a42e
   pos:
     serializedVersion: 2
-    x: 29913
+    x: 29914
     y: 283
     width: 200
     height: 200
@@ -7819,6 +7998,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5546108043061646539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7844,7 +8024,7 @@ MonoBehaviour:
   - 400b55d7-e099-4908-b0df-c52e7e4fa35d
   pos:
     serializedVersion: 2
-    x: 30702
+    x: 30701
     y: 545
     width: 200
     height: 200
@@ -7861,6 +8041,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5558092898834858243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7903,6 +8084,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5721051612376297038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7945,6 +8127,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5727839730478411472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7962,7 +8145,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 6cea84d5-7fd6-49bb-b0ca-e52d723b7b2f
-  charName: (Narrative)
+  charName: Narrative
   text: Hiro stomps on the brakes of the bus
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -7987,6 +8170,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5772225962229697316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8013,7 +8197,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 30163
-    y: 279
+    y: 278
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -8029,6 +8213,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5830616911630672880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8054,7 +8239,7 @@ MonoBehaviour:
   - 5f888c68-3337-4de4-bed5-300832733e9d
   pos:
     serializedVersion: 2
-    x: 30916
+    x: 30914
     y: 66
     width: 200
     height: 200
@@ -8071,6 +8256,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5922687942692704618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8097,7 +8283,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 19637
-    y: 285
+    y: 286
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -8113,6 +8299,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6204766951233613327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8155,6 +8342,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6224014553320095456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8197,6 +8385,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6323464057466564057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8214,7 +8403,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: c1990ea2-cfba-41f8-8b2d-dd468b31b4ef
-  charName: (Narrative)
+  charName: Narrative
   text: Vxlt and Hiro Say Roger!.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -8239,6 +8428,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6325659747255811413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8281,6 +8471,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6464885906752225883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8298,7 +8489,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 64624c65-dad7-4214-a92c-de4ba5ca4027
-  charName: (Narrative)
+  charName: Narrative
   text: Cale goes to the front of the bus and angrily hits the roof
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -8307,7 +8498,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 12272
-    y: 292
+    y: 291
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -8323,6 +8514,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6487672343941281943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8340,7 +8532,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: e8f43457-dde5-495f-ab30-ae94934c6e37
-  charName: (Narrative)
+  charName: Narrative
   text: ' *Amy falls asleep on your shoulder again*'
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -8365,6 +8557,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6589919145451920756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8408,6 +8601,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6629776447283036132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8450,6 +8644,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6750837592173187410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8492,6 +8687,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6804992192972112185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8534,6 +8730,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6817749143241331523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8576,6 +8773,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7031928466695513411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8618,6 +8816,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7242416679168436386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8660,6 +8859,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7343663883780931124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8677,7 +8877,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 57692780-2da4-44db-9d44-643c88d9e80b
-  charName: '(Narrative) '
+  charName: Narrative
   text: thump thump crash
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -8702,6 +8902,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7372959762528180644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8744,6 +8945,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7390877576668954086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8761,7 +8963,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: c60cd954-9a37-4f89-9a6b-204a261dc3ea
-  charName: (Narrative)
+  charName: Narrative
   text: ' *The hooded man walks through the door and lifts his hood up*'
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -8786,6 +8988,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7510889382287929223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8803,7 +9006,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: c542cf17-776a-4979-911a-2893c3c12c85
-  charName: (Narrative)
+  charName: Narrative
   text: The girl is hiding behind the boy.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -8811,7 +9014,7 @@ MonoBehaviour:
   - ed2150e7-ff4a-4b82-9d02-decfd47a316e
   pos:
     serializedVersion: 2
-    x: 32006
+    x: 32008
     y: 314
     width: 200
     height: 200
@@ -8828,6 +9031,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7540446141495796628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8845,7 +9049,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 9c906fb3-3683-4de9-a2cf-c9f79a6054fe
-  charName: (Narrative)
+  charName: Narrative
   text: " *Nova immediately turns the radio off\u2026*"
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -8870,6 +9074,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7551119106243894194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8896,7 +9101,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 10522
-    y: 289
+    y: 287
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -8912,6 +9117,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7556591101251584324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8929,7 +9135,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 4ea9e76c-c8b8-4dc8-b344-f0086d71f571
-  charName: (Narrative)
+  charName: Narrative
   text: '*Speeding* *Car Noises*'
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -8954,6 +9160,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7582230713402834565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8996,6 +9203,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7866540891049872328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9038,6 +9246,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8191744105581499681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9079,6 +9288,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8241556783050603946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9121,6 +9331,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8271022707992640650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9163,6 +9374,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8292945719104713419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9180,7 +9392,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: faa2bf0b-9982-47ff-a039-8ebe6aa10a41
-  charName: (Narrative)
+  charName: Narrative
   text: 'Hiro takes the front seat and starts the bus. '
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -9205,6 +9417,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8545379701499845715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9248,6 +9461,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8633947811172467991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9290,6 +9504,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8747592773045378743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9332,6 +9547,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8875756236063644521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9374,6 +9590,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8961654381157749648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9416,6 +9633,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &9059379722532018225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9433,7 +9651,7 @@ MonoBehaviour:
   isSpriteVisible: 0
   isRootNode: 0
   parentID: ff12592c-7373-438c-a7d9-4ecbe9ca4a0a
-  charName: Main
+  charName: Narrative
   text: you open one eye and see Vxlt shouting and flailing his arms in the air
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -9441,8 +9659,8 @@ MonoBehaviour:
   - 18c8eaf9-6626-4086-b09b-b508900e6d2c
   pos:
     serializedVersion: 2
-    x: 10272
-    y: 290
+    x: 10271
+    y: 289
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -9458,6 +9676,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &9138551875286935358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9500,6 +9719,7 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &9159360570967424484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9542,3 +9762,4 @@ MonoBehaviour:
   conditionalAffinity: 
   miniGameName: 
   miniGame: {fileID: 0}
+  fightSceneName: 

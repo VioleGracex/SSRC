@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: d7956878-cc27-420b-800e-06400d0048e2
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: bb42024a-9bc6-4efe-b1a2-830cedd89599
@@ -39,6 +40,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8726022928123139580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,10 +56,11 @@ MonoBehaviour:
   m_Name: d008abca-4173-4fac-9d09-0611a3d9708f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 1
   parentID: 
-  charName: (Narrative)
+  charName: Narrative
   text: While attending your math class your most hated subject and as you start
     to get bored a student comes running and yells.
   voiceLine: {fileID: 0}
@@ -65,7 +70,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: -1
-    y: 65
+    y: 64
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -79,6 +84,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8618196695331603963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +100,7 @@ MonoBehaviour:
   m_Name: 3823c7f3-8514-43e2-b641-f118794a673d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 26c50f0b-eaef-4d99-b7a6-0331c0fb4cfc
@@ -118,6 +127,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8498633081939865418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +143,7 @@ MonoBehaviour:
   m_Name: 12077056-5483-4517-9920-82f2ff380986
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: b1c2c66b-68f7-4f43-ab34-deea9d77342b
@@ -157,6 +170,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-8471192140025242805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,6 +186,7 @@ MonoBehaviour:
   m_Name: 52fca657-75f0-4468-ae03-b5006a01e45b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 082bc275-decc-47b0-93b5-6564c8bd7547
@@ -196,6 +213,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7575273016376057367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +229,7 @@ MonoBehaviour:
   m_Name: 56c8f626-fef9-4260-9bf8-2e916d93dd03
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 67f0b314-af89-4302-a052-5a94a9ce73c5
@@ -221,7 +242,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 9354
-    y: 328
+    y: 327
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -235,6 +256,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7473081535183283940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,6 +272,7 @@ MonoBehaviour:
   m_Name: 558e109b-8810-4f77-9ca1-4ff8f0bcbd17
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: ab9da39d-01b1-4a23-aa3e-9d713434a6d7
@@ -274,6 +299,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7268850384339844812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +315,7 @@ MonoBehaviour:
   m_Name: 53a4b380-0cb2-4b63-8909-8ccea5f9bf13
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: b1bed53a-13a9-4c8d-885c-35f9a1db0977
@@ -299,8 +328,8 @@ MonoBehaviour:
   - 6440c90c-8060-4815-aeaf-2267e67275ad
   pos:
     serializedVersion: 2
-    x: 465
-    y: 78
+    x: 464
+    y: 79
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -314,6 +343,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-7112168253742129873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,6 +359,7 @@ MonoBehaviour:
   m_Name: fd7a73ad-85a0-4324-9a0b-f6ea286a406d
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 1e335dd3-413f-48f7-a290-493187e344b0
@@ -353,6 +386,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6740206786683443085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,6 +402,7 @@ MonoBehaviour:
   m_Name: 7c4048c9-930c-4960-872d-ce9e39b0c73c
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 82a9d934-4781-4341-8812-92216fc970b3
@@ -392,6 +429,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6658926917058983155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,6 +445,7 @@ MonoBehaviour:
   m_Name: 1ee0d609-1ebd-4b70-b234-fab40d6ec5eb
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: a5ea1680-2550-4d9f-850a-2be21962e1b4
@@ -417,7 +458,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 13344
-    y: 162
+    y: 161
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -431,6 +472,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6643064915067497083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -444,6 +488,7 @@ MonoBehaviour:
   m_Name: 4b141fad-e0cd-449b-a5d1-7ac770bd2384
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 86e95aeb-9423-4693-853f-2f88122667b2
@@ -456,7 +501,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 6059
-    y: 176
+    y: 175
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -470,6 +515,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6397806080351938712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,6 +531,7 @@ MonoBehaviour:
   m_Name: ab9da39d-01b1-4a23-aa3e-9d713434a6d7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: edfe6a34-3180-4346-ad20-81b6edc3f8b3
@@ -509,6 +558,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6385680169086420525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -522,6 +574,7 @@ MonoBehaviour:
   m_Name: 1df0ee24-d07c-4109-a391-a1e651c21529
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 56c8f626-fef9-4260-9bf8-2e916d93dd03
@@ -534,7 +587,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 9581
-    y: 322
+    y: 321
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -548,6 +601,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6372540327822312633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,6 +617,7 @@ MonoBehaviour:
   m_Name: 28ed579b-1163-431a-a9d8-c600c3af7fa7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: c6c6a636-5d29-4281-96b2-f8f7f258783f
@@ -587,6 +644,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-6155699557594626414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,6 +660,7 @@ MonoBehaviour:
   m_Name: bc4a8e53-4b65-4931-a98f-6927e3350a02
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 7c4048c9-930c-4960-872d-ce9e39b0c73c
@@ -626,6 +687,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-5410562154344772308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -639,6 +703,7 @@ MonoBehaviour:
   m_Name: b1c2c66b-68f7-4f43-ab34-deea9d77342b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 3823c7f3-8514-43e2-b641-f118794a673d
@@ -665,6 +730,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4884841011399493052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,6 +746,7 @@ MonoBehaviour:
   m_Name: 174586e0-51ed-4837-a742-da00eb47350f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 30081c03-0c5d-4100-ba77-cf3f2785ec15
@@ -704,6 +773,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4879858780945775349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,6 +789,7 @@ MonoBehaviour:
   m_Name: 86e95aeb-9423-4693-853f-2f88122667b2
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: e52b9e9d-102e-4b3a-8c13-f77418054612
@@ -743,6 +816,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4129232409776525924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -756,6 +832,7 @@ MonoBehaviour:
   m_Name: 30081c03-0c5d-4100-ba77-cf3f2785ec15
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 42223d77-582a-47cd-bbbb-f088429a82b7
@@ -782,6 +859,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-4023034843916152509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -795,6 +875,7 @@ MonoBehaviour:
   m_Name: 7e894fdf-e56c-48a7-96ef-654e8b18c539
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 9cc640b5-d19e-4f87-bce1-27e0da8502d3
@@ -821,6 +902,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-3980055282394054730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -834,6 +918,7 @@ MonoBehaviour:
   m_Name: d558816f-de0c-48a8-87e5-da1689e72bc2
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 6a54acf1-a5cb-4f7d-bb08-dec8b26110f4
@@ -860,6 +945,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-3224257647190933715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -873,6 +961,7 @@ MonoBehaviour:
   m_Name: 84ed65fd-d774-43fe-8a98-0e25d65adea2
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 364e6ba8-68f6-469d-be6d-9368b9358082
@@ -884,7 +973,7 @@ MonoBehaviour:
   - bea045f3-6fe6-46c9-ac49-ab0712c53a92
   pos:
     serializedVersion: 2
-    x: 9560
+    x: 9561
     y: 33
     width: 200
     height: 200
@@ -899,6 +988,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-2910383763004904118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -912,6 +1004,7 @@ MonoBehaviour:
   m_Name: 26859da7-0f40-436c-96cd-8d093086dc0b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: b6448312-7a8a-49d5-a7a6-dd2460e0bd69
@@ -924,7 +1017,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 3779
-    y: 152
+    y: 151
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -938,6 +1031,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-2534297745285268947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -951,6 +1047,7 @@ MonoBehaviour:
   m_Name: 9c39fd7d-bd15-4dcf-88db-a7f1309bdff8
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 560521e1-30bf-4ba2-b6ae-d388c1ee9739
@@ -978,6 +1075,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-2420856530396308527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -991,6 +1091,7 @@ MonoBehaviour:
   m_Name: 3a36a492-e4c7-4b46-bd11-390b69dae397
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: b19f4c6a-c021-41ba-9c65-cf0745c53c96
@@ -1017,6 +1118,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-2327215825400060292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1030,6 +1134,7 @@ MonoBehaviour:
   m_Name: 58546611-651c-4918-a5b0-a3474f862c21
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 875948a1-742b-45ff-bcb5-82d3cd29a364
@@ -1057,6 +1162,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-2044373552013336329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1070,6 +1178,7 @@ MonoBehaviour:
   m_Name: e52b9e9d-102e-4b3a-8c13-f77418054612
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 7e894fdf-e56c-48a7-96ef-654e8b18c539
@@ -1082,7 +1191,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 5552
-    y: 176
+    y: 177
     width: 200
     height: 200
   charSprite: {fileID: 21300000, guid: af093c0eced826748a006862776fd04b, type: 3}
@@ -1096,6 +1205,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1797050046945960766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,6 +1221,7 @@ MonoBehaviour:
   m_Name: ebef52f0-cc56-4365-a717-65836631f90b
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 558e109b-8810-4f77-9ca1-4ff8f0bcbd17
@@ -1135,6 +1248,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1774308378703872797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1148,6 +1264,7 @@ MonoBehaviour:
   m_Name: e4c2bec5-99a7-4472-8ef5-a7bcc99cd140
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 1df0ee24-d07c-4109-a391-a1e651c21529
@@ -1175,6 +1292,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1762673612931901962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,6 +1308,7 @@ MonoBehaviour:
   m_Name: 539ca1c8-6637-4663-9609-aa96e26f75ad
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 1216c0a7-26d7-4d53-ab53-07669c7e2002
@@ -1214,6 +1335,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1474652858280276447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1227,6 +1351,7 @@ MonoBehaviour:
   m_Name: 7723a1e3-73b0-4a84-9924-af44f434478a
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 3619bb6c-6e37-4625-823a-158d6ecd0317
@@ -1252,6 +1377,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1238258610831651351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1265,10 +1393,11 @@ MonoBehaviour:
   m_Name: 42223d77-582a-47cd-bbbb-f088429a82b7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: fd7a73ad-85a0-4324-9a0b-f6ea286a406d
-  charName: (Narrative)
+  charName: Narrative
   text: 'Nova jumps first and helps his sister down, it is your turn to jump through
     the window an infectee breaks room, you trip and fall but Nova manages to catch
     you. '
@@ -1279,7 +1408,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 10851
-    y: 142
+    y: 140
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -1293,6 +1422,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-1030342964581230556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1306,6 +1438,7 @@ MonoBehaviour:
   m_Name: c3e04170-213e-4085-a78d-f54aae1cbe3f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 5b703279-43ca-43a1-9b0f-fd73fdf587b3
@@ -1317,8 +1450,8 @@ MonoBehaviour:
   - f1df87ba-f4da-4b78-8228-7e1427375df0
   pos:
     serializedVersion: 2
-    x: 8308
-    y: 176
+    x: 8304
+    y: 181
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -1332,6 +1465,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-769665544876132740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1345,6 +1481,7 @@ MonoBehaviour:
   m_Name: f1df87ba-f4da-4b78-8228-7e1427375df0
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: c3e04170-213e-4085-a78d-f54aae1cbe3f
@@ -1371,6 +1508,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-752531833903393773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1384,6 +1524,7 @@ MonoBehaviour:
   m_Name: 5b703279-43ca-43a1-9b0f-fd73fdf587b3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: d558816f-de0c-48a8-87e5-da1689e72bc2
@@ -1411,6 +1552,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &-418375457192090793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1424,6 +1568,7 @@ MonoBehaviour:
   m_Name: 040d2e1c-2145-4c26-82e2-3f0733edafd7
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 58546611-651c-4918-a5b0-a3474f862c21
@@ -1450,6 +1595,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1554,6 +1702,7 @@ MonoBehaviour:
   m_Name: 082bc275-decc-47b0-93b5-6564c8bd7547
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: bc4a8e53-4b65-4931-a98f-6927e3350a02
@@ -1580,6 +1729,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &822894795080093391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1593,6 +1745,7 @@ MonoBehaviour:
   m_Name: 4591b581-c182-4ec1-8780-6f601f52423a
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 26859da7-0f40-436c-96cd-8d093086dc0b
@@ -1620,6 +1773,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &895247838829808073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1633,6 +1789,7 @@ MonoBehaviour:
   m_Name: a6e2df7d-a346-4dfe-b1f0-8db98560f42f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: b67c6584-027c-4c6c-afdc-d62dc66e9558
@@ -1659,6 +1816,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1226131012780839728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1672,10 +1832,11 @@ MonoBehaviour:
   m_Name: 3619bb6c-6e37-4625-823a-158d6ecd0317
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: f725f76f-ca29-4c53-809a-e5353d7b13a4
-  charName: 'Hiro:'
+  charName: Hiro
   text: Whew, that was tough, glad I am not late
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -1683,7 +1844,7 @@ MonoBehaviour:
   - 7723a1e3-73b0-4a84-9924-af44f434478a
   pos:
     serializedVersion: 2
-    x: 16344
+    x: 16345
     y: 162
     width: 200
     height: 200
@@ -1698,6 +1859,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1748308824358650461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1711,6 +1875,7 @@ MonoBehaviour:
   m_Name: d57418b1-6058-49fc-b5a4-fe02e879d497
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 82a9d934-4781-4341-8812-92216fc970b3
@@ -1722,7 +1887,7 @@ MonoBehaviour:
   - 9cc640b5-d19e-4f87-bce1-27e0da8502d3
   pos:
     serializedVersion: 2
-    x: 4566
+    x: 4568
     y: 263
     width: 200
     height: 200
@@ -1737,6 +1902,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &1989923132851220507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1750,6 +1918,7 @@ MonoBehaviour:
   m_Name: f2b8113c-2875-419c-b768-f1d54573d545
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: ebef52f0-cc56-4365-a717-65836631f90b
@@ -1762,7 +1931,7 @@ MonoBehaviour:
   - 70ddd93b-c9ad-4aee-b862-92c82344e6ba
   pos:
     serializedVersion: 2
-    x: 12595
+    x: 12597
     y: 165
     width: 200
     height: 200
@@ -1777,6 +1946,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &2639621748455341592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1790,6 +1962,7 @@ MonoBehaviour:
   m_Name: b1bed53a-13a9-4c8d-885c-35f9a1db0977
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: d008abca-4173-4fac-9d09-0611a3d9708f
@@ -1816,6 +1989,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &2834173886970229506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1829,10 +2005,11 @@ MonoBehaviour:
   m_Name: f725f76f-ca29-4c53-809a-e5353d7b13a4
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 040d2e1c-2145-4c26-82e2-3f0733edafd7
-  charName: (Narrative)
+  charName: Narrative
   text: A blonde man comes out of the bus.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -1855,6 +2032,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &2842282798838410773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1868,6 +2048,7 @@ MonoBehaviour:
   m_Name: 904fb212-c6b4-4619-8fd2-2778a31e5254
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: d7956878-cc27-420b-800e-06400d0048e2
@@ -1880,7 +2061,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 1412
-    y: 68
+    y: 67
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -1894,6 +2075,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3251134421263388579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1907,10 +2091,11 @@ MonoBehaviour:
   m_Name: edfe6a34-3180-4346-ad20-81b6edc3f8b3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 174586e0-51ed-4837-a742-da00eb47350f
-  charName: (Narrative)
+  charName: Narrative
   text: He puts you down and grabs his radio
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -1919,7 +2104,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 11594
-    y: 167
+    y: 166
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -1933,6 +2118,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3257480804530635100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1946,6 +2134,7 @@ MonoBehaviour:
   m_Name: c6c6a636-5d29-4281-96b2-f8f7f258783f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: a6e2df7d-a346-4dfe-b1f0-8db98560f42f
@@ -1972,6 +2161,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3593067601141679581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1985,6 +2177,7 @@ MonoBehaviour:
   m_Name: 9cc640b5-d19e-4f87-bce1-27e0da8502d3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: d57418b1-6058-49fc-b5a4-fe02e879d497
@@ -2012,6 +2205,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3802682949785039153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2025,6 +2221,7 @@ MonoBehaviour:
   m_Name: 64a2e21a-2049-4e94-9c83-66998dc35241
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 88e80ec5-2ce1-46d5-913b-f8c9cdc41808
@@ -2051,6 +2248,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &3838390249329773974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2064,6 +2264,7 @@ MonoBehaviour:
   m_Name: 906ce042-1676-4063-ab51-92a9f198b5dd
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 904fb212-c6b4-4619-8fd2-2778a31e5254
@@ -2075,7 +2276,7 @@ MonoBehaviour:
   - 560521e1-30bf-4ba2-b6ae-d388c1ee9739
   pos:
     serializedVersion: 2
-    x: 1652
+    x: 1651
     y: 73
     width: 200
     height: 200
@@ -2090,6 +2291,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4149302218834230955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2103,6 +2307,7 @@ MonoBehaviour:
   m_Name: bcec9f3a-2524-458c-b01d-68150ff3532e
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: bea045f3-6fe6-46c9-ac49-ab0712c53a92
@@ -2129,6 +2334,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4330515687677983556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2142,6 +2350,7 @@ MonoBehaviour:
   m_Name: b19f4c6a-c021-41ba-9c65-cf0745c53c96
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 12077056-5483-4517-9920-82f2ff380986
@@ -2168,6 +2377,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4335551845026911354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2181,6 +2393,7 @@ MonoBehaviour:
   m_Name: bb42024a-9bc6-4efe-b1a2-830cedd89599
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 6440c90c-8060-4815-aeaf-2267e67275ad
@@ -2207,6 +2420,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4380255674082736143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2220,6 +2436,7 @@ MonoBehaviour:
   m_Name: 560521e1-30bf-4ba2-b6ae-d388c1ee9739
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 906ce042-1676-4063-ab51-92a9f198b5dd
@@ -2246,6 +2463,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4473416430355667379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2259,6 +2479,7 @@ MonoBehaviour:
   m_Name: 70ddd93b-c9ad-4aee-b862-92c82344e6ba
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: f2b8113c-2875-419c-b768-f1d54573d545
@@ -2285,6 +2506,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4752374472285445256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2298,6 +2522,7 @@ MonoBehaviour:
   m_Name: b67c6584-027c-4c6c-afdc-d62dc66e9558
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 4b141fad-e0cd-449b-a5d1-7ac770bd2384
@@ -2310,7 +2535,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 6309
-    y: 176
+    y: 175
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -2324,6 +2549,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &4842346974052756320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2337,6 +2565,7 @@ MonoBehaviour:
   m_Name: 6a54acf1-a5cb-4f7d-bb08-dec8b26110f4
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: a7e55ef5-e28f-4e9b-899e-6c4943bc8902
@@ -2363,6 +2592,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5374570361088663654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2376,6 +2608,7 @@ MonoBehaviour:
   m_Name: 88e80ec5-2ce1-46d5-913b-f8c9cdc41808
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 1
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 3a36a492-e4c7-4b46-bd11-390b69dae397
@@ -2387,7 +2620,7 @@ MonoBehaviour:
   - 64a2e21a-2049-4e94-9c83-66998dc35241
   pos:
     serializedVersion: 2
-    x: 14844
+    x: 14843
     y: 162
     width: 200
     height: 200
@@ -2402,6 +2635,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5426844883581691598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2415,6 +2651,7 @@ MonoBehaviour:
   m_Name: 364e6ba8-68f6-469d-be6d-9368b9358082
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 67f0b314-af89-4302-a052-5a94a9ce73c5
@@ -2441,6 +2678,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5644868983069697401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2454,10 +2694,11 @@ MonoBehaviour:
   m_Name: b6448312-7a8a-49d5-a7a6-dd2460e0bd69
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: f8b7494b-b5a4-421c-97bd-924b22537e6f
-  charName: (Narrative)
+  charName: Narrative
   text: As you are about to run with them.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -2480,6 +2721,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &5674497667569568942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2493,10 +2737,11 @@ MonoBehaviour:
   m_Name: 26c50f0b-eaef-4d99-b7a6-0331c0fb4cfc
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 1ee0d609-1ebd-4b70-b234-fab40d6ec5eb
-  charName: (Narrative)
+  charName: Narrative
   text: A dashing guy with white hair and two tasers in hand running through the
     zombies crippling them.
   voiceLine: {fileID: 0}
@@ -2506,7 +2751,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 13594
-    y: 162
+    y: 161
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -2520,6 +2765,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6292276729811115335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2533,6 +2781,7 @@ MonoBehaviour:
   m_Name: 6440c90c-8060-4815-aeaf-2267e67275ad
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 53a4b380-0cb2-4b63-8909-8ccea5f9bf13
@@ -2559,6 +2808,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6649484762462829578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2572,10 +2824,11 @@ MonoBehaviour:
   m_Name: 82a9d934-4781-4341-8812-92216fc970b3
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 4591b581-c182-4ec1-8780-6f601f52423a
-  charName: (Narrative)
+  charName: Narrative
   text: His face is as pale as snow and half of his mouth is gone
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 8300000, guid: 87c1ecaff4e698242b0b8b05ad0f4c68, type: 3}
@@ -2599,6 +2852,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &6840839329623547229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2612,10 +2868,11 @@ MonoBehaviour:
   m_Name: f579d564-e951-45c6-aef2-c93711266045
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 539ca1c8-6637-4663-9609-aa96e26f75ad
-  charName: (Narrative)
+  charName: Narrative
   text: As he sends out the order you see a pale student behind him.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -2623,8 +2880,8 @@ MonoBehaviour:
   - f8b7494b-b5a4-421c-97bd-924b22537e6f
   pos:
     serializedVersion: 2
-    x: 2862
-    y: 65
+    x: 2861
+    y: 64
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -2638,6 +2895,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7019454323264912665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2651,6 +2911,7 @@ MonoBehaviour:
   m_Name: 530018f8-7f0e-4279-bc16-4f7af874d925
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: f1df87ba-f4da-4b78-8228-7e1427375df0
@@ -2677,6 +2938,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7328050104765267406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2690,6 +2954,7 @@ MonoBehaviour:
   m_Name: fc3a7b90-a140-45fa-a1a3-f622035f9e71
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: e4c2bec5-99a7-4472-8ef5-a7bcc99cd140
@@ -2701,7 +2966,7 @@ MonoBehaviour:
   - 1e335dd3-413f-48f7-a290-493187e344b0
   pos:
     serializedVersion: 2
-    x: 10072
+    x: 10074
     y: 325
     width: 200
     height: 200
@@ -2716,6 +2981,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &7886050383862653066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2729,6 +2997,7 @@ MonoBehaviour:
   m_Name: 67f0b314-af89-4302-a052-5a94a9ce73c5
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 530018f8-7f0e-4279-bc16-4f7af874d925
@@ -2756,6 +3025,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8092671853587219744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2769,6 +3041,7 @@ MonoBehaviour:
   m_Name: a7e55ef5-e28f-4e9b-899e-6c4943bc8902
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 28ed579b-1163-431a-a9d8-c600c3af7fa7
@@ -2795,6 +3068,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8488112317209714569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2808,6 +3084,7 @@ MonoBehaviour:
   m_Name: 1e335dd3-413f-48f7-a290-493187e344b0
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: fc3a7b90-a140-45fa-a1a3-f622035f9e71
@@ -2820,7 +3097,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 10344
-    y: 168
+    y: 167
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -2834,6 +3111,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8530734796226685445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2847,6 +3127,7 @@ MonoBehaviour:
   m_Name: 875948a1-742b-45ff-bcb5-82d3cd29a364
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 64a2e21a-2049-4e94-9c83-66998dc35241
@@ -2873,6 +3154,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8593598273936204086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2886,10 +3170,11 @@ MonoBehaviour:
   m_Name: 1216c0a7-26d7-4d53-ab53-07669c7e2002
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 9c39fd7d-bd15-4dcf-88db-a7f1309bdff8
-  charName: (Narrative)
+  charName: Narrative
   text: Another teacher is running towards your class from downstairs and looks horrified.
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -2898,7 +3183,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 2368
-    y: 66
+    y: 65
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -2912,6 +3197,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8835741853949522157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2925,6 +3213,7 @@ MonoBehaviour:
   m_Name: a5ea1680-2550-4d9f-850a-2be21962e1b4
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 70ddd93b-c9ad-4aee-b862-92c82344e6ba
@@ -2951,6 +3240,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &8934080018758956135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2964,10 +3256,11 @@ MonoBehaviour:
   m_Name: f8b7494b-b5a4-421c-97bd-924b22537e6f
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: f579d564-e951-45c6-aef2-c93711266045
-  charName: (Narrative)
+  charName: Narrative
   text: Students started running the other way, screams and shouts got louder as
     the teacher gets bitten and falls to the ground bleeding horribly.
   voiceLine: {fileID: 0}
@@ -2976,8 +3269,8 @@ MonoBehaviour:
   - b6448312-7a8a-49d5-a7a6-dd2460e0bd69
   pos:
     serializedVersion: 2
-    x: 3291
-    y: 150
+    x: 3295
+    y: 146
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -2991,6 +3284,9 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
 --- !u!114 &9047674322189760578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3004,6 +3300,7 @@ MonoBehaviour:
   m_Name: bea045f3-6fe6-46c9-ac49-ab0712c53a92
   m_EditorClassIdentifier: 
   isPlayerSpeaking: 0
+  isMiniGame: 0
   isSpriteVisible: 0
   isRootNode: 0
   parentID: 84ed65fd-d774-43fe-8a98-0e25d65adea2
@@ -3017,7 +3314,7 @@ MonoBehaviour:
   pos:
     serializedVersion: 2
     x: 9801
-    y: 35
+    y: 34
     width: 200
     height: 200
   charSprite: {fileID: 0}
@@ -3031,3 +3328,6 @@ MonoBehaviour:
   affinityPoints: 0
   affinityCharacter: 
   conditionalAffinity: 
+  miniGameName: 
+  miniGame: {fileID: 0}
+  fightSceneName: 
