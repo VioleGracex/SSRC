@@ -36,8 +36,7 @@ public class EnemyBattleManager : MonoBehaviour
         else
         {
             attackIndex = 0;
-        }
-        
+        }   
     }
     private void GetAllEnemies()
     {
@@ -48,11 +47,10 @@ public class EnemyBattleManager : MonoBehaviour
     private void GetAllPlayerHeroes()
     {
         playerHeroes = FindObjectsOfType<HeroAbstract>();
-        
     }
     private GameObject DecideWhichPlayerToAttack()
     {
-        float lowestHp =0;
+        float lowestHp = 0;
         GameObject target = null;
         foreach (var item in playerHeroes)
         {
@@ -68,6 +66,4 @@ public class EnemyBattleManager : MonoBehaviour
         }
         return target;
     }
-
-  
 }

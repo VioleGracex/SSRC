@@ -5,9 +5,9 @@ using UnityEngine.UI;
 public class HerosCharStatsBase : ScriptableObject
 {
     public string unitName;
-    public float attack, defense, dex, maxHP, maxSP,expToLvlUp;
+    public float attack, defense, dex, maxHP, maxSP,expToLvlUp; //sp stamina points for skills
 
-    public int turnCharges_Max,level,levelCap,weaponMastry;
+    public int turnCharges_Max, level, levelCap, weaponMastry;
 
     public bool exhausted;
 

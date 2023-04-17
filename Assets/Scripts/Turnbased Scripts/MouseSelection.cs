@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class MouseSelection : MonoBehaviour
 {   
     [SerializeField]
     Camera cam;
     public BattleHandler battleHandler;
 
+    [SerializeField]
+    Transform heroLabel, enemyTargetLabel;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,18 +30,22 @@ public class MouseSelection : MonoBehaviour
                 if(hit.transform.gameObject.tag == "Hero")
                 {
                     battleHandler.SetAttacker(hit.transform.gameObject);
+                    LocateTargetFollow(heroLabel,hit.transform);
+                    heroLabel.GetChild(0).GetComponent<TextMeshProUGUI>().text = hit.transform.GetComponent<HeroAbstract>().myStats.unitName;
                 }
                 else if(hit.transform.gameObject.tag == "Enemy")
                 {
                     battleHandler.SetTarget(hit.transform.gameObject);
-                    /* targetName.text = enemyTarget.GetComponent<Unit>().unitName;
-                    enemyTarget.GetComponent<Unit>().nameUnitLabel.SetActive(true);
-                    DisableOtherLabelsEnemies();
-                    RefreshHealth();
-                    RefreshArmor(); */
+                    LocateTargetFollow(enemyTargetLabel,hit.transform);
                 }
                 
             }
         } 
+    }
+
+    public void LocateTargetFollow(Transform myUI,Transform target)
+    {
+        myUI.position = target.position + new Vector3(0f, 4f, 0f);//Camera.main.WorldToViewportPoint(target.position); 
+        myUI.gameObject.SetActive(true);
     }
 }

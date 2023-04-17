@@ -16,7 +16,7 @@ MonoBehaviour:
   enemyBodyType: 
   attack: 1
   defense: 1
-  dex: 1
+  dex: 3
   maxHP: 5
   turnCharges_Max: 5
   level: 0
@@ -34,7 +34,7 @@ MonoBehaviour:
   - partName: Body
     armorType: 
     affectedStat: 
-    hp: 0
+    hp: 1
     armorHp: 0
     partDamageRate: 0
     statLossRate: 0

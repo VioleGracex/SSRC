@@ -8,23 +8,29 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
     public HerosCharStatsBase myStats;
     public Animator myAnimator;
 
-    public float attack,defense,dex,HP,SP,exp;
+    public float attack, defense, dex, HP, SP, exp;
 
-    public int turnCharges,level,weaponMastry;
+    public int turnCharges, level, weaponMastry;
 
     public bool exhausted;
 
     public GameObject charToken;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         myStats.myPosition = this.transform.position;
+        InitializeHeroStats();
     }
 
-    // Update is called once per frame
-    void Update()
+    void InitializeHeroStats()
     {
-        
+        // add level modifier
+        level = myStats.level;
+        attack = myStats.attack + ((level-1)*0.5f);
+        defense = myStats.defense + ((level-1)*0.5f);
+        dex = myStats.dex + ((level-1)*0.5f);
+        HP = myStats.maxHP + ((level-1)*0.5f) ;
+        SP = myStats.maxSP + ((level-1)*0.5f);
     }
 
     public void Newturn()
@@ -78,10 +84,11 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
         Destroy(this.gameObject,0.5f);       
     }
 
-    void UpdateHPBar()
+    void UpdateBars()
     {
         BarFillHandler[] bars = charToken.GetComponentsInChildren<BarFillHandler>();
         bars[0].SetBarFillPercentage(HP/myStats.maxHP);
-        bars[1].SetBarFillPercentage(SP/myStats.maxSP);
+        bars[1].SetBarFillPercentage(SP/myStats.maxSP); //stamina for skills 
+        // update turn charges
     }
 }

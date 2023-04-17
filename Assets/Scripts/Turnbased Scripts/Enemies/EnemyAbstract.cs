@@ -11,7 +11,7 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     public List<EnemiesCharStatsBase.PartData> myParts;
     public Animator myAnimator;
     
-     public float attack,defense,dex,HP;
+    public float attack,defense,dex,HP;
 
     public int turnCharges,mapLocation;
 
@@ -73,13 +73,13 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
 
     }
 
-      public void Death()
+    public void Death()
     {
         //death animation
         Destroy(this.gameObject,0.5f);       
     }
 
-     public void Charges(int usage)
+    public void Charges(int usage)
     {
         turnCharges -= usage;
     }
