@@ -5,8 +5,6 @@ using TMPro;
 
 public class GetSpeaker : MonoBehaviour
 {
-
-    
     TextMeshProUGUI myText;
     // Start is called before the first frame update
     void Start()

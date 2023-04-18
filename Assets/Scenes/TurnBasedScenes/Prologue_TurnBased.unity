@@ -1824,7 +1824,7 @@ GameObject:
   - component: {fileID: 1387041068}
   - component: {fileID: 1387041069}
   m_Layer: 0
-  m_Name: Vxlt
+  m_Name: VxltDemo
   m_TagString: Hero
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
