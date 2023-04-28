@@ -245,7 +245,7 @@ public class BattleHandler : MonoBehaviour
         GameObject toggleParent = GameObject.FindGameObjectWithTag("BodyTarget");
         foreach (var item in targetPartsData)
         {
-            if(item.hp <=0)
+            if(item.currentArmor <=0)
             {
                 Debug.Log("edit Hp text");
                 toggleParent.transform.Find(item.partName + "Toggle").GetComponent<Toggle>().interactable = false;   

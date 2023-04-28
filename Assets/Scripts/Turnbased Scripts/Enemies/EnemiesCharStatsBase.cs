@@ -23,8 +23,8 @@ public class EnemiesCharStatsBase : ScriptableObject
     [System.Serializable]
     public struct PartData
     {
-       public string partName,armorType,affectedStat; //the stat it affects when part is destroyed
-       public float hp, armorHp, partDamageRate,statLossRate; //max rate is 100 (0-100) DamageRate ,statLossRate
+       public string partName, armorType, affectedStat; //the stat it affects when part is destroyed
+       public float maxHP, currentHP, currentArmor, partDamageRate,statLossRate; //max rate is 100 (0-100) DamageRate ,statLossRate ,armor is 4 max
        
     }
 

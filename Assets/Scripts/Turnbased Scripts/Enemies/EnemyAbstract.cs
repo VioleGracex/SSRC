@@ -11,7 +11,7 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     public List<EnemiesCharStatsBase.PartData> myParts;
     public Animator myAnimator;
     
-    public float attack,defense,dex,HP;
+    public float attack, defense, dex, HP;
 
     public int turnCharges,mapLocation;
 
@@ -46,14 +46,14 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
        int temp = myParts.Where(x=> x.partName == damagedPart).Select(x => myParts.IndexOf(x)).FirstOrDefault();
        EnemiesCharStatsBase.PartData tempPart = myParts[temp];
 
-        if(tempPart.armorHp > 0)
+        if(tempPart.currentArmor > 0)
         {
-           tempPart.armorHp-=damage;
+           tempPart.currentArmor-=damage;
            Debug.Log("damaged");
         }
-        else if(tempPart.hp > 0 )
+        else if(tempPart.currentHP > 0 )
         {
-           tempPart.hp -= damage * (tempPart.partDamageRate/100);
+           tempPart.currentHP -= damage * (tempPart.partDamageRate/100);
         }
     }
     public void Heal(float heal) //heals main hp
@@ -95,7 +95,7 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     public float ReturnPartHP(string partName)
     {
         int temp = myParts.Where(x=> x.partName == partName).Select(x => myParts.IndexOf(x)).FirstOrDefault();
-        return myParts[temp].hp;
+        return myParts[temp].currentHP;
     }
 
 }
