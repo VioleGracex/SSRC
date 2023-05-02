@@ -58,10 +58,7 @@ public class BattleHandler : MonoBehaviour
             playerTurn = true;
             SetTurnCharges();
         } 
-
-        List<string> temp = new List<string> {"Head","Body","RightArm","LeftArm","RightLeg","LeftLeg"};
-        scrollMechanic.Initialize(temp, true, 0);
-        scrollMechanic.RecolorText(Color.black);
+        CheckAttackAvailability();
     }
 
 
@@ -73,6 +70,7 @@ public class BattleHandler : MonoBehaviour
             hero.rotation = Quaternion.Euler(0, 180, 0);
         }
     }
+    
 #region  //movement
     public void MovementTranslation(Transform attacker, Vector3 target)
     {
@@ -127,7 +125,6 @@ public class BattleHandler : MonoBehaviour
         //here fix
     }
   
-
       IEnumerator SlideToPlace(GameObject attacker)
     {
         //GameObject attacker = this.GetComponent<MouseSelection>().playerTarget;
@@ -145,7 +142,7 @@ public class BattleHandler : MonoBehaviour
         if (attacker.GetComponent<IReturnTurnCharges>().ReturnCharges() <= 0)
         {
             Debug.Log("No Charges");
-             attackButton.interactable = false;
+            attackButton.interactable = false;
             //disable attack button
         }
         //attacker.GetComponent<Unit>().myAnimator.Play("Idle");
@@ -231,14 +228,44 @@ public class BattleHandler : MonoBehaviour
         if(state == State.WaitingForPlayer)
         {
             target = unit;
-            UpdateToggleUI();
-            UpdateStatsUI();
+            CheckAttackAvailability();
         }
     }
 #endregion
     
 #region //updating ui
-    private void UpdateToggleUI()
+   
+    private void SpawnCharTokens()
+    {
+        GameObject token = Instantiate(tokenPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+        token.transform.SetParent (GameObject.FindGameObjectWithTag("Tokens").transform, false);
+        //spawn card HeroAbstract mystats.CardSprite
+    }
+    private void UpdateHpBar()
+    {
+        //will do later
+    }
+
+    private void CheckAttackAvailability()
+    {
+        //conditions for attacking avaliable target, has charges , player turn
+         if(target != null && attacker != null)
+         {
+            bool hasCharges = attacker.GetComponent<IReturnTurnCharges>().ReturnCharges() > 0;
+            if(hasCharges)
+                attackButton.interactable = true; 
+            else
+                attackButton.interactable = false; 
+         }
+         else
+         {
+            attackButton.interactable = false; 
+         }
+    }
+#endregion
+
+#region old codes
+    /*  private void UpdateToggleUI()
     {
         List <EnemiesCharStatsBase.PartData> targetPartsData = target.GetComponent<EnemyAbstract>().myParts;
         targetName.text = target.name;
@@ -274,37 +301,6 @@ public class BattleHandler : MonoBehaviour
             + "\nStatus: "+ placeholderString
             + "\nCoreType: " + enemyStats.core_type;
     }
-
-    private void SpawnCharTokens()
-    {
-        GameObject token = Instantiate(tokenPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-        token.transform.SetParent (GameObject.FindGameObjectWithTag("Tokens").transform, false);
-        //spawn card HeroAbstract mystats.CardSprite
-    }
-    private void UpdateHpBar()
-    {
-        //will do later
-    }
-
-    private void CheckAttackAvailability()
-    {
-        //conditions for attacking avaliable target, has charges , player turn
-         if(target != null && attacker != null)
-         {
-            bool hasCharges = attacker.GetComponent<IReturnTurnCharges>().ReturnCharges() > 0;
-            bool partDestroyed = target.GetComponent<EnemyAbstract>().ReturnPartHP(scrollMechanic.GetCurrentName()) <= 0;
-            //Debug.Log("Part Already Destroyed"); // make popups
-            if(hasCharges && !partDestroyed)
-                attackButton.interactable = true; 
-            else
-                attackButton.interactable = false; 
-         }
-         else
-         {
-            attackButton.interactable = false; 
-         }
-    }
+ */
 #endregion
-
-
 }

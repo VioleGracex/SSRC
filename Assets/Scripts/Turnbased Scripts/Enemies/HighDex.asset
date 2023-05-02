@@ -27,35 +27,40 @@ MonoBehaviour:
   - partName: Head
     armorType: 1
     affectedStat: 
-    hp: 1
-    armorHp: 1
+    maxHP: 1
+    currentHP: 1
+    currentArmor: 1
     partDamageRate: 0
     statLossRate: 0
   - partName: Body
     armorType: 
     affectedStat: 
-    hp: 1
-    armorHp: 0
+    maxHP: 1
+    currentHP: 1
+    currentArmor: 0
     partDamageRate: 0
     statLossRate: 0
   - partName: LeftArm
     armorType: 
     affectedStat: 
-    hp: 1
-    armorHp: 1
+    maxHP: 1
+    currentHP: 1
+    currentArmor: 0
     partDamageRate: 0
     statLossRate: 0
   - partName: RightLeg
     armorType: 
     affectedStat: 
-    hp: 1
-    armorHp: 1
+    maxHP: 1
+    currentHP: 1
+    currentArmor: 0
     partDamageRate: 0
     statLossRate: 0
   - partName: LeftLeg
     armorType: 
     affectedStat: 
-    hp: 1
-    armorHp: 1
+    maxHP: 1
+    currentHP: 1
+    currentArmor: 0
     partDamageRate: 0
     statLossRate: 0

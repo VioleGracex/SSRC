@@ -35,14 +35,13 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     }
     public void Attack(GameObject attackTarget)
     {
-        attackTarget.GetComponent<IDamageable>().Damage(myStats.attack);
+        attackTarget.GetComponent<IDamageable>().Damage(myStats.attack,"");
     }
 
-    public void Damage(float damage) //take damage on armor or part render it unusable and apply perctenage of it depending on weakness to current hp
+    public void Damage(float damage, string damagedPart) //take damage on armor or part render it unusable and apply perctenage of it depending on weakness to current hp
     {
        //get battlehandler selected part here
        //example how to find body part index
-       string damagedPart = GameObject.Find("PartName").GetComponent<TextMeshProUGUI>().text;
        int temp = myParts.Where(x=> x.partName == damagedPart).Select(x => myParts.IndexOf(x)).FirstOrDefault();
        EnemiesCharStatsBase.PartData tempPart = myParts[temp];
 

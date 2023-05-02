@@ -7,13 +7,27 @@ public class GetPartsHPBars : MonoBehaviour
     [SerializeField]
     Transform contentHolder;
     [SerializeField]
-    GameObject partHpTemplate;
-    public void SpawnBars(EnemyAbstract target)
+    GameObject partHpTemplate, partMenu;
+
+    EnemyAbstract target;
+
+    MouseSelection mouseSelection;
+
+    [SerializeField]
+    BattleHandler battleHandler;
+    public void SpawnBars()
     {
-        foreach(var part in target.myParts)
+        target = battleHandler.target.GetComponent<EnemyAbstract>();
+        if(target)
         {
-            var temp = Instantiate(partHpTemplate, contentHolder);
-            temp.GetComponent<PartBarManager>().PartBarInit(part.maxHP, part.currentHP,part.currentArmor);
+            foreach(var part in target.myParts)
+            {
+                var temp = Instantiate(partHpTemplate, contentHolder);
+                temp.GetComponent<PartBarManager>().PartBarInit(part.maxHP, part.currentHP,part.currentArmor, part.partName);
+            }
+            partMenu.SetActive(true);
+
         }
+       
     }
 }

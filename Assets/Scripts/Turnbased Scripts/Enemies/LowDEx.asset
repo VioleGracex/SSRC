@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LowDex
   m_EditorClassIdentifier: 
   unitName: infectee
-  enemyBodyType: 
+  enemyBodyType: null
   attack: 1
   defense: 1
   dex: 3
@@ -21,41 +21,46 @@ MonoBehaviour:
   turnCharges_Max: 5
   level: 0
   _coreTypeIndex: 0
-  coreLocation: 
-  myPosition: {x: -30.1, y: -6.7, z: 0}
+  coreLocation: null
+  myPosition: {x: -30.1, y: -14.999999, z: 0}
   partsData:
   - partName: Head
     armorType: 1
     affectedStat: 
-    hp: 1
-    armorHp: 1
+    maxHP: 0
+    currentHP: 0
+    currentArmor: 0
     partDamageRate: 0
     statLossRate: 0
   - partName: Body
     armorType: 
     affectedStat: 
-    hp: 1
-    armorHp: 0
+    maxHP: 0
+    currentHP: 0
+    currentArmor: 0
     partDamageRate: 0
     statLossRate: 0
   - partName: LeftArm
     armorType: 
     affectedStat: 
-    hp: 1
-    armorHp: 1
+    maxHP: 0
+    currentHP: 0
+    currentArmor: 0
     partDamageRate: 0
     statLossRate: 0
   - partName: RightLeg
     armorType: 
     affectedStat: 
-    hp: 1
-    armorHp: 1
+    maxHP: 0
+    currentHP: 0
+    currentArmor: 0
     partDamageRate: 0
     statLossRate: 0
   - partName: LeftLeg
     armorType: 
     affectedStat: 
-    hp: 1
-    armorHp: 1
+    maxHP: 0
+    currentHP: 0
+    currentArmor: 0
     partDamageRate: 0
     statLossRate: 0

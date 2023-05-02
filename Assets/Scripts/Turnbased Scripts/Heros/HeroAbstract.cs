@@ -40,9 +40,9 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
     }
     public void Attack(GameObject attackTarget)
     {
-        attackTarget.GetComponent<IDamageable>().Damage(attack);
+        attackTarget.GetComponent<IDamageable>().Damage(attack,"");
     }
-    public void Damage(float damage)
+    public void Damage(float damage,string part)
     {
         if (HP - damage < 0)
         {

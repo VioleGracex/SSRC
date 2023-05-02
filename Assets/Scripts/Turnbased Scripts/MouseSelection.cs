@@ -6,7 +6,8 @@ public class MouseSelection : MonoBehaviour
 {   
     [SerializeField]
     Camera cam;
-    public BattleHandler battleHandler;
+    [SerializeField]
+    BattleHandler battleHandler;
 
     [SerializeField]
     Transform heroLabel, enemyTargetLabel;
@@ -21,6 +22,7 @@ public class MouseSelection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //change this to event later
         if (Input.GetMouseButtonDown(0) && battleHandler.state == BattleHandler.State.WaitingForPlayer)
         { 
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -48,4 +50,6 @@ public class MouseSelection : MonoBehaviour
         myUI.position = target.position + new Vector3(0f, 4f, 0f);//Camera.main.WorldToViewportPoint(target.position); 
         myUI.gameObject.SetActive(true);
     }
+
+
 }
