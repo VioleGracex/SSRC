@@ -33,9 +33,9 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
         exhausted = false;
         turnCharges=myStats.turnCharges_Max;     
     }
-    public void Attack(GameObject attackTarget)
+    public void Attack(GameObject attackTarget, string part)
     {
-        attackTarget.GetComponent<IDamageable>().Damage(myStats.attack,"");
+        attackTarget.GetComponent<IDamageable>().Damage(myStats.attack, "");
     }
 
     public void Damage(float damage, string damagedPart) //take damage on armor or part render it unusable and apply perctenage of it depending on weakness to current hp

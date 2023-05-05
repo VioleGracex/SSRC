@@ -45,11 +45,11 @@ public class BattleHandler : MonoBehaviour
         WaitingForPlayer,
         Busy,
         Attacking,
-        SlidingForward,
-        SlidingBackward,
+        Returning,
         Fleeing,
-        Done,
+        ReachedTarget,
     }
+
     private void Awake()
     {
         instance = this;
@@ -58,9 +58,12 @@ public class BattleHandler : MonoBehaviour
             playerTurn = true;
             SetTurnCharges();
         } 
+
+        List<string> temp = new List<string> {"Head","Body","RightArm","LeftArm","RightLeg","LeftLeg"};
+        scrollMechanic.Initialize(temp, true, 0);
+        scrollMechanic.RecolorText(Color.black);
         CheckAttackAvailability();
     }
-
 
     public void FlipHeroes()
     {
@@ -70,7 +73,7 @@ public class BattleHandler : MonoBehaviour
             hero.rotation = Quaternion.Euler(0, 180, 0);
         }
     }
-    
+
 #region  //movement
     public void MovementTranslation(Transform attacker, Vector3 target)
     {
@@ -89,55 +92,44 @@ public class BattleHandler : MonoBehaviour
         //end level
     }
 
-    public void SlideToTargetFunction(GameObject attacker,GameObject target)
+     public void LocalSlideToTargetFunction(string partName)
     {
-        StartCoroutine(SlideToTarget(attacker,target));
-    }
+        Debug.Log("teezi");
 
-
-    IEnumerator SlideToTarget(GameObject attacker, GameObject target)
-    {
         if (attacker.GetComponent<IReturnTurnCharges>().ReturnCharges() <= 0)
         {
             Debug.Log("No Charges");
+            return;
         }
-        if (state == State.SlidingForward && target.gameObject != null)
-        {
-            //myAnimator.Play("Walking");
-            Vector3 temp = target.transform.position + target.transform.right * (-2f);
-            MovementTranslation(attacker.transform, temp);
-          
-            yield return new WaitUntil(() => Mathf.Abs(attacker.transform.position.x - temp.x) < 2f);
-            state = State.Done;
-            Debug.Log("done" + (Mathf.Abs(attacker.transform.position.x - temp.x) < 2f));
-        }
-        attacker.GetComponent<IAttack>().Attack(target);
-        if(target.gameObject != null)
-        {
-            //add busy and wait for animation to end then change to slidebackward
-            //might be unnecessary to have stop coroutine here or in switch
-            state = State.SlidingBackward;
-            StartCoroutine(SlideToPlace(attacker));
-           //StopCoroutine(SlideToTargetPlayer(attacker, target));
-        } 
-       
+
+        state = State.Attacking;
+        attackButton.interactable = false;
+        targetedPart = partName;
+      
+    }
+
+
+    IEnumerator SlideToTarget()
+    {
+        Vector3 temp = target.transform.position + target.transform.right * (-2f);
+        //myAnimator.Play("Walking");
+        MovementTranslation(attacker.transform, temp);
+        yield return new WaitUntil(() => Mathf.Abs(attacker.transform.position.x - temp.x) < 2f);
+        state = State.ReachedTarget;
         yield return new WaitForSeconds(2f);
         //here fix
     }
   
-      IEnumerator SlideToPlace(GameObject attacker)
+
+      IEnumerator SlideToPlace()
     {
-        //GameObject attacker = this.GetComponent<MouseSelection>().playerTarget;
-        if (state == State.SlidingBackward)
-        {
-            //attacker.GetComponent<Unit>().myAnimator.Play("Walking");
-            Vector3 temp = attacker.GetComponent<IReturnPosition>().ReturnPosition();
-            MovementTranslation(attacker.transform, temp);
-            yield return new WaitUntil(() => Mathf.Abs(temp.x - attacker.transform.position.x) < 0.6f);
-        }
+        //attacker.GetComponent<Unit>().myAnimator.Play("Walking");
+        Vector3 temp = attacker.GetComponent<IReturnPosition>().ReturnPosition();
+        MovementTranslation(attacker.transform, temp);
+        yield return new WaitUntil(() => Mathf.Abs(temp.x - attacker.transform.position.x) < 0.6f);
 
         if(playerTurn)
-         state = State.WaitingForPlayer;
+            state = State.WaitingForPlayer;
 
         if (attacker.GetComponent<IReturnTurnCharges>().ReturnCharges() <= 0)
         {
@@ -151,28 +143,28 @@ public class BattleHandler : MonoBehaviour
     }
 #endregion
    
-    void Update()
+    void FixedUpdate()
     {
-        
         switch (state)
         {
             case State.WaitingForPlayer:
                 StopAllCoroutines();
                 //enable player actions
                 break;
-            case State.SlidingForward:
-                StartCoroutine(SlideToTarget(attacker, target));
-                break;
-            case State.SlidingBackward:
-                StopCoroutine(SlideToTarget(attacker, target));
-                StartCoroutine(SlideToPlace(attacker));
-                break;
+            case State.Attacking:
+                StartCoroutine(SlideToTarget());       
+                break;  
+            case State.ReachedTarget:
+                attacker.GetComponent<IAttack>().Attack(target, targetedPart);
+                state = State.Returning;
+                break; 
+            case State.Returning:
+                StartCoroutine(SlideToPlace());
+                break;                          
             case State.Fleeing:
                 StartCoroutine(FleeToTheRight());
                 break;
             case State.Busy:
-                break;
-            case State.Done:
                 break;
             default:
                 //enable player actions
@@ -210,6 +202,7 @@ public class BattleHandler : MonoBehaviour
 
     public void SetAttacker(GameObject unit)
     {
+        //fix for enemy object useless check for attack button during enemy turn
         if(unit.GetComponent<IReturnTurnCharges>().ReturnCharges() > 0)
         {
             attacker = unit;
@@ -220,7 +213,8 @@ public class BattleHandler : MonoBehaviour
             Debug.Log("no charges"); // make popups
             attacker = null;
         }
-        CheckAttackAvailability();
+        if(playerTurn)
+            CheckAttackAvailability();
     }
 
      public void SetTarget(GameObject unit)
@@ -228,7 +222,8 @@ public class BattleHandler : MonoBehaviour
         if(state == State.WaitingForPlayer)
         {
             target = unit;
-            CheckAttackAvailability();
+            if(playerTurn)
+                CheckAttackAvailability();                                
         }
     }
 #endregion
@@ -249,7 +244,7 @@ public class BattleHandler : MonoBehaviour
     private void CheckAttackAvailability()
     {
         //conditions for attacking avaliable target, has charges , player turn
-         if(target != null && attacker != null)
+         if(target != null && attacker != null && state == State.WaitingForPlayer)
          {
             bool hasCharges = attacker.GetComponent<IReturnTurnCharges>().ReturnCharges() > 0;
             if(hasCharges)

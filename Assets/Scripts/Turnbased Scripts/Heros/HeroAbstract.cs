@@ -38,9 +38,9 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
         exhausted = false;
         turnCharges=myStats.turnCharges_Max;
     }
-    public void Attack(GameObject attackTarget)
+    public void Attack(GameObject attackTarget, string part)
     {
-        attackTarget.GetComponent<IDamageable>().Damage(attack,"");
+        attackTarget.GetComponent<IDamageable>().Damage(attack, part);
     }
     public void Damage(float damage,string part)
     {

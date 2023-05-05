@@ -28,7 +28,8 @@ public class EnemyBattleManager : MonoBehaviour
                 attackIndex++;
             }
         }
-        BattleHandler.Getinstance().SlideToTargetFunction(enemies[attackIndex].gameObject, DecideWhichPlayerToAttack());
+        BattleHandler.Getinstance().SetAttacker(enemies[attackIndex].gameObject);
+        BattleHandler.Getinstance().SetTarget(DecideWhichPlayerToAttack());
         if(attackIndex < enemies.Length-1)
         {
             attackIndex++;
