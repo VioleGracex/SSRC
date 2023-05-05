@@ -8,13 +8,11 @@ using Unity.VisualScripting;
 
 public class BattleHandler : MonoBehaviour
 {
+
+#region Vars
     private static BattleHandler instance;
     public State state;
-    public static BattleHandler Getinstance()
-    {
-        return instance;
-    }
-
+    
     [SerializeField]
     TextMeshProUGUI whoseTurn, targetName, partTargetText,enemyStatsText;
     [SerializeField]
@@ -39,6 +37,10 @@ public class BattleHandler : MonoBehaviour
     List<string> temp;
 
     string targetedPart;
+    public static BattleHandler Getinstance()
+    {
+        return instance;
+    }
 
     public enum State
     {
@@ -49,7 +51,7 @@ public class BattleHandler : MonoBehaviour
         Fleeing,
         ReachedTarget,
     }
-
+#endregion
     private void Awake()
     {
         instance = this;
@@ -65,84 +67,6 @@ public class BattleHandler : MonoBehaviour
         CheckAttackAvailability();
     }
 
-    public void FlipHeroes()
-    {
-        state = State.Fleeing;
-        foreach (Transform hero in heroes)
-        {
-            hero.rotation = Quaternion.Euler(0, 180, 0);
-        }
-    }
-
-#region  //movement
-    public void MovementTranslation(Transform attacker, Vector3 target)
-    {
-        attacker.position = Vector3.MoveTowards(attacker.position, target, slideSpeed * Time.deltaTime);        
-    }
-
-    IEnumerator FleeToTheRight()
-    {
-        foreach (Transform hero in heroes)
-        {
-            hero.position += new Vector3(0.2f, 0, 0);
-        }
-
-        yield return new WaitForSeconds(3.0f);
-        state = State.WaitingForPlayer;
-        //end level
-    }
-
-     public void LocalSlideToTargetFunction(string partName)
-    {
-        Debug.Log("teezi");
-
-        if (attacker.GetComponent<IReturnTurnCharges>().ReturnCharges() <= 0)
-        {
-            Debug.Log("No Charges");
-            return;
-        }
-
-        state = State.Attacking;
-        attackButton.interactable = false;
-        targetedPart = partName;
-      
-    }
-
-
-    IEnumerator SlideToTarget()
-    {
-        Vector3 temp = target.transform.position + target.transform.right * (-2f);
-        //myAnimator.Play("Walking");
-        MovementTranslation(attacker.transform, temp);
-        yield return new WaitUntil(() => Mathf.Abs(attacker.transform.position.x - temp.x) < 2f);
-        state = State.ReachedTarget;
-        yield return new WaitForSeconds(2f);
-        //here fix
-    }
-  
-
-      IEnumerator SlideToPlace()
-    {
-        //attacker.GetComponent<Unit>().myAnimator.Play("Walking");
-        Vector3 temp = attacker.GetComponent<IReturnPosition>().ReturnPosition();
-        MovementTranslation(attacker.transform, temp);
-        yield return new WaitUntil(() => Mathf.Abs(temp.x - attacker.transform.position.x) < 0.6f);
-
-        if(playerTurn)
-            state = State.WaitingForPlayer;
-
-        if (attacker.GetComponent<IReturnTurnCharges>().ReturnCharges() <= 0)
-        {
-            Debug.Log("No Charges");
-            attackButton.interactable = false;
-            //disable attack button
-        }
-        //attacker.GetComponent<Unit>().myAnimator.Play("Idle");
-
-        yield return null;
-    }
-#endregion
-   
     void FixedUpdate()
     {
         switch (state)
@@ -160,6 +84,7 @@ public class BattleHandler : MonoBehaviour
                 break; 
             case State.Returning:
                 StartCoroutine(SlideToPlace());
+                //check if turn ends 
                 break;                          
             case State.Fleeing:
                 StartCoroutine(FleeToTheRight());
@@ -171,6 +96,84 @@ public class BattleHandler : MonoBehaviour
                 break;
         }
     }
+
+#region  //movement
+
+    public void FlipHeroes()
+    {
+        state = State.Fleeing;
+        foreach (Transform hero in heroes)
+        {
+            hero.rotation = Quaternion.Euler(0, 180, 0);
+        }
+    }
+    public void MovementTranslation(Transform attacker, Vector3 target)
+    {
+        attacker.position = Vector3.MoveTowards(attacker.position, target, slideSpeed * Time.deltaTime);        
+    }
+
+    IEnumerator FleeToTheRight()
+    {
+        foreach (Transform hero in heroes)
+        {
+            hero.position += new Vector3(0.2f, 0, 0);
+        }
+
+        yield return new WaitForSeconds(3.0f);
+        state = State.WaitingForPlayer;
+        //end level
+    }
+
+    public void LocalSlideToTarget(string partName)
+    {
+        Debug.Log("teezi");
+
+        if (attacker.GetComponent<IReturnTurnCharges>().GetTurnCharges() <= 0)
+        {
+            Debug.Log("No Charges");
+            return;
+        }
+
+        state = State.Attacking;
+        attackButton.interactable = false;
+        targetedPart = partName;
+      
+    }
+
+    IEnumerator SlideToTarget()
+    {
+        Vector3 temp = target.transform.position + target.transform.right * (-2f);
+        //myAnimator.Play("Walking");
+        MovementTranslation(attacker.transform, temp);
+        yield return new WaitUntil(() => Mathf.Abs(attacker.transform.position.x - temp.x) < 2f);
+        state = State.ReachedTarget;
+        yield return new WaitForSeconds(2f);
+        //here fix
+    }
+  
+
+      IEnumerator SlideToPlace()
+    {
+        //attacker.GetComponent<Unit>().myAnimator.Play("Walking");
+        Vector3 temp = attacker.GetComponent<IReturnPosition>().GetPosition();
+        MovementTranslation(attacker.transform, temp);
+        yield return new WaitUntil(() => Mathf.Abs(temp.x - attacker.transform.position.x) < 0.6f);
+
+        if(playerTurn)
+            state = State.WaitingForPlayer;
+
+        if (attacker.GetComponent<IReturnTurnCharges>().GetTurnCharges() <= 0)
+        {
+            Debug.Log("No Charges");
+            attackButton.interactable = false;
+            //disable attack button
+        }
+        //attacker.GetComponent<Unit>().myAnimator.Play("Idle");
+
+        yield return null;
+    }
+#endregion
+   
 #region //setting values
     public void SpawnParty(string[] party)
     {
@@ -194,6 +197,17 @@ public class BattleHandler : MonoBehaviour
             }
         }
     }
+    public void EndPlayerTurn()
+    {
+        playerTurn = false; 
+        SetTurnCharges();
+    }
+    public void EndEnemyTurn()
+    {
+        playerTurn = false; 
+        SetTurnCharges();
+    }
+
     public void SetPartTarget(string part)
     {
         partTargetText.text = part;
@@ -203,7 +217,7 @@ public class BattleHandler : MonoBehaviour
     public void SetAttacker(GameObject unit)
     {
         //fix for enemy object useless check for attack button during enemy turn
-        if(unit.GetComponent<IReturnTurnCharges>().ReturnCharges() > 0)
+        if(unit.GetComponent<IReturnTurnCharges>().GetTurnCharges() > 0)
         {
             attacker = unit;
             //enable attack button
@@ -246,7 +260,7 @@ public class BattleHandler : MonoBehaviour
         //conditions for attacking avaliable target, has charges , player turn
          if(target != null && attacker != null && state == State.WaitingForPlayer)
          {
-            bool hasCharges = attacker.GetComponent<IReturnTurnCharges>().ReturnCharges() > 0;
+            bool hasCharges = attacker.GetComponent<IReturnTurnCharges>().GetTurnCharges() > 0;
             if(hasCharges)
                 attackButton.interactable = true; 
             else

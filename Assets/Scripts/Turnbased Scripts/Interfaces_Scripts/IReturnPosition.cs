@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface IReturnPosition 
 {
-    public Vector2 ReturnPosition();
+    public Vector2 GetPosition();
 }

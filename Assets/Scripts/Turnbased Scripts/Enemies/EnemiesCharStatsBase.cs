@@ -8,9 +8,9 @@ using UnityEditor;
 public class EnemiesCharStatsBase : ScriptableObject
 {
     public string unitName, enemyBodyType; // enemy type humanoid animal tentacle etc changes the body target ui to fit the part count and shape
-    public float attack,defense,dex,maxHP;
+    public float attack, defense, dex, maxHP;
 
-    public int turnCharges_Max,level;
+    public int turnCharges_Max, level;
     
     public readonly string[] core_type =  {"green","red","violet"};
 
@@ -24,7 +24,7 @@ public class EnemiesCharStatsBase : ScriptableObject
     public struct PartData
     {
        public string partName, armorType, affectedStat; //the stat it affects when part is destroyed
-       public float maxHP, currentHP, currentArmor, partDamageRate,statLossRate; //max rate is 100 (0-100) DamageRate ,statLossRate ,armor is 4 max
+       public float maxHP, maxArmor, partDamageRate,statLossRate; //max rate is 100 (0-100) DamageRate ,statLossRate ,armor is 4 max
        
     }
 

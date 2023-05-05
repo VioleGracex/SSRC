@@ -7,6 +7,7 @@ public class EnemyBattleManager : MonoBehaviour
 {
     EnemyAbstract[] enemies;
     HeroAbstract[] playerHeroes;
+    List<EnemyAbstract> enemiesWithCharges;
     int attackIndex;
     // Start is called before the first frame update
     void Awake()
@@ -17,9 +18,10 @@ public class EnemyBattleManager : MonoBehaviour
 
     private void SendEnemyToAttack()
     {
-        if (enemies[attackIndex].gameObject == null)
+        GetAllEnemiesWithCharges();
+        if (enemiesWithCharges[attackIndex].gameObject == null)
         {
-            if(attackIndex >= enemies.Length-1)
+            if(attackIndex >= enemiesWithCharges.Count-1)
             {
                 attackIndex = 0;
             }
@@ -28,9 +30,11 @@ public class EnemyBattleManager : MonoBehaviour
                 attackIndex++;
             }
         }
+
         BattleHandler.Getinstance().SetAttacker(enemies[attackIndex].gameObject);
         BattleHandler.Getinstance().SetTarget(DecideWhichPlayerToAttack());
-        if(attackIndex < enemies.Length-1)
+        BattleHandler.Getinstance().LocalSlideToTarget("");
+        if(attackIndex < enemiesWithCharges.Count-1)
         {
             attackIndex++;
         }
@@ -38,6 +42,8 @@ public class EnemyBattleManager : MonoBehaviour
         {
             attackIndex = 0;
         }   
+
+
     }
     private void GetAllEnemies()
     {
@@ -45,6 +51,14 @@ public class EnemyBattleManager : MonoBehaviour
         Array.Sort(enemies, (a, b) => a.myStats.dex.CompareTo(b.myStats.dex));
     }
 
+    private void GetAllEnemiesWithCharges()
+    {
+        foreach( EnemyAbstract enemy in enemies)
+        {
+            if(enemy.GetTurnCharges() > 0)
+                enemiesWithCharges.Add(enemy);
+        }
+    }
     private void GetAllPlayerHeroes()
     {
         playerHeroes = FindObjectsOfType<HeroAbstract>();

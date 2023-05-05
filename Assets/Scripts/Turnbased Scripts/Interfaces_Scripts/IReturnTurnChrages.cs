@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface IReturnTurnCharges 
 {
-    public int ReturnCharges();
+    public int GetTurnCharges();
 }

@@ -25,7 +25,7 @@ public class PartBarManager : MonoBehaviour
 
     public void AttackThisPart()
     {
-        FindObjectOfType<BattleHandler>().LocalSlideToTargetFunction(partName.text);
+        FindObjectOfType<BattleHandler>().LocalSlideToTarget(partName.text);
         CloseBarsView();
     }
 

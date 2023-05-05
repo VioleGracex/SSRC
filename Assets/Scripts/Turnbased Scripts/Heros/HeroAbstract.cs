@@ -69,11 +69,11 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
     {
         turnCharges -= usage;
     }
-    public int ReturnCharges()
+    public int GetTurnCharges()
     {
         return turnCharges;
     }
-    public Vector2 ReturnPosition()
+    public Vector2 GetPosition()
     {
         return myStats.myPosition;
     }
