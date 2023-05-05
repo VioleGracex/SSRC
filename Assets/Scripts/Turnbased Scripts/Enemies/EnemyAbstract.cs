@@ -60,15 +60,15 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
        
        //EnemiesCharStatsBase.PartData tempPart = myParts[temp];
 
-        /* if(myParts[temp].currentArmor > 0)
+        if(myPartsArmor[temp] > 0)
         {
-           myParts[temp].currentArmor-=damage;
-           Debug.Log("damaged", myParts[temp].partName);
+           myPartsArmor[temp]-=damage;
+           Debug.Log("damaged"+ damagedPart);
         }
-        else if(myParts[temp].currentHP > 0 )
+        else if(myPartsArmor[temp] > 0 )
         {
-           myParts[temp].currentHP -= damage * (myParts[temp].partDamageRate/100);
-        } */
+           myPartsArmor[temp] -= damage * (myParts[temp].partDamageRate/100);
+        }
     }
     public void Heal(float heal) //heals main hp
     {
