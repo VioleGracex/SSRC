@@ -647,6 +647,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myStats: {fileID: 11400000, guid: dab758357e1ddf949ad73065b16c5c55, type: 2}
   myParts: []
+  myPartsHp: []
+  myPartsArmor: []
   myAnimator: {fileID: 0}
   attack: 0
   defense: 0
@@ -1078,8 +1080,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -858, y: -425}
-  m_SizeDelta: {x: 371, y: 191}
+  m_AnchoredPosition: {x: -238.45126, y: -417.21}
+  m_SizeDelta: {x: 2018.6707, y: 265.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &714035019
 MonoBehaviour:
@@ -1838,6 +1840,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myStats: {fileID: 11400000, guid: 6da4cdf7ccd6005499e9042b65d073ed, type: 2}
   myParts: []
+  myPartsHp: []
+  myPartsArmor: []
   myAnimator: {fileID: 0}
   attack: 0
   defense: 0
@@ -1996,6 +2000,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myStats: {fileID: 11400000, guid: a6dd8e85ec5d0d04eb41511cea60732d, type: 2}
   myParts: []
+  myPartsHp: []
+  myPartsArmor: []
   myAnimator: {fileID: 0}
   attack: 0
   defense: 0
@@ -2340,7 +2346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  whoseTurn: {fileID: 0}
+  whoseTurn: {fileID: 4883218250274486484}
   targetName: {fileID: 4883218249237187982}
   partTargetText: {fileID: 978582786}
   enemyStatsText: {fileID: 1418090047}
@@ -2352,7 +2358,7 @@ MonoBehaviour:
   slideSpeed: 20
   playerTurn: 1
   playerStart: 1
-  tokenPrefab: {fileID: 7508140779483117596, guid: 6b310b5dca79d5641b8566ee20fe4c0c,
+  statCard: {fileID: 7508140779483117596, guid: 6b310b5dca79d5641b8566ee20fe4c0c,
     type: 3}
   attackButton: {fileID: 4883218250635606352}
   scrollMechanic: {fileID: 4339735877353255750}
@@ -2472,17 +2478,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myStats: {fileID: 11400000, guid: 4c4c9387d985f174a845121aedb07a50, type: 2}
   myAnimator: {fileID: 0}
-  attack: 0
-  defense: 0
-  dex: 0
+  attack: 1
+  defense: 1
+  dex: 1
   HP: 1
-  SP: 0
+  SP: 1
   exp: 0
   turnCharges: 1
   level: 0
   weaponMastry: 0
   exhausted: 0
-  charToken: {fileID: 0}
+  myStatCard: {fileID: 0}
 --- !u!61 &1387041069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2894,6 +2900,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myStats: {fileID: 11400000, guid: 6da4cdf7ccd6005499e9042b65d073ed, type: 2}
   myParts: []
+  myPartsHp: []
+  myPartsArmor: []
   myAnimator: {fileID: 0}
   attack: 0
   defense: 0
@@ -3664,6 +3672,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myStats: {fileID: 11400000, guid: a6dd8e85ec5d0d04eb41511cea60732d, type: 2}
   myParts: []
+  myPartsHp: []
+  myPartsArmor: []
   myAnimator: {fileID: 0}
   attack: 0
   defense: 0
@@ -13001,7 +13011,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 955.3663, y: 10}
+  m_AnchoredPosition: {x: 921.3, y: 10}
   m_SizeDelta: {x: 151.0381, y: 402.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4883218250798346891
@@ -14507,28 +14517,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 714035018}
     m_Modifications:
-    - target: {fileID: 878051468, guid: 6b310b5dca79d5641b8566ee20fe4c0c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -168
+    - target: {fileID: 246236262, guid: 6b310b5dca79d5641b8566ee20fe4c0c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1418974205, guid: 6b310b5dca79d5641b8566ee20fe4c0c, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -165
+    - target: {fileID: 246236262, guid: 6b310b5dca79d5641b8566ee20fe4c0c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7508140778574977821, guid: 6b310b5dca79d5641b8566ee20fe4c0c,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.90277
+    - target: {fileID: 772864887, guid: 6b310b5dca79d5641b8566ee20fe4c0c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7508140778574977821, guid: 6b310b5dca79d5641b8566ee20fe4c0c,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.90277
-      objectReference: {fileID: 0}
-    - target: {fileID: 7508140778574977821, guid: 6b310b5dca79d5641b8566ee20fe4c0c,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.90277
+    - target: {fileID: 772864887, guid: 6b310b5dca79d5641b8566ee20fe4c0c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7508140779483117596, guid: 6b310b5dca79d5641b8566ee20fe4c0c,
         type: 3}
@@ -14639,21 +14642,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7508140779511925896, guid: 6b310b5dca79d5641b8566ee20fe4c0c,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.90277
-      objectReference: {fileID: 0}
-    - target: {fileID: 7508140779511925896, guid: 6b310b5dca79d5641b8566ee20fe4c0c,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.90277
-      objectReference: {fileID: 0}
-    - target: {fileID: 7508140779511925896, guid: 6b310b5dca79d5641b8566ee20fe4c0c,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.90277
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

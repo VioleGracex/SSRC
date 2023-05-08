@@ -21,7 +21,7 @@ public class ArrowSwitchEnemies : MonoBehaviour
    
     public void GetNextEnemy()
     {
-        int index= enemies.IndexOf(BattleHandler.Getinstance().target);
+        int index= enemies.IndexOf(BattleHandler.Getinstance().GetTarget());
         if(index == enemies.Count-1)
         {
             index = 0;
@@ -35,7 +35,7 @@ public class ArrowSwitchEnemies : MonoBehaviour
 
     public void GetPreviousEnemy()
     {
-        int index = enemies.IndexOf(BattleHandler.Getinstance().target);
+        int index = enemies.IndexOf(BattleHandler.Getinstance().GetTarget());
         if (index == 0)
         {
             index = enemies.Count-1;

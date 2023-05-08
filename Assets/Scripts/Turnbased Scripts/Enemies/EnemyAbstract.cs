@@ -7,8 +7,10 @@ using TMPro;
 
 public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IReturnTurnCharges,IReturnPosition
 {
+    [HideInInspector]
     public EnemiesCharStatsBase myStats;
     public List<EnemiesCharStatsBase.PartData> myParts;
+    public List <float> myPartsHp;
     public List <float> myPartsArmor;
     public Animator myAnimator;
     
@@ -21,6 +23,7 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     {
         myStats.myPosition = this.transform.position;
         myParts = myStats.partsData;   
+        InitializeEnemyStats();
     }
 
     void InitializeEnemyStats()
@@ -32,7 +35,8 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
         dex = myStats.dex + ((level-1)*0.5f);
         HP = myStats.maxHP + ((level-1)*0.5f) ;
         foreach(var part in myParts)
-        {
+        {   
+            myPartsHp.Add(part.maxHP);
             myPartsArmor.Add(part.maxArmor);
         }
         //SP = myStats.maxSP + ((level-1)*0.5f);
@@ -45,7 +49,7 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     public void Newturn()
     {
         exhausted = false;
-        turnCharges=myStats.turnCharges_Max;     
+        turnCharges = myStats.turnCharges_Max;     
     }
     public void Attack(GameObject attackTarget, string part)
     {
@@ -56,18 +60,18 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     {
        //get battlehandler selected part here
        //example how to find body part index
-       int temp = myParts.Where(x=> x.partName == damagedPart).Select(x => myParts.IndexOf(x)).FirstOrDefault();
+       int partIndex = myParts.Where(x=> x.partName == damagedPart).Select(x => myParts.IndexOf(x)).FirstOrDefault();
        
        //EnemiesCharStatsBase.PartData tempPart = myParts[temp];
 
-        if(myPartsArmor[temp] > 0)
+        if(myPartsArmor[partIndex] > 0)
         {
-           myPartsArmor[temp]-=damage;
-           Debug.Log("damaged"+ damagedPart);
+           myPartsArmor[partIndex]-=damage;
+           Debug.Log("damaged"+ damagedPart + myPartsArmor[partIndex]);
         }
-        else if(myPartsArmor[temp] > 0 )
+        else if(myPartsArmor[partIndex] <= 0 )
         {
-           myPartsArmor[temp] -= damage * (myParts[temp].partDamageRate/100);
+           myPartsHp[partIndex] -= damage ;//* (myParts[partIndex].partDamageRate/100);
         }
     }
     public void Heal(float heal) //heals main hp
@@ -78,7 +82,7 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
         }
         else 
         {
-            HP  += heal;
+            HP += heal;
         }
     }
 
@@ -108,8 +112,8 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
 
     public float ReturnPartHP(string partName)
     {
-        int temp = myParts.Where(x=> x.partName == partName).Select(x => myParts.IndexOf(x)).FirstOrDefault();
-        return 0;//myParts[temp].currentHP;
+        int partIndex = myParts.Where(x=> x.partName == partName).Select(x => myParts.IndexOf(x)).FirstOrDefault();
+        return myPartsHp[partIndex];//myParts[temp].currentHP;
     }
 
 }

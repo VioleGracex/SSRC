@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IReturnTurnCharges,IReturnPosition
 {
+    [HideInInspector]
     public HerosCharStatsBase myStats;
     public Animator myAnimator;
 
@@ -14,7 +15,9 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
 
     public bool exhausted;
 
-    public GameObject charToken;
+    [SerializeField]
+    StatCard myStatCard;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -84,11 +87,4 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
         Destroy(this.gameObject,0.5f);       
     }
 
-    void UpdateBars()
-    {
-        BarFillHandler[] bars = charToken.GetComponentsInChildren<BarFillHandler>();
-        bars[0].SetBarFillPercentage(HP/myStats.maxHP);
-        bars[1].SetBarFillPercentage(SP/myStats.maxSP); //stamina for skills 
-        // update turn charges
-    }
 }

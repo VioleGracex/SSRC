@@ -20,14 +20,13 @@ public class BattleHandler : MonoBehaviour
     [SerializeField]  // instead of serialize use instantiate and save them don't forget order in layer and it's child
     public List<Transform> heroes, enemies;
 
-    GameObject attacker;
-    public GameObject target;
+    GameObject attacker, target;
     
     [SerializeField] float slideSpeed = 10f;
     public bool playerTurn = true, playerStart = true; // get if he succeeded in miniGame fast click if yes he gets to start else he got ambushed 
 
     [SerializeField]
-    GameObject tokenPrefab; //hp bar for heros
+    GameObject statCard; //hp bar for heros
     [SerializeField]
     Button attackButton;
 
@@ -160,15 +159,11 @@ public class BattleHandler : MonoBehaviour
         yield return new WaitUntil(() => Mathf.Abs(temp.x - attacker.transform.position.x) < 0.6f);
 
         if(playerTurn)
-            state = State.WaitingForPlayer;
-
-        if (attacker.GetComponent<IReturnTurnCharges>().GetTurnCharges() <= 0)
         {
-            Debug.Log("No Charges");
-            attackButton.interactable = false;
-            //disable attack button
+            state = State.WaitingForPlayer;
+            CheckAttackAvailability();
         }
-        //attacker.GetComponent<Unit>().myAnimator.Play("Idle");
+           
 
         yield return null;
     }
@@ -197,14 +192,9 @@ public class BattleHandler : MonoBehaviour
             }
         }
     }
-    public void EndPlayerTurn()
+    public void EndTurn()
     {
-        playerTurn = false; 
-        SetTurnCharges();
-    }
-    public void EndEnemyTurn()
-    {
-        playerTurn = false; 
+        playerTurn = !playerTurn; 
         SetTurnCharges();
     }
 
@@ -240,21 +230,20 @@ public class BattleHandler : MonoBehaviour
                 CheckAttackAvailability();                                
         }
     }
+    public GameObject GetTarget()
+    {
+        return target;
+    }
 #endregion
     
 #region //updating ui
    
     private void SpawnCharTokens()
     {
-        GameObject token = Instantiate(tokenPrefab, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
+        GameObject token = Instantiate(statCard, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
         token.transform.SetParent (GameObject.FindGameObjectWithTag("Tokens").transform, false);
         //spawn card HeroAbstract mystats.CardSprite
     }
-    private void UpdateHpBar()
-    {
-        //will do later
-    }
-
     private void CheckAttackAvailability()
     {
         //conditions for attacking avaliable target, has charges , player turn

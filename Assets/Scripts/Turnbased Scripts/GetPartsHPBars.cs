@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class GetPartsHPBars : MonoBehaviour
 {
@@ -17,17 +18,25 @@ public class GetPartsHPBars : MonoBehaviour
     BattleHandler battleHandler;
     public void SpawnBars()
     {
-        target = battleHandler.target.GetComponent<EnemyAbstract>();
+        target = battleHandler.GetTarget().GetComponent<EnemyAbstract>();
+       
         if(target)
         {
             foreach(var part in target.myParts)
             {
                 var temp = Instantiate(partHpTemplate, contentHolder);
-                temp.GetComponent<PartBarManager>().PartBarInit(part.maxHP, part.currentHP,part.currentArmor, part.partName);
+                int partIndex = target.myParts.Where(x=> x.partName == part.partName).Select(x => target.myParts.IndexOf(x)).FirstOrDefault();
+                temp.GetComponent<PartBarManager>().PartBarInit(part.maxHP, target.myPartsHp[partIndex], target.myPartsArmor[partIndex], part.partName);
             }
             partMenu.SetActive(true);
+        } 
+    }
 
+    public void ClearBars()
+    {
+        foreach(Transform bar in contentHolder.transform)
+        {
+            GameObject.Destroy(bar.gameObject);
         }
-       
     }
 }

@@ -14,6 +14,4 @@ public class HerosCharStatsBase : ScriptableObject
     public Vector3 myPosition;
     public Sprite cardSprite;
 
-    public GameObject charToken;
-
 }
