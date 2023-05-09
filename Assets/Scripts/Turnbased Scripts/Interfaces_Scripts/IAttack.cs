@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface IAttack 
 {
-    public void Attack(GameObject attackTarget,string part);
+    public void BasicAttack(GameObject attackTarget,string part);
 }

@@ -13,55 +13,50 @@ public class StatCard : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI heroName;
     [SerializeField]
-    Image heroImg, hpFiller;
+    Image heroImg;
     [SerializeField]
-    GameObject chargeAvailable, chargeUsed; 
     Transform chargesContentHolder;
-    int maxCharges, currentCharges;
-    HeroAbstract myHero;
+    int maxCharges;
+    public HeroAbstract myHero;
 
     // Start is called before the first frame update
-    void Start()
+    public void InitStatCard()
     {
         hpSlider.maxValue = myHero.myStats.maxHP;
         hpSlider.value = myHero.HP;
         spSlider.maxValue = myHero.myStats.maxSP;
         spSlider.value = myHero.SP;
-        heroName.text = myHero.myStats.name;
+        heroName.text = myHero.myStats.unitName;
         maxCharges = myHero.myStats.turnCharges_Max;
-        currentCharges = myHero.turnCharges;
         heroImg.sprite = myHero.myStats.cardSprite;
-        InitTurnCharges();
+        CorrectChargesCount();
     }
 
+    private void CorrectChargesCount()
+    {
+        //delete from last not like this
+        for(int i = 5-maxCharges; i > 0 ; i--)
+        {
+            Destroy(chargesContentHolder.GetChild((chargesContentHolder.childCount-i)).gameObject);
+        }
+    }
     public void UpdateStatus()
     {
         hpSlider.value = myHero.HP;
         spSlider.value = myHero.SP;
-        currentCharges = myHero.turnCharges;
         UpdateTurnCharges();
     }
 
-    void InitTurnCharges()
+    public void UpdateTurnCharges()
     {
-        for(int i = 0 ; i<currentCharges ; i++)
+        for(int i = 0 ; i < myHero.GetTurnCharges() ; i++)
         {
-            Instantiate(chargeAvailable, chargesContentHolder);
-        }
-        for(int i = currentCharges ; i<maxCharges ; i++)
-        {
-            Instantiate(chargeUsed, chargesContentHolder);
-        }
-    }
-
-    void UpdateTurnCharges()
-    {
-        for(int i = 0 ; i<currentCharges ; i++)
-        {
+            Debug.Log(i+"Turned on");
             chargesContentHolder.GetChild(i).GetComponent<ChargeChanger>().TurnOn();
-        }
-        for(int i = currentCharges ; i<maxCharges ; i++)
+        }   
+        for(int i = myHero.GetTurnCharges() ; i < maxCharges ; i++)
         {
+            Debug.Log(i+"Turned off");
             chargesContentHolder.GetChild(i).GetComponent<ChargeChanger>().TurnOff();
         }
     }

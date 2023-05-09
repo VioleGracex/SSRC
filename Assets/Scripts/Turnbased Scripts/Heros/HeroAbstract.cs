@@ -5,18 +5,21 @@ using UnityEngine.UI;
 
 public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IReturnTurnCharges,IReturnPosition
 {
-    [HideInInspector]
     public HerosCharStatsBase myStats;
     public Animator myAnimator;
 
     public float attack, defense, dex, HP, SP, exp;
 
-    public int turnCharges, level, weaponMastry;
+    [SerializeField]
+    private int turnCharges, level, weaponMastry;
 
     public bool exhausted;
 
     [SerializeField]
     StatCard myStatCard;
+
+    [SerializeField]
+    GameObject statCardTemplate;
 
     // Start is called before the first frame update
     void Awake()
@@ -34,16 +37,22 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
         dex = myStats.dex + ((level-1)*0.5f);
         HP = myStats.maxHP + ((level-1)*0.5f) ;
         SP = myStats.maxSP + ((level-1)*0.5f);
+        myStatCard = Instantiate(statCardTemplate, GameObject.FindGameObjectWithTag("CharCards").transform).GetComponent<StatCard>();
+        myStatCard.myHero = this;
+        myStatCard.InitStatCard();
     }
 
     public void Newturn()
     {
         exhausted = false;
-        turnCharges=myStats.turnCharges_Max;
+        turnCharges = myStats.turnCharges_Max;
+        myStatCard.UpdateTurnCharges();
+        Debug.Log("myCharges" + turnCharges);
     }
-    public void Attack(GameObject attackTarget, string part)
+    public void BasicAttack(GameObject attackTarget, string part)
     {
         attackTarget.GetComponent<IDamageable>().Damage(attack, part);
+        myStatCard.UpdateTurnCharges();
     }
     public void Damage(float damage,string part)
     {
@@ -75,6 +84,14 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
     public int GetTurnCharges()
     {
         return turnCharges;
+    }
+    public void UseCharges(int value)
+    {
+        turnCharges-=value;
+    }
+    public void RefillCharges(int value)
+    {
+        turnCharges+=value;
     }
     public Vector2 GetPosition()
     {

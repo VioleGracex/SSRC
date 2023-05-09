@@ -7,7 +7,6 @@ using TMPro;
 
 public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IReturnTurnCharges,IReturnPosition
 {
-    [HideInInspector]
     public EnemiesCharStatsBase myStats;
     public List<EnemiesCharStatsBase.PartData> myParts;
     public List <float> myPartsHp;
@@ -15,7 +14,8 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     public Animator myAnimator;
     
     public float attack, defense, dex, HP;
-
+    
+    [SerializeField]
     private int turnCharges, level, mapLocation;
 
     public bool exhausted;
@@ -51,7 +51,7 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
         exhausted = false;
         turnCharges = myStats.turnCharges_Max;     
     }
-    public void Attack(GameObject attackTarget, string part)
+    public void BasicAttack(GameObject attackTarget, string part)
     {
         attackTarget.GetComponent<IDamageable>().Damage(myStats.attack, "");
     }
@@ -104,6 +104,14 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     public int GetTurnCharges()
     {
         return turnCharges;
+    }
+    public void UseCharges(int value)
+    {
+        turnCharges-=value;
+    }
+    public void RefillCharges(int value)
+    {
+        turnCharges+=value;
     }
     public Vector2 GetPosition()
     {

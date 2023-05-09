@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using static UnityEditor.Progress;
-using Unity.VisualScripting;
 
 public class BattleHandler : MonoBehaviour
 {
@@ -14,26 +12,24 @@ public class BattleHandler : MonoBehaviour
     public State state;
     
     [SerializeField]
-    TextMeshProUGUI whoseTurn, targetName, partTargetText,enemyStatsText;
+    TextMeshProUGUI whoseTurn, targetName, partTargetText, enemyStatsText;
+
     [SerializeField]
     Transform[] heroLocations, enemyLocations;
-    [SerializeField]  // instead of serialize use instantiate and save them don't forget order in layer and it's child
-    public List<Transform> heroes, enemies;
+
+   /*  [SerializeField]  // instead of serialize use instantiate and save them don't forget order in layer and it's child
+    public List<Transform> heroes, enemies; */
+    [SerializeField]
+    HeroAbstract[] herosAbstract;
+    EnemyAbstract[] enemiesAbstract;
 
     GameObject attacker, target;
     
-    [SerializeField] float slideSpeed = 10f;
+    [SerializeField] float slideSpeed = 20f;
     public bool playerTurn = true, playerStart = true; // get if he succeeded in miniGame fast click if yes he gets to start else he got ambushed 
 
     [SerializeField]
-    GameObject statCard; //hp bar for heros
-    [SerializeField]
     Button attackButton;
-
-    [SerializeField]
-    ScrollMechanic scrollMechanic;
-
-    List<string> temp;
 
     string targetedPart;
     public static BattleHandler Getinstance()
@@ -51,39 +47,58 @@ public class BattleHandler : MonoBehaviour
         ReachedTarget,
     }
 #endregion
-    private void Awake()
+   
+#region Init
+    private void OnEnable()
     {
         instance = this;
-        if (playerStart)
+        if(playerStart)
         {
             playerTurn = true;
-            SetTurnCharges();
         } 
+        UpdateWhoseTurn();
+        InitGetAllPlayerHeroes();
+        InitGetAllEnemies();
+       
+    }
 
-        List<string> temp = new List<string> {"Head","Body","RightArm","LeftArm","RightLeg","LeftLeg"};
-        scrollMechanic.Initialize(temp, true, 0);
-        scrollMechanic.RecolorText(Color.black);
+    private void Awake()
+    {
+        SetTurnCharges();
         CheckAttackAvailability();
     }
 
+    private void InitGetAllPlayerHeroes()
+    {
+        herosAbstract = GameObject.FindObjectsOfType<HeroAbstract>();
+    }
+    
+    private void InitGetAllEnemies()
+    {
+        enemiesAbstract = GameObject.FindObjectsOfType<EnemyAbstract>();
+    }
+#endregion
+#region Loop
     void FixedUpdate()
     {
         switch (state)
         {
             case State.WaitingForPlayer:
                 StopAllCoroutines();
+                /* if(!HerosHasCharges())
+                    EndTurn(); */
+                //check if turn ends not best place will be called too many times
                 //enable player actions
                 break;
             case State.Attacking:
                 StartCoroutine(SlideToTarget());       
                 break;  
             case State.ReachedTarget:
-                attacker.GetComponent<IAttack>().Attack(target, targetedPart);
+                attacker.GetComponent<IAttack>().BasicAttack(target, targetedPart);
                 state = State.Returning;
                 break; 
             case State.Returning:
                 StartCoroutine(SlideToPlace());
-                //check if turn ends 
                 break;                          
             case State.Fleeing:
                 StartCoroutine(FleeToTheRight());
@@ -95,15 +110,15 @@ public class BattleHandler : MonoBehaviour
                 break;
         }
     }
-
-#region  //movement
+#endregion
+#region movement
 
     public void FlipHeroes()
     {
         state = State.Fleeing;
-        foreach (Transform hero in heroes)
+        foreach (HeroAbstract hero in herosAbstract)
         {
-            hero.rotation = Quaternion.Euler(0, 180, 0);
+            hero.transform.rotation = Quaternion.Euler(0, 180, 0);
         }
     }
     public void MovementTranslation(Transform attacker, Vector3 target)
@@ -113,9 +128,9 @@ public class BattleHandler : MonoBehaviour
 
     IEnumerator FleeToTheRight()
     {
-        foreach (Transform hero in heroes)
+        foreach (HeroAbstract hero in herosAbstract)
         {
-            hero.position += new Vector3(0.2f, 0, 0);
+            hero.transform.position += new Vector3(0.2f, 0, 0);
         }
 
         yield return new WaitForSeconds(3.0f);
@@ -125,14 +140,12 @@ public class BattleHandler : MonoBehaviour
 
     public void LocalSlideToTarget(string partName)
     {
-        Debug.Log("teezi");
-
         if (attacker.GetComponent<IReturnTurnCharges>().GetTurnCharges() <= 0)
         {
             Debug.Log("No Charges");
             return;
         }
-
+        attacker.GetComponent<IReturnTurnCharges>().UseCharges(1);
         state = State.Attacking;
         attackButton.interactable = false;
         targetedPart = partName;
@@ -150,8 +163,7 @@ public class BattleHandler : MonoBehaviour
         //here fix
     }
   
-
-      IEnumerator SlideToPlace()
+    IEnumerator SlideToPlace()
     {
         //attacker.GetComponent<Unit>().myAnimator.Play("Walking");
         Vector3 temp = attacker.GetComponent<IReturnPosition>().GetPosition();
@@ -164,12 +176,11 @@ public class BattleHandler : MonoBehaviour
             CheckAttackAvailability();
         }
            
-
         yield return null;
     }
 #endregion
    
-#region //setting values
+#region setting/getting values
     public void SpawnParty(string[] party)
     {
         //get names instantiate
@@ -179,23 +190,35 @@ public class BattleHandler : MonoBehaviour
     {
         if (playerTurn)
         {
-            foreach (Transform hero in heroes)
-            {
-                hero.GetComponent<HeroAbstract>().Newturn();
-            }
+            foreach (HeroAbstract hero in herosAbstract)
+                hero.Newturn();
         }
         else
         {
-            foreach (Transform enemy in enemies)
-            {
-                enemy.GetComponent<EnemyAbstract>().Newturn();
-            }
+            foreach (EnemyAbstract enemy in enemiesAbstract)
+                enemy.Newturn();
         }
+    }
+    private bool HerosHasCharges()
+    {
+        foreach(HeroAbstract hero in herosAbstract)
+        {
+            if(hero.GetTurnCharges() > 0)
+               return true;
+        }
+        return false;
     }
     public void EndTurn()
     {
-        playerTurn = !playerTurn; 
+        Debug.Log(whoseTurn.text + "ended");
+        playerTurn = !playerTurn;
+        UpdateWhoseTurn();
         SetTurnCharges();
+    }
+
+    private void UpdateWhoseTurn()
+    {
+        whoseTurn.text = playerTurn ? "Your Turn" : "Enemy Turn";
     }
 
     public void SetPartTarget(string part)
@@ -236,14 +259,7 @@ public class BattleHandler : MonoBehaviour
     }
 #endregion
     
-#region //updating ui
-   
-    private void SpawnCharTokens()
-    {
-        GameObject token = Instantiate(statCard, new Vector3(0, 0, 0), Quaternion.identity) as GameObject;
-        token.transform.SetParent (GameObject.FindGameObjectWithTag("Tokens").transform, false);
-        //spawn card HeroAbstract mystats.CardSprite
-    }
+#region updating ui
     private void CheckAttackAvailability()
     {
         //conditions for attacking avaliable target, has charges , player turn

@@ -20,7 +20,7 @@ public class EnemiesCharStatsBase : ScriptableObject
     public string coreLocation;
     public Vector3 myPosition;
 
-    [System.Serializable]
+    [System.Serializable,HideInInspector]
     public struct PartData
     {
        public string partName, armorType, affectedStat; //the stat it affects when part is destroyed

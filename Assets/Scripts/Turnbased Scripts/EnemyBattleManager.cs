@@ -19,6 +19,11 @@ public class EnemyBattleManager : MonoBehaviour
     private void SendEnemyToAttack()
     {
         GetAllEnemiesWithCharges();
+        if(enemiesWithCharges.Count <= 0 )
+        {
+            BattleHandler.Getinstance().EndTurn();
+            return;
+        }
         if (enemiesWithCharges[attackIndex].gameObject == null)
         {
             if(attackIndex >= enemiesWithCharges.Count-1)
@@ -34,6 +39,7 @@ public class EnemyBattleManager : MonoBehaviour
         BattleHandler.Getinstance().SetAttacker(enemies[attackIndex].gameObject);
         BattleHandler.Getinstance().SetTarget(DecideWhichPlayerToAttack());
         BattleHandler.Getinstance().LocalSlideToTarget("");
+        
         if(attackIndex < enemiesWithCharges.Count-1)
         {
             attackIndex++;
@@ -42,8 +48,6 @@ public class EnemyBattleManager : MonoBehaviour
         {
             attackIndex = 0;
         }   
-
-
     }
     private void GetAllEnemies()
     {

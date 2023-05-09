@@ -17,11 +17,12 @@ MonoBehaviour:
   defense: 1
   dex: 1
   maxHP: 10
+  maxSP: 1
   expToLvlUp: 10
-  turnCharges_Max: 5
+  turnCharges_Max: 3
   level: 1
   levelCap: 40
   weaponMastry: 0
   exhausted: 0
   myPosition: {x: 27.2, y: 1.03, z: 0}
-  cardImage: {fileID: 21300000, guid: 87bb035cf7b855844b48c731e96ab536, type: 3}
+  cardSprite: {fileID: 21300000, guid: 7f6a2852b2a89b64c8c9e2d51ee4db22, type: 3}
