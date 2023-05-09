@@ -14,14 +14,17 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     public Animator myAnimator;
     
     public float attack, defense, dex, HP;
-    
+    public Vector3 myPosition;
+
     [SerializeField]
     private int turnCharges, level, mapLocation;
+    [SerializeField]
+    string myCorePart;
 
     public bool exhausted;
     void Start()
     {
-        myStats.myPosition = this.transform.position;
+        myPosition = this.transform.position;
         myParts = myStats.partsData;   
         InitializeEnemyStats();
     }
@@ -33,18 +36,13 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
         attack = myStats.attack + ((level-1)*0.5f);
         defense = myStats.defense + ((level-1)*0.5f);
         dex = myStats.dex + ((level-1)*0.5f);
-        HP = myStats.maxHP + ((level-1)*0.5f) ;
         foreach(var part in myParts)
         {   
             myPartsHp.Add(part.maxHP);
             myPartsArmor.Add(part.maxArmor);
         }
+        HP = myPartsHp.Sum() + ((level-1)*0.5f) ;
         //SP = myStats.maxSP + ((level-1)*0.5f);
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     public void Newturn()
     {
@@ -58,11 +56,8 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
 
     public void Damage(float damage, string damagedPart) //take damage on armor or part render it unusable and apply perctenage of it depending on weakness to current hp
     {
-       //get battlehandler selected part here
        //example how to find body part index
        int partIndex = myParts.Where(x=> x.partName == damagedPart).Select(x => myParts.IndexOf(x)).FirstOrDefault();
-       
-       //EnemiesCharStatsBase.PartData tempPart = myParts[temp];
 
         if(myPartsArmor[partIndex] > 0)
         {
@@ -71,7 +66,24 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
         }
         else if(myPartsArmor[partIndex] <= 0 )
         {
-           myPartsHp[partIndex] -= damage ;//* (myParts[partIndex].partDamageRate/100);
+            if(myPartsHp[partIndex] <= 0 && damagedPart != myCorePart)
+            {
+               myPartsHp.Remove(partIndex); 
+            }
+            else if (myPartsHp[partIndex] <= 0 && damagedPart == myCorePart)
+            {
+                //core part has bean destroyed so has been the enemy
+                Death();
+            }
+            else
+            {
+                myPartsHp[partIndex] -= damage ;
+            }
+        }
+        HP = myPartsHp.Sum() + ((level-1)*0.5f) ;
+        if(HP <= 0 )
+        {
+            Death();
         }
     }
     public void Heal(float heal) //heals main hp
@@ -115,7 +127,7 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     }
     public Vector2 GetPosition()
     {
-        return myStats.myPosition;
+        return myPosition;
     }
 
     public float ReturnPartHP(string partName)

@@ -18,7 +18,7 @@ MonoBehaviour:
   defense: 1
   dex: 3
   maxHP: 5
-  turnCharges_Max: 5
+  turnCharges_Max: 1
   level: 0
   _coreTypeIndex: 0
   coreLocation: 
@@ -29,33 +29,28 @@ MonoBehaviour:
     affectedStat: 
     maxHP: 1
     maxArmor: 1
-    partDamageRate: 0
     statLossRate: 0
   - partName: Body
     armorType: 
     affectedStat: 
     maxHP: 1
     maxArmor: 0
-    partDamageRate: 0
     statLossRate: 0
   - partName: LeftArm
     armorType: 
     affectedStat: 
     maxHP: 1
     maxArmor: 0
-    partDamageRate: 0
     statLossRate: 0
   - partName: RightLeg
     armorType: 
     affectedStat: 
     maxHP: 1
     maxArmor: 0
-    partDamageRate: 0
     statLossRate: 0
   - partName: LeftLeg
     armorType: 
     affectedStat: 
     maxHP: 1
     maxArmor: 0
-    partDamageRate: 0
     statLossRate: 0

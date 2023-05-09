@@ -24,7 +24,7 @@ public class EnemiesCharStatsBase : ScriptableObject
     public struct PartData
     {
        public string partName, armorType, affectedStat; //the stat it affects when part is destroyed
-       public float maxHP, maxArmor, partDamageRate,statLossRate; //max rate is 100 (0-100) DamageRate ,statLossRate ,armor is 4 max
+       public float maxHP, maxArmor,statLossRate; // statLossRate the rate which enemy loses his stats due to loss of part ,armor is 4 max
        
     }
 

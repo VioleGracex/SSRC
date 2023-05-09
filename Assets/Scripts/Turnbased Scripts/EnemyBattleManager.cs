@@ -5,18 +5,45 @@ using UnityEngine;
 
 public class EnemyBattleManager : MonoBehaviour
 {
+    private static EnemyBattleManager instance;
+    [SerializeField]
     EnemyAbstract[] enemies;
+    [SerializeField]
     HeroAbstract[] playerHeroes;
+    [SerializeField]
     List<EnemyAbstract> enemiesWithCharges;
-    int attackIndex;
+    int attackIndex = 0;
+    public bool enemySentToAttack = false;
+
+    private bool enemyTurn = false;
+    public static EnemyBattleManager Getinstance()
+    {
+        return instance;
+    }
     // Start is called before the first frame update
     void Awake()
     {
+        instance = this;
         GetAllEnemies();
         GetAllPlayerHeroes();
     }
 
-    private void SendEnemyToAttack()
+   /*  public void StartEnemyTurn()
+    {
+        enemyTurn = true;
+        StartCoroutine(EnemyTurn());
+    }
+    IEnumerator EnemyTurn()
+    {
+        if(!enemySentToAttack && enemyTurn)
+        {
+            SendEnemyToAttack();
+            enemySentToAttack = true;
+        }
+        yield return new WaitForSeconds(0.2f);
+
+    } */
+    public void SendEnemyToAttack()
     {
         GetAllEnemiesWithCharges();
         if(enemiesWithCharges.Count <= 0 )
@@ -24,42 +51,24 @@ public class EnemyBattleManager : MonoBehaviour
             BattleHandler.Getinstance().EndTurn();
             return;
         }
-        if (enemiesWithCharges[attackIndex].gameObject == null)
-        {
-            if(attackIndex >= enemiesWithCharges.Count-1)
-            {
-                attackIndex = 0;
-            }
-            else
-            {
-                attackIndex++;
-            }
-        }
 
-        BattleHandler.Getinstance().SetAttacker(enemies[attackIndex].gameObject);
+        BattleHandler.Getinstance().SetAttacker(enemiesWithCharges[0].gameObject);
         BattleHandler.Getinstance().SetTarget(DecideWhichPlayerToAttack());
         BattleHandler.Getinstance().LocalSlideToTarget("");
-        
-        if(attackIndex < enemiesWithCharges.Count-1)
-        {
-            attackIndex++;
-        }
-        else
-        {
-            attackIndex = 0;
-        }   
+
     }
     private void GetAllEnemies()
     {
-        enemies = GetComponentsInChildren<EnemyAbstract>();
+        //enemies = GetComponentsInChildren<EnemyAbstract>();
+        enemies = FindObjectsOfType<EnemyAbstract>();
         Array.Sort(enemies, (a, b) => a.myStats.dex.CompareTo(b.myStats.dex));
     }
 
     private void GetAllEnemiesWithCharges()
-    {
-        foreach( EnemyAbstract enemy in enemies)
+    {   enemiesWithCharges.Clear();
+        foreach(EnemyAbstract enemy in enemies)
         {
-            if(enemy.GetTurnCharges() > 0)
+            if(enemy.GetTurnCharges() > 0 && !enemiesWithCharges.Contains(enemy))
                 enemiesWithCharges.Add(enemy);
         }
     }
@@ -71,16 +80,16 @@ public class EnemyBattleManager : MonoBehaviour
     {
         float lowestHp = 0;
         GameObject target = null;
-        foreach (var item in playerHeroes)
+        if(playerHeroes.Length == 1)
         {
-            if(item.HP > lowestHp)
+            return playerHeroes[0].gameObject;
+        }
+        foreach (HeroAbstract hero in playerHeroes)
+        {
+            if(hero.HP > lowestHp)
             {
-                target = item.gameObject;
-                lowestHp = item.HP;
-            }
-            else
-            {
-                target = null;
+                target = hero.gameObject;
+                lowestHp = hero.HP;
             }
         }
         return target;

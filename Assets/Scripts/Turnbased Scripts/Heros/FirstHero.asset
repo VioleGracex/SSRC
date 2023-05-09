@@ -16,7 +16,7 @@ MonoBehaviour:
   attack: 1
   defense: 1
   dex: 1
-  maxHP: 10
+  maxHP: 20
   maxSP: 1
   expToLvlUp: 10
   turnCharges_Max: 3

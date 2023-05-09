@@ -9,10 +9,12 @@ public class BattleHandler : MonoBehaviour
 
 #region Vars
     private static BattleHandler instance;
+    [SerializeField]
+    MouseSelection mouseSelection;
     public State state;
     
     [SerializeField]
-    TextMeshProUGUI whoseTurn, targetName, partTargetText, enemyStatsText;
+    TextMeshProUGUI whoseTurn;
 
     [SerializeField]
     Transform[] heroLocations, enemyLocations;
@@ -22,14 +24,14 @@ public class BattleHandler : MonoBehaviour
     [SerializeField]
     HeroAbstract[] herosAbstract;
     EnemyAbstract[] enemiesAbstract;
-
+    [SerializeField]
     GameObject attacker, target;
     
     [SerializeField] float slideSpeed = 20f;
     public bool playerTurn = true, playerStart = true; // get if he succeeded in miniGame fast click if yes he gets to start else he got ambushed 
 
     [SerializeField]
-    Button attackButton;
+    Button attackButton, endTurnButton;
 
     string targetedPart;
     public static BattleHandler Getinstance()
@@ -40,6 +42,7 @@ public class BattleHandler : MonoBehaviour
     public enum State
     {
         WaitingForPlayer,
+        WaitingForEnemy,
         Busy,
         Attacking,
         Returning,
@@ -52,6 +55,7 @@ public class BattleHandler : MonoBehaviour
     private void OnEnable()
     {
         instance = this;
+        mouseSelection = this.GetComponent<MouseSelection>();
         if(playerStart)
         {
             playerTurn = true;
@@ -59,10 +63,9 @@ public class BattleHandler : MonoBehaviour
         UpdateWhoseTurn();
         InitGetAllPlayerHeroes();
         InitGetAllEnemies();
-       
     }
 
-    private void Awake()
+    void Start()
     {
         SetTurnCharges();
         CheckAttackAvailability();
@@ -81,6 +84,10 @@ public class BattleHandler : MonoBehaviour
 #region Loop
     void FixedUpdate()
     {
+        if(state == State.WaitingForPlayer && playerTurn)
+            endTurnButton.interactable = true;
+        else
+            endTurnButton.interactable = false;
         switch (state)
         {
             case State.WaitingForPlayer:
@@ -90,6 +97,9 @@ public class BattleHandler : MonoBehaviour
                 //check if turn ends not best place will be called too many times
                 //enable player actions
                 break;
+            case State.WaitingForEnemy:
+                EnemyBattleManager.Getinstance().SendEnemyToAttack();
+                break;                
             case State.Attacking:
                 StartCoroutine(SlideToTarget());       
                 break;  
@@ -140,7 +150,7 @@ public class BattleHandler : MonoBehaviour
 
     public void LocalSlideToTarget(string partName)
     {
-        if (attacker.GetComponent<IReturnTurnCharges>().GetTurnCharges() <= 0)
+        if (attacker.GetComponent<IReturnTurnCharges>().GetTurnCharges() <= 0)//null when enemy attacks why ?
         {
             Debug.Log("No Charges");
             return;
@@ -175,6 +185,10 @@ public class BattleHandler : MonoBehaviour
             state = State.WaitingForPlayer;
             CheckAttackAvailability();
         }
+        else
+        {
+            state = State.WaitingForEnemy;
+        }
            
         yield return null;
     }
@@ -185,7 +199,6 @@ public class BattleHandler : MonoBehaviour
     {
         //get names instantiate
     }
-
     private void SetTurnCharges()
     {
         if (playerTurn)
@@ -210,8 +223,10 @@ public class BattleHandler : MonoBehaviour
     }
     public void EndTurn()
     {
-        Debug.Log(whoseTurn.text + "ended");
+        Debug.Log(whoseTurn.text + " ended");
         playerTurn = !playerTurn;
+        NullTargetAndAttacker();
+        mouseSelection.ClearLabels();
         UpdateWhoseTurn();
         SetTurnCharges();
     }
@@ -219,11 +234,11 @@ public class BattleHandler : MonoBehaviour
     private void UpdateWhoseTurn()
     {
         whoseTurn.text = playerTurn ? "Your Turn" : "Enemy Turn";
+        state = playerTurn ? State.WaitingForPlayer : State.WaitingForEnemy;
     }
 
     public void SetPartTarget(string part)
     {
-        partTargetText.text = part;
         CheckAttackAvailability();
     }
 
@@ -238,7 +253,7 @@ public class BattleHandler : MonoBehaviour
         else 
         {
             Debug.Log("no charges"); // make popups
-            attacker = null;
+            //attacker = null;
         }
         if(playerTurn)
             CheckAttackAvailability();
@@ -248,14 +263,21 @@ public class BattleHandler : MonoBehaviour
     {
         if(state == State.WaitingForPlayer)
         {
-            target = unit;
+            //target = unit;
             if(playerTurn)
                 CheckAttackAvailability();                                
         }
+        target = unit;
     }
     public GameObject GetTarget()
     {
         return target;
+    }
+
+    public void NullTargetAndAttacker()
+    {
+        attacker = null;
+        target = null;
     }
 #endregion
     

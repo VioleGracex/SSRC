@@ -25,23 +25,13 @@ public class PartBarManager : MonoBehaviour
 
     public void AttackThisPart()
     {
-        FindObjectOfType<BattleHandler>().LocalSlideToTarget(partName.text);
+       BattleHandler.Getinstance().LocalSlideToTarget(partName.text);
         CloseBarsView();
     }
 
     public void CloseBarsView()
     {
         this.transform.parent.parent.parent.parent.parent.gameObject.SetActive(false);
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        FindObjectOfType<GetPartsHPBars>().ClearBars();
     }
 }

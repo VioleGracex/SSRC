@@ -35,10 +35,11 @@ public class StatCard : MonoBehaviour
     private void CorrectChargesCount()
     {
         //delete from last not like this
-        for(int i = 5-maxCharges; i > 0 ; i--)
+        for(int i = chargesContentHolder.childCount-maxCharges; i > 0 ; i--)
         {
             Destroy(chargesContentHolder.GetChild((chargesContentHolder.childCount-i)).gameObject);
         }
+        UpdateTurnCharges();
     }
     public void UpdateStatus()
     {
@@ -51,12 +52,10 @@ public class StatCard : MonoBehaviour
     {
         for(int i = 0 ; i < myHero.GetTurnCharges() ; i++)
         {
-            Debug.Log(i+"Turned on");
             chargesContentHolder.GetChild(i).GetComponent<ChargeChanger>().TurnOn();
         }   
         for(int i = myHero.GetTurnCharges() ; i < maxCharges ; i++)
         {
-            Debug.Log(i+"Turned off");
             chargesContentHolder.GetChild(i).GetComponent<ChargeChanger>().TurnOff();
         }
     }

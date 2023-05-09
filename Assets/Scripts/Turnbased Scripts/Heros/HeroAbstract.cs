@@ -12,7 +12,6 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
 
     [SerializeField]
     private int turnCharges, level, weaponMastry;
-
     public bool exhausted;
 
     [SerializeField]
@@ -20,11 +19,12 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
 
     [SerializeField]
     GameObject statCardTemplate;
+    public Vector3 myPosition;
 
     // Start is called before the first frame update
     void Awake()
     {
-        myStats.myPosition = this.transform.position;
+        myPosition = this.transform.position;
         InitializeHeroStats();
     }
 
@@ -56,30 +56,31 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
     }
     public void Damage(float damage,string part)
     {
-        if (HP - damage < 0)
+        if(HP - damage <= 0)
         {
-            HP = 0;//death
+          Death();
         }
         else
         {
-            HP  -= damage;
+            HP-= damage;
         }
+        myStatCard.UpdateStatus();
     }
     public void Heal(float heal)
     {
         if (HP + heal > myStats.maxHP)
         {
-            HP = myStats.maxHP;
+            HP= myStats.maxHP;
         }
         else
         {
-            HP  += heal;
+            HP+= heal;
         }
     }
 
     public void Charges(int usage)
     {
-        turnCharges -= usage;
+        turnCharges-= usage;
     }
     public int GetTurnCharges()
     {
@@ -95,7 +96,7 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
     }
     public Vector2 GetPosition()
     {
-        return myStats.myPosition;
+        return myPosition;
     }
 
       public void Death()

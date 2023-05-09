@@ -14,19 +14,20 @@ public class GetPartsHPBars : MonoBehaviour
 
     MouseSelection mouseSelection;
 
-    [SerializeField]
-    BattleHandler battleHandler;
     public void SpawnBars()
     {
-        target = battleHandler.GetTarget().GetComponent<EnemyAbstract>();
+        target = BattleHandler.Getinstance().GetTarget().GetComponent<EnemyAbstract>();
        
         if(target)
         {
             foreach(var part in target.myParts)
             {
-                var temp = Instantiate(partHpTemplate, contentHolder);
                 int partIndex = target.myParts.Where(x=> x.partName == part.partName).Select(x => target.myParts.IndexOf(x)).FirstOrDefault();
-                temp.GetComponent<PartBarManager>().PartBarInit(part.maxHP, target.myPartsHp[partIndex], target.myPartsArmor[partIndex], part.partName);
+                if(target.myPartsHp[partIndex] > 0)
+                {
+                    var temp = Instantiate(partHpTemplate, contentHolder);
+                    temp.GetComponent<PartBarManager>().PartBarInit(part.maxHP, target.myPartsHp[partIndex], target.myPartsArmor[partIndex], part.partName);
+                }
             }
             partMenu.SetActive(true);
         } 
