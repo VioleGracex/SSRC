@@ -14,7 +14,6 @@ public class Menu_Music : MonoBehaviour
 
     void Start()
     {
-
         menuMusicPlayer = this.GetComponent<AudioSource>();
         StartCoroutine(playSound());
     }

@@ -18,6 +18,10 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(lvlNumber);
 	}
 
+    public void FastNewGame()
+    {
+       FindObjectOfType<LoadingScreen>().LoadNextScene(1);
+    }
     /*public void ChangeToggle()
     {
         myToggle.isOn = !myToggle.isOn;

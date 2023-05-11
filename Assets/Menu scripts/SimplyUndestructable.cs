@@ -11,7 +11,7 @@ public class SimplyUndestructable : MonoBehaviour
         GameObject[] me =GameObject.FindGameObjectsWithTag(this.tag);
         if( me.Length > 1)
         {
-             DestroyImmediate(gameObject);
+            DestroyImmediate(gameObject);
         }
     }
     void Start()

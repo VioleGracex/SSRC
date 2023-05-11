@@ -22,7 +22,6 @@ public class UI_SoundManager : MonoBehaviour
         if(EventSystem.current.currentSelectedGameObject != current_go)
         {
             //play sound 
-            Debug.Log("working");
             mixer.PlayOneShot(button_click);
             current_go = EventSystem.current.currentSelectedGameObject;
         }
