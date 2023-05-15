@@ -69,36 +69,6 @@ MonoBehaviour:
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
-  - id: 2
-    fields:
-    - title: Name
-      value: Fredrick
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Pictures
-      value: '[]'
-      type: 3
-      typeString: CustomFieldType_Files
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: IsPlayer
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Age
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: ShowChar
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    portrait: {fileID: 0}
-    spritePortrait: {fileID: 21300000, guid: ace7c0eaf69adcd4bbe2767a2c23742e, type: 3}
-    alternatePortraits: []
-    spritePortraits: []
   - id: 3
     fields:
     - title: Name
@@ -143,6 +113,36 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
+    - title: Age
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: ShowChar
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    spritePortrait: {fileID: 0}
+    alternatePortraits: []
+    spritePortraits: []
+  - id: 7
+    fields:
+    - title: Name
+      value: Fredrick
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
     - title: Age
       value: 
       type: 0
@@ -350,7 +350,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: SetPortrait(Player, Characters/Char_Celesia_Clear)
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
@@ -505,7 +505,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 121.5565
-        y: 298.55698
+        y: 297.33746
         width: 160
         height: 30
     - id: 4
@@ -567,8 +567,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 120.16153
-        y: 355.417
+        x: 118.895706
+        y: 354.15115
         width: 160
         height: 30
     - id: 5
@@ -626,7 +626,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 332.93494
+        x: 336.59348
         y: 323.38864
         width: 160
         height: 30
@@ -742,7 +742,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 334.25073
+        x: 335.51654
         y: 438.71826
         width: 160
         height: 30
@@ -757,7 +757,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 7
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -812,7 +812,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 7
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -853,7 +853,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 342.14545
-        y: 588.71826
+        y: 587.40247
         width: 160
         height: 30
     - id: 10
@@ -1441,12 +1441,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: As you arrive at the bus station, you see Amy waving for you. She
-          hands you a small chocolate box.
+        value: 'As you arrive at the bus station, you see Amy waving for you. '
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: SetPortrait(Amy, Characters/Char_Amy_Shaded_Rescaled);
         type: 0
         typeString: 
       - title: EventGuid
@@ -1464,7 +1463,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 21
         destinationConversationID: 1
-        destinationDialogueID: 22
+        destinationDialogueID: 33
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1474,8 +1473,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 946.9901
-        y: 944.4002
+        x: 945.9592
+        y: 944.1155
         width: 160
         height: 30
     - id: 22
@@ -1535,8 +1534,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 946.9901
-        y: 994.4002
+        x: 949.0519
+        y: 989.2457
         width: 160
         height: 30
     - id: 23
@@ -2015,6 +2014,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: EventGuid
+        value: 4201e267-0913-4ad0-b741-87b8378bc01a
+        type: 0
+        typeString: 
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -2093,9 +2096,64 @@ MonoBehaviour:
         y: 1435.8539
         width: 160
         height: 30
+    - id: 33
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: She hands you a small chocolate box.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 33
+        destinationConversationID: 1
+        destinationDialogueID: 22
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1232.5573
+        y: 943.6002
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 12.734581, y: 181.27179}
-    canvasZoom: 0.85000014
+    canvasScrollPosition: {x: 55.223877, y: 991.3176}
+    canvasZoom: 0.6700002
   syncInfo:
     syncActors: 0
     syncItems: 0

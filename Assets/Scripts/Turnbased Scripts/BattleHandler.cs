@@ -32,7 +32,7 @@ public class BattleHandler : MonoBehaviour
 
     [SerializeField]
     Button attackButton, endTurnButton;
-
+    
     string targetedPart;
     public static BattleHandler Getinstance()
     {

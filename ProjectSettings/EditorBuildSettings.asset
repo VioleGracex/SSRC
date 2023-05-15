@@ -12,9 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/New Dia Scenes/NewDiaPrologue.unity
     guid: c14a441876e99814b9c0c27193d5cc85
   - enabled: 1
-    path: Assets/Scenes/New Dia Scenes/NewDiaChapter1.unity
+    path: Assets/Scenes/New Dia Scenes/NewDiaCh1_Part1.unity
     guid: f11024638a57f91448bbef7e039538c6
   - enabled: 1
     path: Assets/Scenes/TurnBasedScenes/Prologue_TurnBased.unity
     guid: 4cbab3cb2b61c074cbd82890430133dd
+  - enabled: 1
+    path: Assets/Scenes/New Dia Scenes/NewDiaCh1_Part2.unity
+    guid: a8ebfb79a4bbd0843a8235345f8235d9
   m_configObjects: {}

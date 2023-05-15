@@ -1082,7 +1082,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: EnGarde
+        value: EnGarde!
         type: 0
         typeString: 
       - title: Sequence
@@ -1108,8 +1108,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 940.7101
-        y: 585.01013
+        x: 939.4906
+        y: 585.0102
         width: 160
         height: 30
     - id: 20
@@ -1143,6 +1143,10 @@ MonoBehaviour:
         value: SetPortrait(Amy, Characters/Char_Amy_Shaded_Rescaled);
         type: 0
         typeString: CustomFieldType_Text
+      - title: Response Menu Sequence
+        value: 
+        type: 0
+        typeString: 
       conversationID: 1
       isRoot: 0
       isGroup: 0
@@ -1224,8 +1228,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 101.54642}
-    canvasZoom: 0.7900002
+    canvasScrollPosition: {x: 0, y: 124.39029}
+    canvasZoom: 0.8200002
   syncInfo:
     syncActors: 0
     syncItems: 0

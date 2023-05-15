@@ -5,22 +5,22 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class LoadingScreen : MonoBehaviour
 {
+    private static LoadingScreen instance;
+    public static LoadingScreen Getinstance()
+    {
+        return instance;
+    }
     [SerializeField]
     GameObject loadingBG;
     [SerializeField]
     Slider loadingSlider;
-    // Start is called before the first frame update
-    void Start()
+    
+    public void LoadNextScene()
     {
-        
+        loadingBG.SetActive(true);
+        StartCoroutine(AsynchronousLoad(SceneManager.GetActiveScene().buildIndex+1));
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void LoadNextScene(int sceneIndex)
+    public void LoadNextSceneByIndex(int sceneIndex)
     {
         loadingBG.SetActive(true);
         StartCoroutine(AsynchronousLoad(sceneIndex));

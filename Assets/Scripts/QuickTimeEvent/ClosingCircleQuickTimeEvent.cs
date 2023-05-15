@@ -13,26 +13,23 @@ public class ClosingCircleQuickTimeEvent : MonoBehaviour
     GameObject diaObj;
     [SerializeField]
     GameObject diaCanvas;
+    [SerializeField]
+    GameObject closingCircleCanvas;
     
     private void Awake()
     {
        StartCoroutine(CloseCircle());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     private IEnumerator CloseCircle()
     {
         WaitForEndOfFrame wait = new WaitForEndOfFrame();
         while(this.transform.localScale.x > 0)
         {
-            this.transform.localScale -=Vector3.one* closingSpeed* Time.deltaTime;
+            this.transform.localScale -= Vector3.one* closingSpeed* Time.deltaTime;
             yield return wait;
         }
         Debug.Log("FailedMiniGame");
+        CallFailOnQuickTimeEvent();
     }
     public void QuickTimeEvent()
     {
@@ -45,6 +42,7 @@ public class ClosingCircleQuickTimeEvent : MonoBehaviour
         {
             CallFailOnQuickTimeEvent();
         }
+        closingCircleCanvas.SetActive(false);
     }
 
     private void CallSucceedOnQuickTimeEvent()
@@ -64,7 +62,9 @@ public class ClosingCircleQuickTimeEvent : MonoBehaviour
         //loading screen wait set active unload
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(FindObjectOfType<PlayerConversant>().currentNode.GetFightSceneName()));
         SceneManager.UnloadSceneAsync("DialogueTestTemplate"); */
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1 );    
+        //FindObjectOfType<LoadingScreen>().LoadNextScene(SceneManager.GetActiveScene().buildIndex+1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1 );    
+        LoadingScreen.Getinstance().LoadNextScene();
     }
 
     private void CallFailOnQuickTimeEvent()

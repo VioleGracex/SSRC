@@ -23,10 +23,10 @@ TagManager:
   - BackButton
   - UIHandler
   - BackGround
-  - PositionList
   - Hero
   - Enemy
   - CharCards
+  - LoadingScreenCanvas
   layers:
   - Default
   - TransparentFX

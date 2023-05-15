@@ -475,7 +475,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &234110728
 GameObject:
@@ -1694,6 +1694,7 @@ MonoBehaviour:
   defense: 0
   dex: 0
   HP: 0
+  myPosition: {x: 0, y: 0, z: 0}
   turnCharges: 0
   level: 0
   mapLocation: 0
@@ -1751,6 +1752,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1086162910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1086162911}
+  m_Layer: 0
+  m_Name: WinLoseHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1086162911
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086162910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 843.95856, y: 507.68652, z: -5.786593}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1091705932
 GameObject:
   m_ObjectHideFlags: 0
@@ -2043,14 +2075,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba06cf992d6d3640808eafcb22de33e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouseSelection: {fileID: 0}
   state: 0
   whoseTurn: {fileID: 4883218250274486484}
-  targetName: {fileID: 4883218249237187982}
-  partTargetText: {fileID: 978582786}
-  enemyStatsText: {fileID: 1418090047}
   heroLocations: []
   enemyLocations: []
   herosAbstract: []
+  attacker: {fileID: 0}
+  target: {fileID: 0}
   slideSpeed: 35
   playerTurn: 1
   playerStart: 1
@@ -2444,6 +2476,7 @@ MonoBehaviour:
   defense: 0
   dex: 0
   HP: 0
+  myPosition: {x: 0, y: 0, z: 0}
   turnCharges: 0
   level: 0
   mapLocation: 0
@@ -2547,7 +2580,7 @@ Transform:
   - {fileID: 1461882665}
   - {fileID: 1036663962}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1479459847
 MonoBehaviour:
@@ -2561,6 +2594,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 583249450b8083448985dfcbd4d08530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemies: []
+  playerHeroes: []
+  enemiesWithCharges: []
   enemySentToAttack: 0
 --- !u!1 &1554544479
 GameObject:
@@ -2814,7 +2850,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1558670028
 GameObject:
@@ -11088,7 +11124,7 @@ RectTransform:
   - {fileID: 714035018}
   - {fileID: 79519071}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -13799,7 +13835,7 @@ RectTransform:
   m_Children:
   - {fileID: 2058968608}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
