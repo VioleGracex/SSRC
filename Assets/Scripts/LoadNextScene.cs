@@ -14,6 +14,7 @@ public class LoadNextScene : MonoBehaviour
         //loading screen
         //SceneManager.LoadSceneAsync(1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1 ); */
-        FindObjectOfType<LoadingScreen>().LoadNextScene(SceneManager.GetActiveScene().buildIndex+1);
+        //FindObjectOfType<LoadingScreen>().LoadNextScene(SceneManager.GetActiveScene().buildIndex+1);
+        LoadingScreen.Getinstance().LoadNextScene();
     }
 }

@@ -106,7 +106,8 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     public void Death()
     {
         //death animation
-        Destroy(this.gameObject,0.5f);       
+        FindObjectOfType<WinLoseHandler>().EnemyUnitDied(this);
+        //Destroy(this.gameObject,0.5f);       
     }
 
     public void Charges(int usage)

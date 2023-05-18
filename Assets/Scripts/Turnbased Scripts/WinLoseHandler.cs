@@ -7,6 +7,9 @@ public class WinLoseHandler : MonoBehaviour
     List<HeroAbstract> aliveHeroes;
     List<EnemyAbstract> aliveEnemies;
 
+    [SerializeField]
+    GameObject deathScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,17 +32,23 @@ public class WinLoseHandler : MonoBehaviour
 
     public void HeroUnitDied(HeroAbstract deadUnit)
     {
+        Debug.Log("AMHERE");
         if(deadUnit.myStats.unitName == "player")
         {
             //call lose condition stop game call lost menu
+            Time.timeScale = 0f; // check for time errors here
+            deathScreen.SetActive(true);
         }
         else
         {
-            aliveHeroes.Remove(deadUnit);
-            Destroy(deadUnit.gameObject,0.5f);
+            //Debug.Log(aliveHeroes.Contains(deadUnit));
+            //aliveHeroes.Remove(deadUnit);
+            //Destroy(deadUnit.gameObject,0.5f);
             if(aliveHeroes.Count <= 0)
             {
                 //call lose condition stop game call lost menu
+                Time.timeScale = 0f; // check for time errors here
+                deathScreen.SetActive(true);
             }
         }
     }

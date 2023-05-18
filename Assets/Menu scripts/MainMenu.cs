@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
 
     public void FastNewGame()
     {
-       FindObjectOfType<LoadingScreen>().LoadNextScene(1);
+       LoadingScreen.Getinstance().LoadNextSceneByIndex(1);
     }
     /*public void ChangeToggle()
     {

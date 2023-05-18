@@ -32,7 +32,10 @@ public class BattleHandler : MonoBehaviour
 
     [SerializeField]
     Button attackButton, endTurnButton;
+    [SerializeField]
+    GameObject partMenu;
     
+    GetPartsHPBars partsHPBars;
     string targetedPart;
     public static BattleHandler Getinstance()
     {
@@ -67,6 +70,7 @@ public class BattleHandler : MonoBehaviour
 
     void Start()
     {
+        partsHPBars = FindObjectOfType<GetPartsHPBars>();
         SetTurnCharges();
         CheckAttackAvailability();
     }
@@ -289,13 +293,24 @@ public class BattleHandler : MonoBehaviour
          {
             bool hasCharges = attacker.GetComponent<IReturnTurnCharges>().GetTurnCharges() > 0;
             if(hasCharges)
+            {
                 attackButton.interactable = true; 
+                partsHPBars.ClearBars();
+                //partsHPBars.SpawnBars(); // need to fix the list opens b4 the damage is done maybe
+            }   
             else
+            {
                 attackButton.interactable = false; 
+                partMenu.SetActive(false);
+                partsHPBars.ClearBars();
+            }         
          }
          else
          {
             attackButton.interactable = false; 
+            partMenu.SetActive(false);
+            partsHPBars.ClearBars();
+            //disable attack menu
          }
     }
 #endregion

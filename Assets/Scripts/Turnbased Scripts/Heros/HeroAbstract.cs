@@ -58,7 +58,8 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
     {
         if(HP - damage <= 0)
         {
-          Death();
+            HP = 0;
+            Death();
         }
         else
         {
@@ -102,7 +103,10 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
       public void Death()
     {
         //death animation
-        Destroy(this.gameObject,0.5f);       
+        FindObjectOfType<BattleHandler>().state = BattleHandler.State.Returning;
+        FindObjectOfType<BattleHandler>().StopAllCoroutines();
+        //FindObjectOfType<WinLoseHandler>().HeroUnitDied(this.GetComponent<HeroAbstract>());
+        //Destroy(this.gameObject,0.5f);       
     }
 
 }

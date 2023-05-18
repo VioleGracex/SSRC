@@ -15,6 +15,18 @@ public class LoadingScreen : MonoBehaviour
     [SerializeField]
     Slider loadingSlider;
     
+    public void LoadMainMenu()
+    {
+        loadingBG.SetActive(true);
+        StartCoroutine(AsynchronousLoad(0));
+    }
+
+    public void RestartScene()
+    {
+        loadingBG.SetActive(true);
+        StartCoroutine(AsynchronousLoad(SceneManager.GetActiveScene().buildIndex));
+    }
+    
     public void LoadNextScene()
     {
         loadingBG.SetActive(true);
@@ -42,6 +54,7 @@ public class LoadingScreen : MonoBehaviour
             {
                 Debug.Log("90%");
                 loadingBG.SetActive(false);
+                Time.timeScale = 1f;
             }
             yield return null;
         }
