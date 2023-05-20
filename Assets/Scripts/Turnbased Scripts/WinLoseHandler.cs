@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class WinLoseHandler : MonoBehaviour
 {
+    [SerializeField]
     List<HeroAbstract> aliveHeroes;
+    [SerializeField]
     List<EnemyAbstract> aliveEnemies;
 
     [SerializeField]
@@ -13,7 +15,7 @@ public class WinLoseHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        InitAliveUnits();
     }
 
     void InitAliveUnits()
@@ -32,7 +34,7 @@ public class WinLoseHandler : MonoBehaviour
 
     public void HeroUnitDied(HeroAbstract deadUnit)
     {
-        Debug.Log("AMHERE");
+        BattleHandler.Getinstance().state = BattleHandler.State.Returning;
         if(deadUnit.myStats.unitName == "player")
         {
             //call lose condition stop game call lost menu
@@ -41,8 +43,7 @@ public class WinLoseHandler : MonoBehaviour
         }
         else
         {
-            Debug.Log(aliveHeroes.Contains(deadUnit));
-            //aliveHeroes.Remove(deadUnit);
+            aliveHeroes.Remove(deadUnit);
             //Destroy(deadUnit.gameObject,0.5f);
             if(aliveHeroes.Count <= 0)
             {
@@ -54,6 +55,8 @@ public class WinLoseHandler : MonoBehaviour
     }
     public void EnemyUnitDied(EnemyAbstract deadUnit)
     {
+        BattleHandler.Getinstance().state = BattleHandler.State.Returning;
+        FindObjectOfType<MouseSelection>().ClearTargetLabel();
         aliveEnemies.Remove(deadUnit);
         Destroy(deadUnit.gameObject,0.5f);
         if(aliveEnemies.Count <= 0)

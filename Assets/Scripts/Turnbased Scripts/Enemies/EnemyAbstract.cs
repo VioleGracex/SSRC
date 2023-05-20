@@ -78,7 +78,7 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
         HP = myPartsHp.Sum() + ((level-1)*0.5f) ;
         if(HP <= 0 )
         {
-            //Death();
+            Death();
         }
     }
 
@@ -94,8 +94,10 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
         else if (myPartsHp[partIndex] <= 0 && damagedPart == myCorePart)
         {
             Debug.Log("AM SO FKIN DEAD MATE!");
+            this.GetComponent<BoxCollider2D>().enabled = false;
+            BattleHandler.Getinstance().SetTarget(null); // there might be an error when attacker starts to return to position 
             //core part has bean destroyed so has been the enemy
-            //Death();
+            Death();
         }
     }
 
@@ -119,8 +121,7 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     public void Death()
     {
         //death animation
-        FindObjectOfType<WinLoseHandler>().EnemyUnitDied(this);
-        //Destroy(this.gameObject,0.5f);       
+        FindObjectOfType<WinLoseHandler>().EnemyUnitDied(this);     
     }
 
     public void Charges(int usage)

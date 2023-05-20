@@ -1602,6 +1602,11 @@ PrefabInstance:
       objectReference: {fileID: 666479407}
     - target: {fileID: 4174916487386547505, guid: 5457ec6b61c23da4da72881c540398b8,
         type: 3}
+      propertyPath: closingSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4174916487386547505, guid: 5457ec6b61c23da4da72881c540398b8,
+        type: 3}
       propertyPath: closingCircleCanvas
       value: 
       objectReference: {fileID: 1390333602}
@@ -2320,7 +2325,7 @@ PrefabInstance:
     - target: {fileID: 991585118698581280, guid: 3fbfa086ca2bdd14cb7cc8c7ff734227,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 69.99995
+      value: 69.999756
       objectReference: {fileID: 0}
     - target: {fileID: 991585118698581284, guid: 3fbfa086ca2bdd14cb7cc8c7ff734227,
         type: 3}

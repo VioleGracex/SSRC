@@ -103,10 +103,8 @@ public class HeroAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IRe
       public void Death()
     {
         //death animation
-        FindObjectOfType<BattleHandler>().state = BattleHandler.State.Returning;
-        FindObjectOfType<BattleHandler>().StopAllCoroutines();
-        //FindObjectOfType<WinLoseHandler>().HeroUnitDied(this.GetComponent<HeroAbstract>());
-        //Destroy(this.gameObject,0.5f);       
+        FindObjectOfType<WinLoseHandler>().HeroUnitDied(this.GetComponent<HeroAbstract>());
+        this.GetComponent<BoxCollider2D>().enabled = false; // or disable raycast
     }
 
 }

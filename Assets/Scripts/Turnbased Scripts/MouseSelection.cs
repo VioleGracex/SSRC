@@ -51,6 +51,10 @@ public class MouseSelection : MonoBehaviour
         enemyTargetLabel.gameObject.SetActive(false);
         heroLabel.gameObject.SetActive(false);
     }
+    public void ClearTargetLabel()
+    {
+        enemyTargetLabel.gameObject.SetActive(false);
+    }
 
 
 }
