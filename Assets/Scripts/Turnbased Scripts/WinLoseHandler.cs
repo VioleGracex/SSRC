@@ -41,7 +41,7 @@ public class WinLoseHandler : MonoBehaviour
         }
         else
         {
-            //Debug.Log(aliveHeroes.Contains(deadUnit));
+            Debug.Log(aliveHeroes.Contains(deadUnit));
             //aliveHeroes.Remove(deadUnit);
             //Destroy(deadUnit.gameObject,0.5f);
             if(aliveHeroes.Count <= 0)

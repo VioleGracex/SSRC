@@ -36,7 +36,6 @@ public class MouseSelection : MonoBehaviour
                     BattleHandler.Getinstance().SetTarget(hit.transform.gameObject);
                     LocateTargetFollow(enemyTargetLabel,hit.transform);
                 }
-                
             }
         } 
     }

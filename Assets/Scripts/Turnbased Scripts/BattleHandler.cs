@@ -265,13 +265,13 @@ public class BattleHandler : MonoBehaviour
 
      public void SetTarget(GameObject unit)
     {
+        target = unit;
         if(state == State.WaitingForPlayer)
         {
-            //target = unit;
             if(playerTurn)
                 CheckAttackAvailability();                                
         }
-        target = unit;
+        
     }
     public GameObject GetTarget()
     {
@@ -295,14 +295,14 @@ public class BattleHandler : MonoBehaviour
             if(hasCharges)
             {
                 attackButton.interactable = true; 
-                partsHPBars.ClearBars();
+                //partsHPBars.ClearBars();
                 //partsHPBars.SpawnBars(); // need to fix the list opens b4 the damage is done maybe
             }   
             else
             {
                 attackButton.interactable = false; 
                 partMenu.SetActive(false);
-                partsHPBars.ClearBars();
+                //partsHPBars.ClearBars();
             }         
          }
          else

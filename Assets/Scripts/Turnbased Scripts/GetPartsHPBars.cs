@@ -14,10 +14,13 @@ public class GetPartsHPBars : MonoBehaviour
 
     MouseSelection mouseSelection;
 
-    public void SpawnBars()
+    public void SpawnBars() //spawner is buggy fix where it is called and make sure there is no duplicates
     {
         target = BattleHandler.Getinstance().GetTarget().GetComponent<EnemyAbstract>();
-       
+        if(contentHolder.childCount > 0)
+        {
+            ClearBars();
+        }
         if(target)
         {
             foreach(var part in target.myParts)

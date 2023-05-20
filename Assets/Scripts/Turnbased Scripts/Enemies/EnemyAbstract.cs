@@ -36,6 +36,7 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
         attack = myStats.attack + ((level-1)*0.5f);
         defense = myStats.defense + ((level-1)*0.5f);
         dex = myStats.dex + ((level-1)*0.5f);
+        myCorePart = myStats.coreLocation;
         foreach(var part in myParts)
         {   
             myPartsHp.Add(part.maxHP);
@@ -58,34 +59,46 @@ public class EnemyAbstract : MonoBehaviour,IDamageable,IHeal,IAttack,ICharges,IR
     {
        //example how to find body part index
        int partIndex = myParts.Where(x=> x.partName == damagedPart).Select(x => myParts.IndexOf(x)).FirstOrDefault();
+       float leftoverDamage = 0;
 
         if(myPartsArmor[partIndex] > 0)
         {
-           myPartsArmor[partIndex]-=damage;
-           Debug.Log("damaged"+ damagedPart + myPartsArmor[partIndex]);
+            leftoverDamage = damage - myPartsArmor[partIndex];
+            myPartsArmor[partIndex]-=damage;
+            Debug.Log("damaged "+ damagedPart + myPartsArmor[partIndex]);
         }
         else if(myPartsArmor[partIndex] <= 0 )
         {
-            if(myPartsHp[partIndex] <= 0 && damagedPart != myCorePart)
-            {
-               myPartsHp.Remove(partIndex); 
-            }
-            else if (myPartsHp[partIndex] <= 0 && damagedPart == myCorePart)
-            {
-                //core part has bean destroyed so has been the enemy
-                Death();
-            }
-            else
-            {
-                myPartsHp[partIndex] -= damage ;
-            }
+            CheckPartHPDamage(damage, damagedPart, partIndex);
+        }
+        if (leftoverDamage > 0)
+        {
+            CheckPartHPDamage(leftoverDamage, damagedPart, partIndex);
         }
         HP = myPartsHp.Sum() + ((level-1)*0.5f) ;
         if(HP <= 0 )
         {
-            Death();
+            //Death();
         }
     }
+
+    private void CheckPartHPDamage(float damage, string damagedPart, int partIndex)
+    {
+        myPartsHp[partIndex] -= damage;
+        if (myPartsHp[partIndex] <= 0 && damagedPart != myCorePart)
+        {
+            //myPartsHp.Remove(partIndex); // cant remove i spawn from default part list and still exists there
+            //call stats reduction
+            myPartsHp[partIndex] = 0f;
+        }
+        else if (myPartsHp[partIndex] <= 0 && damagedPart == myCorePart)
+        {
+            Debug.Log("AM SO FKIN DEAD MATE!");
+            //core part has bean destroyed so has been the enemy
+            //Death();
+        }
+    }
+
     public void Heal(float heal) //heals main hp
     {
         if (HP + heal > myStats.maxHP)

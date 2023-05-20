@@ -21,7 +21,7 @@ MonoBehaviour:
   turnCharges_Max: 1
   level: 0
   _coreTypeIndex: 0
-  coreLocation: 
+  coreLocation: Head
   myPosition: {x: -30.1, y: -6.7, z: 0}
   partsData:
   - partName: Head
