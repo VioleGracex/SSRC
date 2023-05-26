@@ -15,6 +15,10 @@ public class LoadingScreen : MonoBehaviour
     [SerializeField]
     Slider loadingSlider;
     
+    private void Awake()
+    {
+        instance = this;
+    }
     public void LoadMainMenu()
     {
         loadingBG.SetActive(true);

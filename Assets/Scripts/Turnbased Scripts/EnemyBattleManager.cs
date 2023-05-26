@@ -66,7 +66,7 @@ public class EnemyBattleManager : MonoBehaviour
 
     private void GetAllEnemiesWithCharges()
     {   enemiesWithCharges.Clear();
-        foreach(EnemyAbstract enemy in enemies)
+        foreach(EnemyAbstract enemy in FindObjectOfType<WinLoseHandler>().ReturnAliveEnemies())
         {
             if(enemy.GetTurnCharges() > 0 && !enemiesWithCharges.Contains(enemy))
                 enemiesWithCharges.Add(enemy);

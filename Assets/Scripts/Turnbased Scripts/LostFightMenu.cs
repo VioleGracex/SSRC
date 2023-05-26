@@ -8,7 +8,7 @@ public class LostFightMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        loadingScreen = FindObjectOfType<LoadingScreen>();    
+        loadingScreen = LoadingScreen.Getinstance();    
     }
 
     // Update is called once per frame

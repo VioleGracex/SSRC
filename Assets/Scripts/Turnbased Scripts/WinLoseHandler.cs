@@ -66,6 +66,11 @@ public class WinLoseHandler : MonoBehaviour
         }
    
     }
+
+    public List<EnemyAbstract> ReturnAliveEnemies()
+    {
+        return aliveEnemies;
+    }
     // Update is called once per frame
     void Update()
     {

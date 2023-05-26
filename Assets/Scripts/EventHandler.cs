@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
@@ -8,6 +8,7 @@ using System.IO;
 public class EventHandler : MonoBehaviour
 {
     public TextMeshProUGUI chatbox;
+    
     public TextMeshProUGUI speakerbox;
     public TextMeshProUGUI ch_1;
     public TextMeshProUGUI ch_2;
