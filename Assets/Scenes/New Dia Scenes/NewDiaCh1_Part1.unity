@@ -2317,6 +2317,11 @@ PrefabInstance:
       propertyPath: dontDestroyOnLoad
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 991585118166280396, guid: 3fbfa086ca2bdd14cb7cc8c7ff734227,
+        type: 3}
+      propertyPath: displaySettings.subtitleSettings.subtitleCharsPerSecond
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 991585118172002859, guid: 3fbfa086ca2bdd14cb7cc8c7ff734227,
         type: 3}
       propertyPath: onOpen.m_PersistentCalls.m_Calls.Array.size
@@ -2493,6 +2498,11 @@ PrefabInstance:
       propertyPath: typewriterEffect
       value: 
       objectReference: {fileID: 991585117228326131}
+    - target: {fileID: 991585119011768130, guid: 3fbfa086ca2bdd14cb7cc8c7ff734227,
+        type: 3}
+      propertyPath: hideContinueButtonOnContinue
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 991585116949190314, guid: 3fbfa086ca2bdd14cb7cc8c7ff734227, type: 3}
     - {fileID: 991585118159319514, guid: 3fbfa086ca2bdd14cb7cc8c7ff734227, type: 3}
@@ -2524,7 +2534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightToLeft: 0
-  charactersPerSecond: 50
+  charactersPerSecond: 80
   audioClip: {fileID: 0}
   alternateAudioClips: []
   audioSource: {fileID: 0}

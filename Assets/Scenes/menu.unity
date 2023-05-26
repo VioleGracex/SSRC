@@ -17180,11 +17180,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadingScreenCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 8348082742298715494, guid: f355111d575832541a50e5b884adea93,
-        type: 3}
-      propertyPath: m_TagString
-      value: LoadingScreenCanvas
-      objectReference: {fileID: 0}
     - target: {fileID: 8348082742298715498, guid: f355111d575832541a50e5b884adea93,
         type: 3}
       propertyPath: m_Pivot.x

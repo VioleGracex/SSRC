@@ -5,23 +5,32 @@ using UnityEngine;
 public class SimplyUndestructable : MonoBehaviour
 {
     private static bool exists = false;
-    // Start is called before the first frame update
-    void Awake()
+
+    void OnEnable()
     {
-        GameObject[] me =GameObject.FindGameObjectsWithTag(this.tag);
-        if( me.Length > 1)
+        // Check if multiple instances exist during Awake (optional)
+        GameObject[] me = GameObject.FindGameObjectsWithTag(this.tag);
+        if (me.Length > 1)
         {
-            DestroyImmediate(gameObject);
+            Debug.Log("Destroyed duplicate instance");
+            DestroyImmediate(this.gameObject);
         }
     }
+
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
+        // Ensure only one instance persists across scene changes
+        if (!exists)
+        {
+            exists = true;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            // If another instance already exists, destroy this one
+            Debug.Log("Destroyed duplicate instance");
+            Destroy(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -17,7 +17,15 @@ public class LoadingScreen : MonoBehaviour
     
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     public void LoadMainMenu()
     {
@@ -54,7 +62,7 @@ public class LoadingScreen : MonoBehaviour
             loadingSlider.value = progress;
             Debug.Log("Loading progress: " + (progress * 100) + "%");
             // Loading completed
-            if (operation.progress == 0.9f)
+            if (operation.progress == 0.99f)
             {
                 Debug.Log("90%");
                 loadingBG.SetActive(false);
@@ -62,5 +70,6 @@ public class LoadingScreen : MonoBehaviour
             }
             yield return null;
         }
+        loadingBG.SetActive(false);
     }
 }
